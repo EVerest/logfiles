@@ -1,0 +1,2846 @@
+"2023-01-13T08:52:44.530Z","SYS","Session logging started.",""
+"2023-01-13T08:52:44.531Z","EVSE","Session Started: EVConnected",""
+"2023-01-13T08:52:44.531Z","EVSE","Set PWM On (5.000000074505806%)",""
+"2023-01-13T08:52:45.203Z","EVSE","EIM Authorization received",""
+"2023-01-13T08:52:45.204Z","EVSE","Transaction Started (131.668 kWh)",""
+"2023-01-13T08:52:45.205Z","EVSE","DC mode. We are in 5percent mode so we can continue without further action.",""
+"2023-01-13T08:52:45.255Z","EVSE","Charger state: WaitAuth->PrepareCharging",""
+"2023-01-13T08:52:45.387Z","EVSE","Set PWM On (5.000000074505806%)",""
+"2023-01-13T08:52:45.411Z","CAR","Event EnterBCD",""
+"2023-01-13T08:52:49.107Z","EVSE","SLAC MATCHING",""
+"2023-01-13T08:52:52.046Z","CAR","V2G SupportedAppProtocolReq","{
+    "supportedAppProtocolReq": {
+        "AppProtocol": [
+            {
+                "Priority": 1,
+                "ProtocolNamespace": "urn:din:70121:2012:MsgDef",
+                "SchemaID": 1,
+                "VersionNumberMajor": 2,
+                "VersionNumberMinor": 0
+            }
+        ]
+    }
+}"
+"2023-01-13T08:52:52.066Z","EVSE","V2G SupportedAppProtocolRes","{
+    "supportedAppProtocolRes": {
+        "ResponseCode": "OK_SuccessfulNegotiation",
+        "SchemaID": 1
+    }
+}"
+"2023-01-13T08:52:52.272Z","CAR","V2G SessionSetupReq","{
+    "V2G_Message": {
+        "Body": {
+            "SessionSetupReq": {
+                "EVCCID": "044EAFD9C5FA"
+            }
+        },
+        "Header": {
+            "SessionID": "0000000000000000"
+        }
+    }
+}"
+"2023-01-13T08:52:52.459Z","EVSE","V2G SessionSetupRes","{
+    "V2G_Message": {
+        "Body": {
+            "SessionSetupRes": {
+                "DateTimeNow": 1673599972,
+                "EVSEID": "49A80737A45678",
+                "ResponseCode": "OK_NewSessionEstablished"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:52:52.785Z","CAR","V2G ServiceDiscoveryReq","{
+    "V2G_Message": {
+        "Body": {
+            "ServiceDiscoveryReq": {}
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:52:53.166Z","EVSE","V2G ServiceDiscoveryRes","{
+    "V2G_Message": {
+        "Body": {
+            "ServiceDiscoveryRes": {
+                "ChargeService": {
+                    "EnergyTransferType": "DC_extended",
+                    "FreeService": false,
+                    "ServiceTag": {
+                        "ServiceCategory": "EVCharging",
+                        "ServiceID": 1
+                    }
+                },
+                "PaymentOptions": {
+                    "PaymentOption": [
+                        "ExternalPayment"
+                    ]
+                },
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:52:53.454Z","CAR","V2G ServicePaymentSelectionReq","{
+    "V2G_Message": {
+        "Body": {
+            "ServicePaymentSelectionReq": {
+                "SelectedPaymentOption": "ExternalPayment",
+                "SelectedServiceList": {
+                    "SelectedService": [
+                        {
+                            "ServiceID": 1
+                        }
+                    ]
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:52:53.617Z","EVSE","V2G ServicePaymentSelectionRes","{
+    "V2G_Message": {
+        "Body": {
+            "ServicePaymentSelectionRes": {
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:52:53.908Z","CAR","V2G ContractAuthenticationReq","{
+    "V2G_Message": {
+        "Body": {
+            "ContractAuthenticationReq": {}
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:52:54.048Z","EVSE","V2G ContractAuthenticationRes","{
+    "V2G_Message": {
+        "Body": {
+            "ContractAuthenticationRes": {
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:52:54.233Z","CAR","V2G ContractAuthenticationReq","{
+    "V2G_Message": {
+        "Body": {
+            "ContractAuthenticationReq": {}
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:52:54.364Z","EVSE","V2G ContractAuthenticationRes","{
+    "V2G_Message": {
+        "Body": {
+            "ContractAuthenticationRes": {
+                "EVSEProcessing": "Finished",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:52:54.687Z","CAR","V2G ChargeParameterDiscoveryReq","{
+    "V2G_Message": {
+        "Body": {
+            "ChargeParameterDiscoveryReq": {
+                "DC_EVChargeParameter": {
+                    "BulkSOC": 80,
+                    "DC_EVStatus": {
+                        "EVCabinConditioning": false,
+                        "EVErrorCode": "NO_ERROR",
+                        "EVRESSConditioning": false,
+                        "EVRESSSOC": 97,
+                        "EVReady": false
+                    },
+                    "EVEnergyCapacity": {
+                        "Multiplier": 0,
+                        "Unit": "Wh",
+                        "Value": 18700
+                    },
+                    "EVEnergyRequest": {
+                        "Multiplier": 0,
+                        "Unit": "Wh",
+                        "Value": 16700
+                    },
+                    "EVMaximumCurrentLimit": {
+                        "Multiplier": -1,
+                        "Unit": "A",
+                        "Value": 1500
+                    },
+                    "EVMaximumPowerLimit": {
+                        "Multiplier": 2,
+                        "Unit": "W",
+                        "Value": 600
+                    },
+                    "EVMaximumVoltageLimit": {
+                        "Multiplier": -1,
+                        "Unit": "V",
+                        "Value": 4500
+                    },
+                    "FullSOC": 100
+                },
+                "EVRequestedEnergyTransferType": "DC_extended"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:52:54.866Z","EVSE","V2G ChargeParameterDiscoveryRes","{
+    "V2G_Message": {
+        "Body": {
+            "ChargeParameterDiscoveryRes": {
+                "DC_EVSEChargeParameter": {
+                    "DC_EVSEStatus": {
+                        "EVSEIsolationStatus": "Invalid",
+                        "EVSENotification": "None",
+                        "EVSEStatusCode": "EVSE_Ready",
+                        "NotificationMaxDelay": 0
+                    },
+                    "EVSECurrentRegulationTolerance": {
+                        "Multiplier": 0,
+                        "Unit": "A",
+                        "Value": 1
+                    },
+                    "EVSEEnergyToBeDelivered": {
+                        "Multiplier": 0,
+                        "Unit": "Wh",
+                        "Value": 10000
+                    },
+                    "EVSEMaximumCurrentLimit": {
+                        "Multiplier": 0,
+                        "Unit": "A",
+                        "Value": 25
+                    },
+                    "EVSEMaximumPowerLimit": {
+                        "Multiplier": 0,
+                        "Unit": "W",
+                        "Value": 10000
+                    },
+                    "EVSEMaximumVoltageLimit": {
+                        "Multiplier": 0,
+                        "Unit": "V",
+                        "Value": 900
+                    },
+                    "EVSEMinimumCurrentLimit": {
+                        "Multiplier": 0,
+                        "Unit": "A",
+                        "Value": 1
+                    },
+                    "EVSEMinimumVoltageLimit": {
+                        "Multiplier": 0,
+                        "Unit": "V",
+                        "Value": 180
+                    },
+                    "EVSEPeakCurrentRipple": {
+                        "Multiplier": -2,
+                        "Unit": "A",
+                        "Value": 50
+                    }
+                },
+                "EVSEProcessing": "Finished",
+                "ResponseCode": "OK",
+                "SAScheduleList": {
+                    "SAScheduleTuple": [
+                        {
+                            "PMaxSchedule": {
+                                "PMaxScheduleEntry": [
+                                    {
+                                        "PMax": 200,
+                                        "RelativeTimeInterval": {
+                                            "duration": 3600,
+                                            "start": 0
+                                        }
+                                    }
+                                ],
+                                "PMaxScheduleID": 0
+                            },
+                            "SAScheduleTupleID": 1
+                        }
+                    ]
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:52:58.119Z","CAR","Event CarRequestedPower",""
+"2023-01-13T08:52:58.138Z","EVSE","Event PowerOn",""
+"2023-01-13T08:52:58.312Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:52:58.335Z","EVSE","Start cable check...",""
+"2023-01-13T08:52:58.458Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:52:59.157Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:52:59.312Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:52:59.470Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:52:59.623Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:00.244Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:00.404Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:00.625Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:00.738Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:01.404Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:01.544Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:01.717Z","EVSE","SLAC MATCHED",""
+"2023-01-13T08:53:01.729Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:01.876Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:02.566Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:02.717Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:03.096Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:03.238Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:03.927Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:04.128Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:04.354Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:04.475Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:05.140Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:05.308Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:05.493Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:05.599Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:06.246Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:06.386Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:06.618Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:06.734Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:07.426Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:07.573Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:07.749Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:07.944Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:08.516Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:08.703Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:08.873Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:09.070Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:09.753Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:09.920Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:10.098Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:10.221Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:10.874Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:11.014Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:11.394Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:11.541Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:12.271Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:12.404Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:12.568Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:12.718Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:13.361Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:13.510Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:13.783Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:13.891Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:14.563Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:14.720Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:14.932Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:15.028Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:15.691Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:15.839Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:16.083Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:16.189Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:16.884Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:17.040Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:17.205Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:17.355Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:18.008Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:18.215Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:18.393Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:18.561Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:19.246Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:19.571Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:19.744Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:19.897Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:20.550Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:20.755Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:20.919Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:21.093Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:21.756Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:21.903Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:22.075Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:22.255Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:22.854Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:23.009Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:23.230Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:23.382Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:24.099Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:24.281Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:24.393Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:24.538Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:25.199Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:25.360Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:25.580Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:25.723Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:26.360Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:26.490Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:26.917Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:27.297Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:27.978Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:28.176Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:28.320Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:28.493Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:29.179Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:29.307Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:29.494Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:29.651Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:30.304Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:30.460Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:30.706Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:30.830Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:31.477Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:31.643Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:31.753Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:31.906Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:32.540Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:32.694Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:32.863Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:33.043Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:33.724Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:33.837Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:34.032Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:34.189Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:34.818Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:34.964Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:35.361Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:35.487Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:36.180Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:36.320Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:36.516Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:36.668Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:37.267Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:37.457Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:37.656Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:37.789Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:38.293Z","CAR","Event CarRequestedStopPower",""
+"2023-01-13T08:53:38.299Z","EVSE","Charger state: PrepareCharging->StoppingCharging",""
+"2023-01-13T08:53:38.300Z","EVSE","Set PWM Off",""
+"2023-01-13T08:53:38.313Z","EVSE","Event PowerOff",""
+"2023-01-13T08:53:38.474Z","EVSE","Transaction Finished: EVDisconnected (131.668 kWh)",""
+"2023-01-13T08:53:38.491Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": false
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:38.614Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:38.825Z","CAR","V2G SessionStopReq","{
+    "V2G_Message": {
+        "Body": {
+            "SessionStopReq": {}
+        },
+        "Header": {
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"
+"2023-01-13T08:53:38.948Z","EVSE","V2G SessionStopRes","{
+    "V2G_Message": {
+        "Body": {
+            "SessionStopRes": {
+                "ResponseCode": "FAILED_SequenceError"
+            }
+        },
+        "Header": {
+            "Notification": {
+                "FaultCode": "ParsingError",
+                "FaultMsg": "SessionStopReq' not accepted in state CableCheck"
+            },
+            "SessionID": "93667410ABB35AC5"
+        }
+    }
+}"

@@ -1,0 +1,40 @@
+"2023-01-13T08:31:48.580Z","SYS","Session logging started.",""
+"2023-01-13T08:31:48.580Z","EVSE","Session Started: EVConnected",""
+"2023-01-13T08:31:48.581Z","EVSE","Set PWM On (5.000000074505806%)",""
+"2023-01-13T08:31:49.252Z","EVSE","EIM Authorization received",""
+"2023-01-13T08:31:49.253Z","EVSE","Transaction Started (1.6713669756427408e-06 kWh)",""
+"2023-01-13T08:31:49.254Z","EVSE","AC mode, HLC enabled(ac_enforce_hlc), keeping 5 percent on until a dlink error is signalled.",""
+"2023-01-13T08:31:49.305Z","EVSE","Charger state: WaitAuth->PrepareCharging",""
+"2023-01-13T08:31:49.321Z","CAR","Event EnterBCD",""
+"2023-01-13T08:31:49.473Z","EVSE","Set PWM On (5.000000074505806%)",""
+"2023-01-13T08:31:53.055Z","EVSE","SLAC MATCHING",""
+"2023-01-13T08:31:56.438Z","CAR","V2G SupportedAppProtocolReq","{
+    "supportedAppProtocolReq": {
+        "AppProtocol": [
+            {
+                "Priority": 1,
+                "ProtocolNamespace": "urn:din:70121:2012:MsgDef",
+                "SchemaID": 1,
+                "VersionNumberMajor": 2,
+                "VersionNumberMinor": 0
+            }
+        ]
+    }
+}"
+"2023-01-13T08:31:56.581Z","EVSE","V2G SupportedAppProtocolRes","{
+    "supportedAppProtocolRes": {
+        "ResponseCode": "Failed_NoNegotiation"
+    }
+}"
+"2023-01-13T08:32:05.753Z","EVSE","SLAC MATCHED",""
+"2023-01-13T08:33:25.076Z","CAR","Event LeaveBCD",""
+"2023-01-13T08:33:25.184Z","EVSE","SLAC UNMATCHED",""
+"2023-01-13T08:33:25.199Z","CAR","Event CarRequestedStopPower",""
+"2023-01-13T08:33:25.260Z","CAR","Event CarUnplugged",""
+"2023-01-13T08:33:25.307Z","EVSE","Charger state: PrepareCharging->StoppingCharging",""
+"2023-01-13T08:33:25.308Z","EVSE","Set PWM Off",""
+"2023-01-13T08:33:25.401Z","EVSE","SLAC UNMATCHED",""
+"2023-01-13T08:33:25.455Z","EVSE","Transaction Finished: EVDisconnected (4.0517988963983953e-07 kWh)",""
+"2023-01-13T08:33:25.506Z","EVSE","Charger state: StoppingCharging->Finished",""
+"2023-01-13T08:33:25.506Z","EVSE","Session Finished",""
+"2023-01-13T08:33:25.507Z","SYS","Session logging stopped.",""

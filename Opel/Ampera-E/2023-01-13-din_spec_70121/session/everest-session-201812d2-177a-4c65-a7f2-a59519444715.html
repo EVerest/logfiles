@@ -1,0 +1,2756 @@
+<html><head><title>EVerest log session 201812d2-177a-4c65-a7f2-a59519444715</title>
+<style>.log {  font-family: Arial, Helvetica, sans-serif;  border-collapse: collapse;  width: 100%;}.log td, .log th {  border: 1px solid #ddd;  padding: 8px;  vertical-align: top;}.log tr.CAR{background-color: #E4E6F2;}.log tr.EVSE{background-color: #F2F0E4;}.log tr.SYS{background-color: white;}.log th {  padding-top: 12px;  padding-bottom: 12px;  text-align: left;  vertical-align: top;  background-color: #04AA6D;  color: white;}</style></head><body><table class="log">
+<tr class="SYS"> <td>2023-01-13T08:47:48.863Z</td> <td>SYS&gt;</td> <td><b>Session logging started.</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:47:48.863Z</td> <td>EVSE&gt;CAR</td> <td><b>Session Started: EVConnected</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:47:48.864Z</td> <td>EVSE&gt;CAR</td> <td><b>Set PWM On (5.000000074505806%)</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:47:49.624Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>Event EnterBCD</b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:47:49.664Z</td> <td>EVSE&gt;CAR</td> <td><b>EIM Authorization received</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:47:49.664Z</td> <td>EVSE&gt;CAR</td> <td><b>Transaction Started (131.668 kWh)</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:47:49.665Z</td> <td>EVSE&gt;CAR</td> <td><b>DC mode. We are in 5percent mode so we can continue without further action.</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:47:49.716Z</td> <td>EVSE&gt;CAR</td> <td><b>Charger state: WaitAuth->PrepareCharging</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:47:49.864Z</td> <td>EVSE&gt;CAR</td> <td><b>Set PWM On (5.000000074505806%)</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:47:53.319Z</td> <td>EVSE&gt;CAR</td> <td><b>SLAC MATCHING</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:47:56.742Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G SupportedAppProtocolReq</b></td> <td><pre lang="xml">{
+    "supportedAppProtocolReq": {
+        "AppProtocol": [
+            {
+                "Priority": 1,
+                "ProtocolNamespace": "urn:din:70121:2012:MsgDef",
+                "SchemaID": 1,
+                "VersionNumberMajor": 2,
+                "VersionNumberMinor": 0
+            }
+        ]
+    }
+}</pre></td> <td><pre lang="xml">8000dbab9371d3234b71d1b981899189d191818991d26b9b3a232b30020000040040</pre></td> <td><pre lang="xml">6741446271354e7830794e4c6364473567596d526964475267596d52306d75624f694d724d4149414141514151413d3d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:47:56.887Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G SupportedAppProtocolRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "supportedAppProtocolRes": {
+        "ResponseCode": "OK_SuccessfulNegotiation",
+        "SchemaID": 1
+    }
+}</pre></td> <td><pre lang="xml">80400040</pre></td> <td><pre lang="xml">6745414151413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:47:57.668Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G SessionSetupReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "SessionSetupReq": {
+                "EVCCID": "044EAFD9C5FA"
+            }
+        },
+        "Header": {
+            "SessionID": "0000000000000000"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02000000000000000011d018113abf6717e800</pre></td> <td><pre lang="xml">674a6f43414141414141414141414152304267524f72396e462b6741</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:47:57.970Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G SessionSetupRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "SessionSetupRes": {
+                "DateTimeNow": 1673599677,
+                "EVSEID": "49A80737A45678",
+                "ResponseCode": "OK_NewSessionEstablished"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a91e0201d26a01cde9159e017b6b093c0c0</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337152344341644a7141633370465a34426532734a504177413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:47:58.413Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G ServiceDiscoveryReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ServiceDiscoveryReq": {}
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a9198</pre></td> <td><pre lang="xml">674a6f43456e727a47454a37633371526d413d3d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:47:58.699Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G ServiceDiscoveryRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ServiceDiscoveryRes": {
+                "ChargeService": {
+                    "EnergyTransferType": "DC_extended",
+                    "FreeService": false,
+                    "ServiceTag": {
+                        "ServiceCategory": "EVCharging",
+                        "ServiceID": 1
+                    }
+                },
+                "PaymentOptions": {
+                    "PaymentOption": [
+                        "ExternalPayment"
+                    ]
+                },
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a91a00120024100c4</pre></td> <td><pre lang="xml">674a6f43456e727a47454a37633371526f414567416b454178413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:47:59.139Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G ServicePaymentSelectionReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ServicePaymentSelectionReq": {
+                "SelectedPaymentOption": "ExternalPayment",
+                "SelectedServiceList": {
+                    "SelectedService": [
+                        {
+                            "ServiceID": 1
+                        }
+                    ]
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a91b2001280</pre></td> <td><pre lang="xml">674a6f43456e727a47454a37633371527367415367413d3d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:47:59.361Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G ServicePaymentSelectionRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ServicePaymentSelectionRes": {
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a91c000</pre></td> <td><pre lang="xml">674a6f43456e727a47454a37633371527741413d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:47:59.899Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G ContractAuthenticationReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ContractAuthenticationReq": {}
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a90b8</pre></td> <td><pre lang="xml">674a6f43456e727a47454a376333715175413d3d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:00.127Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G ContractAuthenticationRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ContractAuthenticationRes": {
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a90c00200</pre></td> <td><pre lang="xml">674a6f43456e727a47454a376333715177414941</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:00.351Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G ContractAuthenticationReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ContractAuthenticationReq": {}
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a90b8</pre></td> <td><pre lang="xml">674a6f43456e727a47454a376333715175413d3d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:00.588Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G ContractAuthenticationRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ContractAuthenticationRes": {
+                "EVSEProcessing": "Finished",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a90c00000</pre></td> <td><pre lang="xml">674a6f43456e727a47454a376333715177414141</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:00.951Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G ChargeParameterDiscoveryReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargeParameterDiscoveryReq": {
+                "DC_EVChargeParameter": {
+                    "BulkSOC": 80,
+                    "DC_EVStatus": {
+                        "EVCabinConditioning": false,
+                        "EVErrorCode": "NO_ERROR",
+                        "EVRESSConditioning": false,
+                        "EVRESSSOC": 97,
+                        "EVReady": false
+                    },
+                    "EVEnergyCapacity": {
+                        "Multiplier": 0,
+                        "Unit": "Wh",
+                        "Value": 18700
+                    },
+                    "EVEnergyRequest": {
+                        "Multiplier": 0,
+                        "Unit": "Wh",
+                        "Value": 16700
+                    },
+                    "EVMaximumCurrentLimit": {
+                        "Multiplier": -1,
+                        "Unit": "A",
+                        "Value": 1500
+                    },
+                    "EVMaximumPowerLimit": {
+                        "Multiplier": 2,
+                        "Unit": "W",
+                        "Value": 600
+                    },
+                    "EVMaximumVoltageLimit": {
+                        "Multiplier": -1,
+                        "Unit": "V",
+                        "Value": 4500
+                    },
+                    "FullSOC": 100
+                },
+                "EVRequestedEnergyTransferType": "DC_extended"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a90719000000c204061b81605070d80402050942300c24232480403090bc82010640a00</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151635a4141414177675147473446675548445942414946435549774443516a4a4942414d4a433867674547514b41413d3d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:01.211Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G ChargeParameterDiscoveryRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargeParameterDiscoveryRes": {
+                "DC_EVSEChargeParameter": {
+                    "DC_EVSEStatus": {
+                        "EVSEIsolationStatus": "Invalid",
+                        "EVSENotification": "None",
+                        "EVSEStatusCode": "EVSE_Ready",
+                        "NotificationMaxDelay": 0
+                    },
+                    "EVSECurrentRegulationTolerance": {
+                        "Multiplier": 0,
+                        "Unit": "A",
+                        "Value": 1
+                    },
+                    "EVSEEnergyToBeDelivered": {
+                        "Multiplier": 0,
+                        "Unit": "Wh",
+                        "Value": 10000
+                    },
+                    "EVSEMaximumCurrentLimit": {
+                        "Multiplier": 0,
+                        "Unit": "A",
+                        "Value": 25
+                    },
+                    "EVSEMaximumPowerLimit": {
+                        "Multiplier": 0,
+                        "Unit": "W",
+                        "Value": 10000
+                    },
+                    "EVSEMaximumVoltageLimit": {
+                        "Multiplier": 0,
+                        "Unit": "V",
+                        "Value": 900
+                    },
+                    "EVSEMinimumCurrentLimit": {
+                        "Multiplier": 0,
+                        "Unit": "A",
+                        "Value": 1
+                    },
+                    "EVSEMinimumVoltageLimit": {
+                        "Multiplier": 0,
+                        "Unit": "V",
+                        "Value": 180
+                    },
+                    "EVSEPeakCurrentRipple": {
+                        "Multiplier": -2,
+                        "Unit": "A",
+                        "Value": 50
+                    }
+                },
+                "EVSEProcessing": "Finished",
+                "ResponseCode": "OK",
+                "SAScheduleList": {
+                    "SAScheduleTuple": [
+                        {
+                            "PMaxSchedule": {
+                                "PMaxScheduleEntry": [
+                                    {
+                                        "PMax": 200,
+                                        "RelativeTimeInterval": {
+                                            "duration": 3600,
+                                            "start": 0
+                                        }
+                                    }
+                                ],
+                                "PMaxScheduleID": 0
+                            },
+                            "SAScheduleTupleID": 1
+                        }
+                    ]
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a90800000040000000480e032004550008000018180c80c1c241380c142101c0c0c0040c142d0040606002020606403090904e000</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151674141414241414141415341344449415256414167414142675944494442776b453444425168416344417741514d464330415147426741674947426b41776b4a424f4141</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:04.026Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>Event CarRequestedPower</b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:04.035Z</td> <td>EVSE&gt;CAR</td> <td><b>Event PowerOn</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:04.256Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a901100000c20</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151455141414443413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:04.279Z</td> <td>EVSE&gt;CAR</td> <td><b>Start cable check...</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:04.435Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a9020000200000400</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151494141434141414541413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:05.120Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a901100000c20</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151455141414443413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:05.310Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a9020000200000400</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151494141434141414541413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:05.516Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a901100000c20</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151455141414443413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:05.692Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a9020000200000400</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151494141434141414541413d3d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:05.938Z</td> <td>EVSE&gt;CAR</td> <td><b>SLAC MATCHED</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:06.391Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a901100000c20</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151455141414443413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:06.592Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a9020000200000400</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151494141434141414541413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:06.777Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a901100000c20</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151455141414443413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:06.999Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a9020000200000400</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151494141434141414541413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:07.804Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a901100000c20</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151455141414443413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:08.005Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a9020000200000400</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151494141434141414541413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:08.267Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a901100000c20</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151455141414443413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:08.381Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a9020004200000400</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151494142434141414541413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:09.052Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a901100000c20</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151455141414443413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:09.242Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a9020004200000400</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151494142434141414541413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:09.459Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a901100000c20</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151455141414443413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:09.594Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a9020004200000400</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151494142434141414541413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:10.350Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a901100000c20</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151455141414443413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:10.499Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a9020004200000400</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151494142434141414541413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:10.692Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a901100000c20</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151455141414443413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:10.839Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a9020004200000400</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151494142434141414541413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:11.509Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a901100000c20</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151455141414443413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:11.677Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a9020004200000400</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151494142434141414541413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:11.935Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a901100000c20</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151455141414443413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:12.095Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a9020004200000400</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151494142434141414541413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:12.810Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a901100000c20</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151455141414443413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:13.013Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a9020004200000400</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151494142434141414541413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:13.236Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a901100000c20</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151455141414443413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:13.397Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a9020004200000400</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151494142434141414541413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:14.245Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a901100000c20</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151455141414443413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:14.419Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a9020004200000400</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151494142434141414541413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:14.604Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a901100000c20</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151455141414443413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:14.759Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a9020004200000400</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151494142434141414541413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:15.490Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a901100000c20</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151455141414443413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:15.637Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a9020004200000400</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151494142434141414541413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:15.873Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a901100000c20</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151455141414443413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:16.051Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a9020004200000400</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151494142434141414541413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:16.716Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a901100000c20</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151455141414443413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:16.917Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a9020004200000400</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151494142434141414541413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:17.075Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a901100000c20</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151455141414443413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:17.246Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a9020004200000400</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151494142434141414541413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:17.921Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a901100000c20</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151455141414443413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:18.096Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a9020004200000400</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151494142434141414541413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:18.324Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a901100000c20</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151455141414443413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:18.485Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a9020004200000400</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151494142434141414541413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:19.150Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a901100000c20</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151455141414443413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:19.318Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a9020004200000400</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151494142434141414541413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:19.494Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a901100000c20</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151455141414443413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:19.646Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a9020004200000400</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151494142434141414541413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:20.352Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a901100000c20</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151455141414443413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:20.485Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a9020004200000400</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151494142434141414541413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:20.834Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a901100000c20</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151455141414443413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:20.991Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a9020004200000400</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151494142434141414541413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:21.686Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a901100000c20</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151455141414443413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:21.856Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a9020004200000400</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151494142434141414541413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:22.056Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a901100000c20</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151455141414443413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:22.253Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a9020004200000400</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151494142434141414541413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:22.905Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a901100000c20</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151455141414443413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:23.103Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a9020004200000400</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151494142434141414541413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:23.291Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a901100000c20</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151455141414443413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:23.447Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a9020004200000400</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151494142434141414541413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:24.100Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a901100000c20</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151455141414443413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:24.276Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a9020004200000400</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151494142434141414541413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:24.420Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a901100000c20</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151455141414443413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:24.584Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a9020004200000400</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151494142434141414541413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:25.257Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a901100000c20</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151455141414443413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:25.411Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a9020004200000400</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151494142434141414541413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:25.588Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a901100000c20</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151455141414443413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:25.790Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a9020004200000400</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151494142434141414541413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:26.380Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a901100000c20</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151455141414443413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:26.548Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a9020004200000400</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151494142434141414541413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:26.722Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a901100000c20</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151455141414443413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:26.884Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a9020004200000400</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151494142434141414541413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:27.702Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a901100000c20</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151455141414443413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:27.874Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a9020004200000400</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151494142434141414541413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:28.042Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a901100000c20</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151455141414443413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:28.201Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a9020004200000400</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151494142434141414541413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:28.846Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a901100000c20</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151455141414443413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:29.062Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a9020004200000400</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151494142434141414541413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:29.242Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a901100000c20</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151455141414443413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:29.376Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a9020004200000400</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151494142434141414541413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:30.101Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a901100000c20</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151455141414443413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:30.256Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a9020004200000400</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151494142434141414541413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:30.399Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a901100000c20</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151455141414443413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:30.536Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a9020004200000400</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151494142434141414541413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:31.199Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a901100000c20</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151455141414443413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:31.358Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a9020004200000400</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151494142434141414541413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:31.565Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a901100000c20</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151455141414443413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:31.735Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a9020004200000400</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151494142434141414541413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:32.408Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a901100000c20</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151455141414443413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:32.571Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a9020004200000400</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151494142434141414541413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:32.731Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a901100000c20</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151455141414443413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:32.949Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a9020004200000400</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151494142434141414541413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:33.556Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a901100000c20</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151455141414443413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:33.723Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a9020004200000400</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151494142434141414541413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:33.924Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a901100000c20</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151455141414443413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:34.297Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a9020004200000400</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151494142434141414541413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:34.973Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a901100000c20</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151455141414443413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:35.137Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a9020004200000400</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151494142434141414541413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:35.299Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a901100000c20</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151455141414443413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:35.441Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a9020004200000400</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151494142434141414541413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:36.097Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a901100000c20</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151455141414443413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:36.304Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a9020004200000400</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151494142434141414541413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:36.453Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a901100000c20</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151455141414443413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:36.596Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a9020004200000400</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151494142434141414541413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:37.280Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a901100000c20</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151455141414443413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:37.423Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a9020004200000400</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151494142434141414541413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:37.597Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a901100000c20</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151455141414443413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:37.737Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a9020004200000400</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151494142434141414541413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:38.387Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a901100000c20</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151455141414443413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:38.529Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a9020004200000400</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151494142434141414541413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:38.753Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a901100000c20</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151455141414443413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:38.967Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a9020004200000400</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151494142434141414541413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:39.636Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a901100000c20</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151455141414443413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:39.844Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a9020004200000400</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151494142434141414541413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:40.000Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a901100000c20</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151455141414443413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:40.151Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a9020004200000400</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151494142434141414541413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:40.812Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a901100000c20</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151455141414443413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:41.189Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a9020004200000400</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151494142434141414541413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:41.351Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a901100000c20</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151455141414443413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:41.504Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a9020004200000400</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151494142434141414541413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:42.153Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a901100000c20</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151455141414443413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:42.327Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a9020004200000400</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151494142434141414541413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:42.479Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a901100000c20</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151455141414443413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:42.634Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a9020004200000400</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151494142434141414541413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:43.287Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a901100000c20</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151455141414443413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:43.450Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a9020004200000400</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151494142434141414541413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:43.677Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a901100000c20</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151455141414443413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:43.800Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a9020004200000400</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151494142434141414541413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:44.248Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>Event CarRequestedStopPower</b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:44.259Z</td> <td>EVSE&gt;CAR</td> <td><b>Event PowerOff</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:44.262Z</td> <td>EVSE&gt;CAR</td> <td><b>Charger state: PrepareCharging->StoppingCharging</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:44.264Z</td> <td>EVSE&gt;CAR</td> <td><b>Set PWM Off</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:44.388Z</td> <td>EVSE&gt;CAR</td> <td><b>Transaction Finished: EVDisconnected (131.668 kWh)</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:48:44.511Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVCabinConditioning": false,
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSConditioning": false,
+                    "EVRESSSOC": 97,
+                    "EVReady": false
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a901000000c20</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151454141414443413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:48:44.665Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "49EBCC6109EDCDEA"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809a02127af318427b737a9020004200000400</pre></td> <td><pre lang="xml">674a6f43456e727a47454a3763337151494142434141414541413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:49:13.053Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>Event LeaveBCD</b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:49:13.154Z</td> <td>EVSE&gt;CAR</td> <td><b>SLAC UNMATCHED</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:49:13.168Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>Event CarRequestedStopPower</b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="CAR"> <td>2023-01-13T08:49:13.171Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>Event CarUnplugged</b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:49:13.200Z</td> <td>EVSE&gt;CAR</td> <td><b>Charger state: StoppingCharging->Finished</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-13T08:49:13.200Z</td> <td>EVSE&gt;CAR</td> <td><b>Session Finished</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="SYS"> <td>2023-01-13T08:49:13.201Z</td> <td>SYS&gt;</td> <td><b>Session logging stopped.</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+</table></body></html>

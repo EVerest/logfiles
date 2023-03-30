@@ -1,0 +1,1946 @@
+<html><head><title>EVerest log session cc794f4b-33cc-481a-bbb6-135a1e9d1104</title>
+<style>.log {  font-family: Arial, Helvetica, sans-serif;  border-collapse: collapse;  width: 100%;}.log td, .log th {  border: 1px solid #ddd;  padding: 8px;  vertical-align: top;}.log tr.CAR{background-color: #E4E6F2;}.log tr.EVSE{background-color: #F2F0E4;}.log tr.SYS{background-color: white;}.log th {  padding-top: 12px;  padding-bottom: 12px;  text-align: left;  vertical-align: top;  background-color: #04AA6D;  color: white;}</style></head><body><table class="log">
+<tr class="SYS"> <td>2023-01-16T09:53:29.437Z</td> <td>SYS&gt;</td> <td><b>Session logging started.</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:53:29.438Z</td> <td>EVSE&gt;CAR</td> <td><b>Session Started: EVConnected</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:53:29.439Z</td> <td>EVSE&gt;CAR</td> <td><b>Set PWM On (5.000000074505806%)</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:53:30.153Z</td> <td>EVSE&gt;CAR</td> <td><b>EIM Authorization received</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:53:30.153Z</td> <td>EVSE&gt;CAR</td> <td><b>Transaction Started (1.4687770744785667e-06 kWh)</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:53:30.154Z</td> <td>EVSE&gt;CAR</td> <td><b>AC mode, HLC enabled(ac_enforce_hlc), keeping 5 percent on until a dlink error is signalled.</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:53:30.204Z</td> <td>EVSE&gt;CAR</td> <td><b>Charger state: WaitAuth->PrepareCharging</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:53:30.362Z</td> <td>EVSE&gt;CAR</td> <td><b>Set PWM On (5.000000074505806%)</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="CAR"> <td>2023-01-16T09:53:30.439Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>Event EnterBCD</b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:53:35.078Z</td> <td>EVSE&gt;CAR</td> <td><b>SLAC MATCHING</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:53:37.334Z</td> <td>EVSE&gt;CAR</td> <td><b>SLAC MATCHED</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="CAR"> <td>2023-01-16T09:53:40.062Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G SupportedAppProtocolReq</b></td> <td><pre lang="xml">{
+    "supportedAppProtocolReq": {
+        "AppProtocol": [
+            {
+                "Priority": 1,
+                "ProtocolNamespace": "urn:din:70121:2012:MsgDef",
+                "SchemaID": 1,
+                "VersionNumberMajor": 2,
+                "VersionNumberMinor": 0
+            },
+            {
+                "Priority": 2,
+                "ProtocolNamespace": "urn:iso:15118:2:2013:MsgDef",
+                "SchemaID": 0,
+                "VersionNumberMajor": 2,
+                "VersionNumberMinor": 0
+            }
+        ]
+    }
+}</pre></td> <td><pre lang="xml">8000dbab9371d3234b71d1b981899189d191818991d26b9b3a232b30020000040001d75726e3a69736f3a31353131383a323a323031333a4d73674465660040000000880</pre></td> <td><pre lang="xml">6741446271354e7830794e4c6364473567596d526964475267596d52306d75624f694d724d41494141415141416464584a754f6d6c7a627a6f784e5445784f446f794f6a49774d544d3654584e6e5247566d4145414141414349413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:53:40.185Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G SupportedAppProtocolRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "supportedAppProtocolRes": {
+        "ResponseCode": "OK_SuccessfulNegotiation",
+        "SchemaID": 0
+    }
+}</pre></td> <td><pre lang="xml">80400000</pre></td> <td><pre lang="xml">6745414141413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-16T09:53:40.748Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G SessionSetupReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "SessionSetupReq": {
+                "EVCCID": "007DFA09F9B2"
+            }
+        },
+        "Header": {
+            "SessionID": "00"
+        }
+    }
+}</pre></td> <td><pre lang="xml">8098004011d01801f7e827e6c800</pre></td> <td><pre lang="xml">674a674151424851474148333643666d7941413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:53:41.062Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G SessionSetupRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "SessionSetupRes": {
+                "EVSEID": "DE*PNX*E123456*1",
+                "EVSETimeStamp": 1673862820,
+                "ResponseCode": "OK_NewSessionEstablished"
+            }
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0251e020491114a9413960a914c4c8ccd0d4d8a8c41497b293c0c0</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a523443424a4552537051546c6771525445794d7a51314e696f784253587370504177413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-16T09:53:41.555Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G ServiceDiscoveryReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ServiceDiscoveryReq": {}
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0251b8</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a5275413d3d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:53:41.911Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G ServiceDiscoveryRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ServiceDiscoveryRes": {
+                "ChargeService": {
+                    "FreeService": false,
+                    "ServiceCategory": "EVCharging",
+                    "ServiceID": 1,
+                    "ServiceName": "AC_DC_Charging",
+                    "SupportedEnergyTransferMode": {
+                        "EnergyTransferMode": [
+                            "AC_three_phase_core",
+                            "AC_single_phase_core"
+                        ]
+                    }
+                },
+                "PaymentOptionList": {
+                    "PaymentOption": [
+                        "ExternalPayment"
+                    ]
+                },
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0251c0012004041050d7d110d7d0da185c99da5b99c040200900</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a527741456742415151554e6652454e6651326868636d6470626d63424149416b41</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-16T09:53:42.258Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G PaymentServiceSelectionReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "PaymentServiceSelectionReq": {
+                "SelectedPaymentOption": "ExternalPayment",
+                "SelectedServiceList": {
+                    "SelectedService": [
+                        {
+                            "ServiceID": 1
+                        }
+                    ]
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d025132001280</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a524d67415367413d3d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:53:42.563Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G PaymentServiceSelectionRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "PaymentServiceSelectionRes": {
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d02514000</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a525141413d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-16T09:53:42.933Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G AuthorizationReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "AuthorizationReq": {}
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d025008</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a5143413d3d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:53:43.138Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G AuthorizationRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "AuthorizationRes": {
+                "EVSEProcessing": "Ongoing_WaitingForCustomerInteraction",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250100200</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a5145414941</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-16T09:53:43.612Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G AuthorizationReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "AuthorizationReq": {}
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d025008</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a5143413d3d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:53:43.869Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G AuthorizationRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "AuthorizationRes": {
+                "EVSEProcessing": "Finished",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250100000</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a5145414141</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-16T09:53:44.169Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G ChargeParameterDiscoveryReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargeParameterDiscoveryReq": {
+                "AC_EVChargeParameter": {
+                    "EAmount": {
+                        "Multiplier": 0,
+                        "Unit": "Wh",
+                        "Value": 5300
+                    },
+                    "EVMaxCurrent": {
+                        "Multiplier": -1,
+                        "Unit": "A",
+                        "Value": 624
+                    },
+                    "EVMaxVoltage": {
+                        "Multiplier": 0,
+                        "Unit": "V",
+                        "Value": 272
+                    },
+                    "EVMinCurrent": {
+                        "Multiplier": -1,
+                        "Unit": "A",
+                        "Value": 15
+                    }
+                },
+                "MaxEntriesSAScheduleTuple": 192,
+                "RequestedEnergyTransferMode": "AC_three_phase_core"
+            }
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d02509180020846305a1481881200404187802010601e00</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a516b594143434559775768534269424941514547486743415159423441</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:53:44.635Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G ChargeParameterDiscoveryRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargeParameterDiscoveryRes": {
+                "AC_EVSEChargeParameter": {
+                    "AC_EVSEStatus": {
+                        "EVSENotification": "None",
+                        "NotificationMaxDelay": 0,
+                        "RCD": false
+                    },
+                    "EVSEMaxCurrent": {
+                        "Multiplier": 0,
+                        "Unit": "A",
+                        "Value": 16
+                    },
+                    "EVSENominalVoltage": {
+                        "Multiplier": 0,
+                        "Unit": "V",
+                        "Value": 230
+                    }
+                },
+                "EVSEProcessing": "Finished",
+                "ResponseCode": "OK",
+                "SAScheduleList": {
+                    "SAScheduleTuple": [
+                        {
+                            "PMaxSchedule": {
+                                "PMaxScheduleEntry": [
+                                    {
+                                        "PMax": {
+                                            "Multiplier": 0,
+                                            "Unit": "W",
+                                            "Value": 11000
+                                        },
+                                        "RelativeTimeInterval": {
+                                            "start": 0
+                                        }
+                                    },
+                                    {
+                                        "PMax": {
+                                            "Multiplier": 0,
+                                            "Unit": "W",
+                                            "Value": 7000
+                                        },
+                                        "RelativeTimeInterval": {
+                                            "duration": 43200,
+                                            "start": 43200
+                                        }
+                                    }
+                                ]
+                            },
+                            "SAScheduleTupleID": 1,
+                            "SalesTariff": {
+                                "Id": "id1",
+                                "NumEPriceLevels": 2,
+                                "SalesTariffEntry": [
+                                    {
+                                        "EPriceLevel": 1,
+                                        "RelativeTimeInterval": {
+                                            "start": 0
+                                        }
+                                    },
+                                    {
+                                        "EPriceLevel": 2,
+                                        "RelativeTimeInterval": {
+                                            "duration": 43200,
+                                            "start": 43200
+                                        }
+                                    }
+                                ],
+                                "SalesTariffID": 10
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250a0000000000086287c2a80303440830344080c50d8360802b4b218812404000100240c0d1020c0d1020011480000006207300818602000</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a516f41414141414141686968384b6f41774e45434441305149444644594e676743744c495967535145414145414a41774e45434441305149414555674141414269427a41494747416741413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-16T09:53:44.809Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>Event CarRequestedPower</b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:53:44.822Z</td> <td>EVSE&gt;CAR</td> <td><b>Charger state: PrepareCharging->Charging</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:53:44.835Z</td> <td>EVSE&gt;CAR</td> <td><b>Event PowerOn</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="CAR"> <td>2023-01-16T09:53:44.928Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G PowerDeliveryReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "PowerDeliveryReq": {
+                "ChargeProgress": "Start",
+                "ChargingProfile": {
+                    "ProfileEntry": [
+                        {
+                            "ChargingProfileEntryMaxPower": {
+                                "Multiplier": 2,
+                                "Unit": "W",
+                                "Value": 110
+                            },
+                            "ChargingProfileEntryStart": 0
+                        }
+                    ]
+                },
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d025150000000028a0dc2c0</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a525541414141414b4b44634c41</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:53:44.956Z</td> <td>EVSE&gt;CAR</td> <td><b>Set PWM On (5.000000074505806%)</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:53:45.499Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G PowerDeliveryRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "PowerDeliveryRes": {
+                "AC_EVSEStatus": {
+                    "EVSENotification": "None",
+                    "NotificationMaxDelay": 0,
+                    "RCD": false
+                },
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d02516000000000</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a52594141414141413d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-16T09:53:46.997Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G ChargingStatusReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusReq": {}
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250b0</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a5173413d3d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:53:47.190Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G ChargingStatusRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusRes": {
+                "AC_EVSEStatus": {
+                    "EVSENotification": "None",
+                    "NotificationMaxDelay": 0,
+                    "RCD": false
+                },
+                "EVSEID": "DE*PNX*E123456*1",
+                "EVSEMaxCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 16
+                },
+                "MeterInfo": {
+                    "MeterID": "YETI_POWERMETER",
+                    "MeterReading": 0,
+                    "TMeter": 1673862826
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250c000491114a9413960a914c4c8ccd0d4d8a8c40000c30100045651551257d413d5d154935155115480004555eca4f03000000000</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a517741424a4552537051546c6771525445794d7a51314e696f784141417777454142465a5256524a583142505630565354555655525649414152565873705041774141414141413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-16T09:53:47.445Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G ChargingStatusReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusReq": {}
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250b0</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a5173413d3d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:53:47.652Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G ChargingStatusRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusRes": {
+                "AC_EVSEStatus": {
+                    "EVSENotification": "None",
+                    "NotificationMaxDelay": 0,
+                    "RCD": false
+                },
+                "EVSEID": "DE*PNX*E123456*1",
+                "EVSEMaxCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 16
+                },
+                "MeterInfo": {
+                    "MeterID": "YETI_POWERMETER",
+                    "MeterReading": 0,
+                    "TMeter": 1673862826
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250c000491114a9413960a914c4c8ccd0d4d8a8c40000c30100045651551257d413d5d154935155115480004555eca4f03000000000</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a517741424a4552537051546c6771525445794d7a51314e696f784141417777454142465a5256524a583142505630565354555655525649414152565873705041774141414141413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-16T09:53:47.948Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G ChargingStatusReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusReq": {}
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250b0</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a5173413d3d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:53:48.140Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G ChargingStatusRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusRes": {
+                "AC_EVSEStatus": {
+                    "EVSENotification": "None",
+                    "NotificationMaxDelay": 0,
+                    "RCD": false
+                },
+                "EVSEID": "DE*PNX*E123456*1",
+                "EVSEMaxCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 16
+                },
+                "MeterInfo": {
+                    "MeterID": "YETI_POWERMETER",
+                    "MeterReading": 0,
+                    "TMeter": 1673862827
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250c000491114a9413960a914c4c8ccd0d4d8a8c40000c30100045651551257d413d5d15493515511548000455deca4f03000000000</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a517741424a4552537051546c6771525445794d7a51314e696f784141417777454142465a5256524a583142505630565354555655525649414152563373705041774141414141413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-16T09:53:48.465Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G ChargingStatusReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusReq": {}
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250b0</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a5173413d3d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:53:48.647Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G ChargingStatusRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusRes": {
+                "AC_EVSEStatus": {
+                    "EVSENotification": "None",
+                    "NotificationMaxDelay": 0,
+                    "RCD": false
+                },
+                "EVSEID": "DE*PNX*E123456*1",
+                "EVSEMaxCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 16
+                },
+                "MeterInfo": {
+                    "MeterID": "YETI_POWERMETER",
+                    "MeterReading": 0,
+                    "TMeter": 1673862827
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250c000491114a9413960a914c4c8ccd0d4d8a8c40000c30100045651551257d413d5d15493515511548000455deca4f03000000000</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a517741424a4552537051546c6771525445794d7a51314e696f784141417777454142465a5256524a583142505630565354555655525649414152563373705041774141414141413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-16T09:53:49.099Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G ChargingStatusReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusReq": {}
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250b0</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a5173413d3d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:53:49.286Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G ChargingStatusRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusRes": {
+                "AC_EVSEStatus": {
+                    "EVSENotification": "None",
+                    "NotificationMaxDelay": 0,
+                    "RCD": false
+                },
+                "EVSEID": "DE*PNX*E123456*1",
+                "EVSEMaxCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 16
+                },
+                "MeterInfo": {
+                    "MeterID": "YETI_POWERMETER",
+                    "MeterReading": 2,
+                    "TMeter": 1673862828
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250c000491114a9413960a914c4c8ccd0d4d8a8c40000c30100045651551257d413d5d154935155115480044565eca4f03000000000</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a517741424a4552537051546c6771525445794d7a51314e696f784141417777454142465a5256524a583142505630565354555655525649414552575873705041774141414141413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-16T09:53:49.570Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G ChargingStatusReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusReq": {}
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250b0</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a5173413d3d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:53:49.760Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G ChargingStatusRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusRes": {
+                "AC_EVSEStatus": {
+                    "EVSENotification": "None",
+                    "NotificationMaxDelay": 0,
+                    "RCD": false
+                },
+                "EVSEID": "DE*PNX*E123456*1",
+                "EVSEMaxCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 16
+                },
+                "MeterInfo": {
+                    "MeterID": "YETI_POWERMETER",
+                    "MeterReading": 2,
+                    "TMeter": 1673862828
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250c000491114a9413960a914c4c8ccd0d4d8a8c40000c30100045651551257d413d5d154935155115480044565eca4f03000000000</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a517741424a4552537051546c6771525445794d7a51314e696f784141417777454142465a5256524a583142505630565354555655525649414552575873705041774141414141413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-16T09:53:50.065Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G ChargingStatusReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusReq": {}
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250b0</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a5173413d3d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:53:50.242Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G ChargingStatusRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusRes": {
+                "AC_EVSEStatus": {
+                    "EVSENotification": "None",
+                    "NotificationMaxDelay": 0,
+                    "RCD": false
+                },
+                "EVSEID": "DE*PNX*E123456*1",
+                "EVSEMaxCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 16
+                },
+                "MeterInfo": {
+                    "MeterID": "YETI_POWERMETER",
+                    "MeterReading": 4,
+                    "TMeter": 1673862829
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250c000491114a9413960a914c4c8ccd0d4d8a8c40000c30100045651551257d413d5d15493515511548008456deca4f03000000000</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a517741424a4552537051546c6771525445794d7a51314e696f784141417777454142465a5256524a583142505630565354555655525649414952573373705041774141414141413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-16T09:53:50.564Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G ChargingStatusReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusReq": {}
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250b0</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a5173413d3d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:53:50.762Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G ChargingStatusRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusRes": {
+                "AC_EVSEStatus": {
+                    "EVSENotification": "None",
+                    "NotificationMaxDelay": 0,
+                    "RCD": false
+                },
+                "EVSEID": "DE*PNX*E123456*1",
+                "EVSEMaxCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 16
+                },
+                "MeterInfo": {
+                    "MeterID": "YETI_POWERMETER",
+                    "MeterReading": 4,
+                    "TMeter": 1673862829
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250c000491114a9413960a914c4c8ccd0d4d8a8c40000c30100045651551257d413d5d15493515511548008456deca4f03000000000</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a517741424a4552537051546c6771525445794d7a51314e696f784141417777454142465a5256524a583142505630565354555655525649414952573373705041774141414141413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-16T09:53:51.027Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G ChargingStatusReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusReq": {}
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250b0</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a5173413d3d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:53:51.189Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G ChargingStatusRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusRes": {
+                "AC_EVSEStatus": {
+                    "EVSENotification": "None",
+                    "NotificationMaxDelay": 0,
+                    "RCD": false
+                },
+                "EVSEID": "DE*PNX*E123456*1",
+                "EVSEMaxCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 16
+                },
+                "MeterInfo": {
+                    "MeterID": "YETI_POWERMETER",
+                    "MeterReading": 6,
+                    "TMeter": 1673862830
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250c000491114a9413960a914c4c8ccd0d4d8a8c40000c30100045651551257d413d5d1549351551154800c4575eca4f03000000000</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a517741424a4552537051546c6771525445794d7a51314e696f784141417777454142465a5256524a583142505630565354555655525649414d52585873705041774141414141413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-16T09:53:51.532Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G ChargingStatusReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusReq": {}
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250b0</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a5173413d3d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:53:51.732Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G ChargingStatusRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusRes": {
+                "AC_EVSEStatus": {
+                    "EVSENotification": "None",
+                    "NotificationMaxDelay": 0,
+                    "RCD": false
+                },
+                "EVSEID": "DE*PNX*E123456*1",
+                "EVSEMaxCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 16
+                },
+                "MeterInfo": {
+                    "MeterID": "YETI_POWERMETER",
+                    "MeterReading": 6,
+                    "TMeter": 1673862830
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250c000491114a9413960a914c4c8ccd0d4d8a8c40000c30100045651551257d413d5d1549351551154800c4575eca4f03000000000</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a517741424a4552537051546c6771525445794d7a51314e696f784141417777454142465a5256524a583142505630565354555655525649414d52585873705041774141414141413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-16T09:53:51.977Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G ChargingStatusReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusReq": {}
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250b0</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a5173413d3d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:53:52.129Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G ChargingStatusRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusRes": {
+                "AC_EVSEStatus": {
+                    "EVSENotification": "None",
+                    "NotificationMaxDelay": 0,
+                    "RCD": false
+                },
+                "EVSEID": "DE*PNX*E123456*1",
+                "EVSEMaxCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 16
+                },
+                "MeterInfo": {
+                    "MeterID": "YETI_POWERMETER",
+                    "MeterReading": 9,
+                    "TMeter": 1673862831
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250c000491114a9413960a914c4c8ccd0d4d8a8c40000c30100045651551257d413d5d15493515511548012457deca4f03000000000</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a517741424a4552537051546c6771525445794d7a51314e696f784141417777454142465a5256524a583142505630565354555655525649415352583373705041774141414141413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-16T09:53:52.461Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G ChargingStatusReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusReq": {}
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250b0</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a5173413d3d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:53:52.597Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G ChargingStatusRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusRes": {
+                "AC_EVSEStatus": {
+                    "EVSENotification": "None",
+                    "NotificationMaxDelay": 0,
+                    "RCD": false
+                },
+                "EVSEID": "DE*PNX*E123456*1",
+                "EVSEMaxCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 16
+                },
+                "MeterInfo": {
+                    "MeterID": "YETI_POWERMETER",
+                    "MeterReading": 9,
+                    "TMeter": 1673862831
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250c000491114a9413960a914c4c8ccd0d4d8a8c40000c30100045651551257d413d5d15493515511548012457deca4f03000000000</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a517741424a4552537051546c6771525445794d7a51314e696f784141417777454142465a5256524a583142505630565354555655525649415352583373705041774141414141413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-16T09:53:52.908Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G ChargingStatusReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusReq": {}
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250b0</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a5173413d3d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:53:53.049Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G ChargingStatusRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusRes": {
+                "AC_EVSEStatus": {
+                    "EVSENotification": "None",
+                    "NotificationMaxDelay": 0,
+                    "RCD": false
+                },
+                "EVSEID": "DE*PNX*E123456*1",
+                "EVSEMaxCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 16
+                },
+                "MeterInfo": {
+                    "MeterID": "YETI_POWERMETER",
+                    "MeterReading": 11,
+                    "TMeter": 1673862832
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250c000491114a9413960a914c4c8ccd0d4d8a8c40000c30100045651551257d413d5d154935155115480164585eca4f03000000000</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a517741424a4552537051546c6771525445794d7a51314e696f784141417777454142465a5256524a583142505630565354555655525649415752595873705041774141414141413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-16T09:53:53.350Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G ChargingStatusReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusReq": {}
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250b0</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a5173413d3d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:53:53.524Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G ChargingStatusRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusRes": {
+                "AC_EVSEStatus": {
+                    "EVSENotification": "None",
+                    "NotificationMaxDelay": 0,
+                    "RCD": false
+                },
+                "EVSEID": "DE*PNX*E123456*1",
+                "EVSEMaxCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 16
+                },
+                "MeterInfo": {
+                    "MeterID": "YETI_POWERMETER",
+                    "MeterReading": 11,
+                    "TMeter": 1673862832
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250c000491114a9413960a914c4c8ccd0d4d8a8c40000c30100045651551257d413d5d154935155115480164585eca4f03000000000</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a517741424a4552537051546c6771525445794d7a51314e696f784141417777454142465a5256524a583142505630565354555655525649415752595873705041774141414141413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-16T09:53:53.985Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G ChargingStatusReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusReq": {}
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250b0</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a5173413d3d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:53:54.137Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G ChargingStatusRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusRes": {
+                "AC_EVSEStatus": {
+                    "EVSENotification": "None",
+                    "NotificationMaxDelay": 0,
+                    "RCD": false
+                },
+                "EVSEID": "DE*PNX*E123456*1",
+                "EVSEMaxCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 16
+                },
+                "MeterInfo": {
+                    "MeterID": "YETI_POWERMETER",
+                    "MeterReading": 13,
+                    "TMeter": 1673862833
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250c000491114a9413960a914c4c8ccd0d4d8a8c40000c30100045651551257d413d5d1549351551154801a458deca4f03000000000</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a517741424a4552537051546c6771525445794d7a51314e696f784141417777454142465a5256524a583142505630565354555655525649416152593373705041774141414141413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-16T09:53:54.432Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G ChargingStatusReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusReq": {}
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250b0</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a5173413d3d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:53:54.637Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G ChargingStatusRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusRes": {
+                "AC_EVSEStatus": {
+                    "EVSENotification": "None",
+                    "NotificationMaxDelay": 0,
+                    "RCD": false
+                },
+                "EVSEID": "DE*PNX*E123456*1",
+                "EVSEMaxCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 16
+                },
+                "MeterInfo": {
+                    "MeterID": "YETI_POWERMETER",
+                    "MeterReading": 13,
+                    "TMeter": 1673862833
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250c000491114a9413960a914c4c8ccd0d4d8a8c40000c30100045651551257d413d5d1549351551154801a458deca4f03000000000</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a517741424a4552537051546c6771525445794d7a51314e696f784141417777454142465a5256524a583142505630565354555655525649416152593373705041774141414141413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-16T09:53:54.906Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G ChargingStatusReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusReq": {}
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250b0</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a5173413d3d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:53:55.048Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G ChargingStatusRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusRes": {
+                "AC_EVSEStatus": {
+                    "EVSENotification": "None",
+                    "NotificationMaxDelay": 0,
+                    "RCD": false
+                },
+                "EVSEID": "DE*PNX*E123456*1",
+                "EVSEMaxCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 16
+                },
+                "MeterInfo": {
+                    "MeterID": "YETI_POWERMETER",
+                    "MeterReading": 15,
+                    "TMeter": 1673862834
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250c000491114a9413960a914c4c8ccd0d4d8a8c40000c30100045651551257d413d5d1549351551154801e4595eca4f03000000000</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a517741424a4552537051546c6771525445794d7a51314e696f784141417777454142465a5256524a5831425056305653545556555256494165525a5873705041774141414141413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-16T09:53:55.326Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G ChargingStatusReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusReq": {}
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250b0</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a5173413d3d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:53:55.523Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G ChargingStatusRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusRes": {
+                "AC_EVSEStatus": {
+                    "EVSENotification": "None",
+                    "NotificationMaxDelay": 0,
+                    "RCD": false
+                },
+                "EVSEID": "DE*PNX*E123456*1",
+                "EVSEMaxCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 16
+                },
+                "MeterInfo": {
+                    "MeterID": "YETI_POWERMETER",
+                    "MeterReading": 15,
+                    "TMeter": 1673862834
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250c000491114a9413960a914c4c8ccd0d4d8a8c40000c30100045651551257d413d5d1549351551154801e4595eca4f03000000000</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a517741424a4552537051546c6771525445794d7a51314e696f784141417777454142465a5256524a5831425056305653545556555256494165525a5873705041774141414141413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-16T09:53:55.825Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G ChargingStatusReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusReq": {}
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250b0</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a5173413d3d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:53:55.983Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G ChargingStatusRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusRes": {
+                "AC_EVSEStatus": {
+                    "EVSENotification": "None",
+                    "NotificationMaxDelay": 0,
+                    "RCD": false
+                },
+                "EVSEID": "DE*PNX*E123456*1",
+                "EVSEMaxCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 16
+                },
+                "MeterInfo": {
+                    "MeterID": "YETI_POWERMETER",
+                    "MeterReading": 15,
+                    "TMeter": 1673862834
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250c000491114a9413960a914c4c8ccd0d4d8a8c40000c30100045651551257d413d5d1549351551154801e4595eca4f03000000000</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a517741424a4552537051546c6771525445794d7a51314e696f784141417777454142465a5256524a5831425056305653545556555256494165525a5873705041774141414141413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-16T09:53:56.206Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G ChargingStatusReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusReq": {}
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250b0</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a5173413d3d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:53:56.370Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G ChargingStatusRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusRes": {
+                "AC_EVSEStatus": {
+                    "EVSENotification": "None",
+                    "NotificationMaxDelay": 0,
+                    "RCD": false
+                },
+                "EVSEID": "DE*PNX*E123456*1",
+                "EVSEMaxCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 16
+                },
+                "MeterInfo": {
+                    "MeterID": "YETI_POWERMETER",
+                    "MeterReading": 17,
+                    "TMeter": 1673862835
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250c000491114a9413960a914c4c8ccd0d4d8a8c40000c30100045651551257d413d5d15493515511548022459deca4f03000000000</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a517741424a4552537051546c6771525445794d7a51314e696f784141417777454142465a5256524a5831425056305653545556555256494169525a3373705041774141414141413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-16T09:53:56.731Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G ChargingStatusReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusReq": {}
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250b0</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a5173413d3d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:53:56.854Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G ChargingStatusRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusRes": {
+                "AC_EVSEStatus": {
+                    "EVSENotification": "None",
+                    "NotificationMaxDelay": 0,
+                    "RCD": false
+                },
+                "EVSEID": "DE*PNX*E123456*1",
+                "EVSEMaxCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 16
+                },
+                "MeterInfo": {
+                    "MeterID": "YETI_POWERMETER",
+                    "MeterReading": 17,
+                    "TMeter": 1673862835
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250c000491114a9413960a914c4c8ccd0d4d8a8c40000c30100045651551257d413d5d15493515511548022459deca4f03000000000</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a517741424a4552537051546c6771525445794d7a51314e696f784141417777454142465a5256524a5831425056305653545556555256494169525a3373705041774141414141413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-16T09:53:57.118Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G ChargingStatusReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusReq": {}
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250b0</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a5173413d3d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:53:57.282Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G ChargingStatusRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusRes": {
+                "AC_EVSEStatus": {
+                    "EVSENotification": "None",
+                    "NotificationMaxDelay": 0,
+                    "RCD": false
+                },
+                "EVSEID": "DE*PNX*E123456*1",
+                "EVSEMaxCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 16
+                },
+                "MeterInfo": {
+                    "MeterID": "YETI_POWERMETER",
+                    "MeterReading": 19,
+                    "TMeter": 1673862836
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250c000491114a9413960a914c4c8ccd0d4d8a8c40000c30100045651551257d413d5d1549351551154802645a5eca4f03000000000</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a517741424a4552537051546c6771525445794d7a51314e696f784141417777454142465a5256524a583142505630565354555655525649416d52615873705041774141414141413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-16T09:53:57.571Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G ChargingStatusReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusReq": {}
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250b0</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a5173413d3d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:53:57.735Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G ChargingStatusRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusRes": {
+                "AC_EVSEStatus": {
+                    "EVSENotification": "None",
+                    "NotificationMaxDelay": 0,
+                    "RCD": false
+                },
+                "EVSEID": "DE*PNX*E123456*1",
+                "EVSEMaxCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 16
+                },
+                "MeterInfo": {
+                    "MeterID": "YETI_POWERMETER",
+                    "MeterReading": 19,
+                    "TMeter": 1673862836
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250c000491114a9413960a914c4c8ccd0d4d8a8c40000c30100045651551257d413d5d1549351551154802645a5eca4f03000000000</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a517741424a4552537051546c6771525445794d7a51314e696f784141417777454142465a5256524a583142505630565354555655525649416d52615873705041774141414141413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-16T09:53:58.000Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G ChargingStatusReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusReq": {}
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250b0</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a5173413d3d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:53:58.162Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G ChargingStatusRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusRes": {
+                "AC_EVSEStatus": {
+                    "EVSENotification": "None",
+                    "NotificationMaxDelay": 0,
+                    "RCD": false
+                },
+                "EVSEID": "DE*PNX*E123456*1",
+                "EVSEMaxCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 16
+                },
+                "MeterInfo": {
+                    "MeterID": "YETI_POWERMETER",
+                    "MeterReading": 22,
+                    "TMeter": 1673862837
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250c000491114a9413960a914c4c8ccd0d4d8a8c40000c30100045651551257d413d5d1549351551154802c45adeca4f03000000000</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a517741424a4552537051546c6771525445794d7a51314e696f784141417777454142465a5256524a583142505630565354555655525649417352613373705041774141414141413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-16T09:53:58.606Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G ChargingStatusReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusReq": {}
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250b0</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a5173413d3d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:53:58.820Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G ChargingStatusRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusRes": {
+                "AC_EVSEStatus": {
+                    "EVSENotification": "None",
+                    "NotificationMaxDelay": 0,
+                    "RCD": false
+                },
+                "EVSEID": "DE*PNX*E123456*1",
+                "EVSEMaxCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 16
+                },
+                "MeterInfo": {
+                    "MeterID": "YETI_POWERMETER",
+                    "MeterReading": 22,
+                    "TMeter": 1673862837
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250c000491114a9413960a914c4c8ccd0d4d8a8c40000c30100045651551257d413d5d1549351551154802c45adeca4f03000000000</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a517741424a4552537051546c6771525445794d7a51314e696f784141417777454142465a5256524a583142505630565354555655525649417352613373705041774141414141413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-16T09:53:59.067Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G ChargingStatusReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusReq": {}
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250b0</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a5173413d3d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:53:59.227Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G ChargingStatusRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusRes": {
+                "AC_EVSEStatus": {
+                    "EVSENotification": "None",
+                    "NotificationMaxDelay": 0,
+                    "RCD": false
+                },
+                "EVSEID": "DE*PNX*E123456*1",
+                "EVSEMaxCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 16
+                },
+                "MeterInfo": {
+                    "MeterID": "YETI_POWERMETER",
+                    "MeterReading": 24,
+                    "TMeter": 1673862838
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250c000491114a9413960a914c4c8ccd0d4d8a8c40000c30100045651551257d413d5d1549351551154803045b5eca4f03000000000</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a517741424a4552537051546c6771525445794d7a51314e696f784141417777454142465a5256524a583142505630565354555655525649417752625873705041774141414141413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-16T09:53:59.529Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G ChargingStatusReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusReq": {}
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250b0</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a5173413d3d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:53:59.726Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G ChargingStatusRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusRes": {
+                "AC_EVSEStatus": {
+                    "EVSENotification": "None",
+                    "NotificationMaxDelay": 0,
+                    "RCD": false
+                },
+                "EVSEID": "DE*PNX*E123456*1",
+                "EVSEMaxCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 16
+                },
+                "MeterInfo": {
+                    "MeterID": "YETI_POWERMETER",
+                    "MeterReading": 24,
+                    "TMeter": 1673862838
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250c000491114a9413960a914c4c8ccd0d4d8a8c40000c30100045651551257d413d5d1549351551154803045b5eca4f03000000000</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a517741424a4552537051546c6771525445794d7a51314e696f784141417777454142465a5256524a583142505630565354555655525649417752625873705041774141414141413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-16T09:53:59.944Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G ChargingStatusReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusReq": {}
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250b0</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a5173413d3d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:54:00.125Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G ChargingStatusRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusRes": {
+                "AC_EVSEStatus": {
+                    "EVSENotification": "None",
+                    "NotificationMaxDelay": 0,
+                    "RCD": false
+                },
+                "EVSEID": "DE*PNX*E123456*1",
+                "EVSEMaxCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 16
+                },
+                "MeterInfo": {
+                    "MeterID": "YETI_POWERMETER",
+                    "MeterReading": 26,
+                    "TMeter": 1673862839
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250c000491114a9413960a914c4c8ccd0d4d8a8c40000c30100045651551257d413d5d1549351551154803445bdeca4f03000000000</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a517741424a4552537051546c6771525445794d7a51314e696f784141417777454142465a5256524a583142505630565354555655525649413052623373705041774141414141413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-16T09:54:00.465Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G ChargingStatusReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusReq": {}
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250b0</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a5173413d3d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:54:00.649Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G ChargingStatusRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusRes": {
+                "AC_EVSEStatus": {
+                    "EVSENotification": "None",
+                    "NotificationMaxDelay": 0,
+                    "RCD": false
+                },
+                "EVSEID": "DE*PNX*E123456*1",
+                "EVSEMaxCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 16
+                },
+                "MeterInfo": {
+                    "MeterID": "YETI_POWERMETER",
+                    "MeterReading": 26,
+                    "TMeter": 1673862839
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250c000491114a9413960a914c4c8ccd0d4d8a8c40000c30100045651551257d413d5d1549351551154803445bdeca4f03000000000</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a517741424a4552537051546c6771525445794d7a51314e696f784141417777454142465a5256524a583142505630565354555655525649413052623373705041774141414141413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-16T09:54:00.907Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G ChargingStatusReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusReq": {}
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250b0</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a5173413d3d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:54:01.051Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G ChargingStatusRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusRes": {
+                "AC_EVSEStatus": {
+                    "EVSENotification": "None",
+                    "NotificationMaxDelay": 0,
+                    "RCD": false
+                },
+                "EVSEID": "DE*PNX*E123456*1",
+                "EVSEMaxCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 16
+                },
+                "MeterInfo": {
+                    "MeterID": "YETI_POWERMETER",
+                    "MeterReading": 28,
+                    "TMeter": 1673862840
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250c000491114a9413960a914c4c8ccd0d4d8a8c40000c30100045651551257d413d5d1549351551154803845c5eca4f03000000000</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a517741424a4552537051546c6771525445794d7a51314e696f784141417777454142465a5256524a583142505630565354555655525649413452635873705041774141414141413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-16T09:54:01.305Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G ChargingStatusReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusReq": {}
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250b0</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a5173413d3d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:54:01.493Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G ChargingStatusRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusRes": {
+                "AC_EVSEStatus": {
+                    "EVSENotification": "None",
+                    "NotificationMaxDelay": 0,
+                    "RCD": false
+                },
+                "EVSEID": "DE*PNX*E123456*1",
+                "EVSEMaxCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 16
+                },
+                "MeterInfo": {
+                    "MeterID": "YETI_POWERMETER",
+                    "MeterReading": 28,
+                    "TMeter": 1673862840
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250c000491114a9413960a914c4c8ccd0d4d8a8c40000c30100045651551257d413d5d1549351551154803845c5eca4f03000000000</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a517741424a4552537051546c6771525445794d7a51314e696f784141417777454142465a5256524a583142505630565354555655525649413452635873705041774141414141413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-16T09:54:01.765Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G ChargingStatusReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusReq": {}
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250b0</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a5173413d3d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:54:01.963Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G ChargingStatusRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusRes": {
+                "AC_EVSEStatus": {
+                    "EVSENotification": "None",
+                    "NotificationMaxDelay": 0,
+                    "RCD": false
+                },
+                "EVSEID": "DE*PNX*E123456*1",
+                "EVSEMaxCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 16
+                },
+                "MeterInfo": {
+                    "MeterID": "YETI_POWERMETER",
+                    "MeterReading": 31,
+                    "TMeter": 1673862841
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250c000491114a9413960a914c4c8ccd0d4d8a8c40000c30100045651551257d413d5d1549351551154803e45cdeca4f03000000000</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a517741424a4552537051546c6771525445794d7a51314e696f784141417777454142465a5256524a583142505630565354555655525649412b52633373705041774141414141413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-16T09:54:02.220Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G ChargingStatusReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusReq": {}
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250b0</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a5173413d3d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:54:02.416Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G ChargingStatusRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusRes": {
+                "AC_EVSEStatus": {
+                    "EVSENotification": "None",
+                    "NotificationMaxDelay": 0,
+                    "RCD": false
+                },
+                "EVSEID": "DE*PNX*E123456*1",
+                "EVSEMaxCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 16
+                },
+                "MeterInfo": {
+                    "MeterID": "YETI_POWERMETER",
+                    "MeterReading": 31,
+                    "TMeter": 1673862841
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250c000491114a9413960a914c4c8ccd0d4d8a8c40000c30100045651551257d413d5d1549351551154803e45cdeca4f03000000000</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a517741424a4552537051546c6771525445794d7a51314e696f784141417777454142465a5256524a583142505630565354555655525649412b52633373705041774141414141413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-16T09:54:02.678Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G ChargingStatusReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusReq": {}
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250b0</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a5173413d3d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:54:02.904Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G ChargingStatusRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusRes": {
+                "AC_EVSEStatus": {
+                    "EVSENotification": "None",
+                    "NotificationMaxDelay": 0,
+                    "RCD": false
+                },
+                "EVSEID": "DE*PNX*E123456*1",
+                "EVSEMaxCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 16
+                },
+                "MeterInfo": {
+                    "MeterID": "YETI_POWERMETER",
+                    "MeterReading": 31,
+                    "TMeter": 1673862841
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250c000491114a9413960a914c4c8ccd0d4d8a8c40000c30100045651551257d413d5d1549351551154803e45cdeca4f03000000000</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a517741424a4552537051546c6771525445794d7a51314e696f784141417777454142465a5256524a583142505630565354555655525649412b52633373705041774141414141413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-16T09:54:03.097Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G ChargingStatusReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusReq": {}
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250b0</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a5173413d3d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:54:03.460Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G ChargingStatusRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusRes": {
+                "AC_EVSEStatus": {
+                    "EVSENotification": "None",
+                    "NotificationMaxDelay": 0,
+                    "RCD": false
+                },
+                "EVSEID": "DE*PNX*E123456*1",
+                "EVSEMaxCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 16
+                },
+                "MeterInfo": {
+                    "MeterID": "YETI_POWERMETER",
+                    "MeterReading": 33,
+                    "TMeter": 1673862842
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250c000491114a9413960a914c4c8ccd0d4d8a8c40000c30100045651551257d413d5d1549351551154804245d5eca4f03000000000</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a517741424a4552537051546c6771525445794d7a51314e696f784141417777454142465a5256524a583142505630565354555655525649424352645873705041774141414141413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-16T09:54:03.724Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G ChargingStatusReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusReq": {}
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250b0</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a5173413d3d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:54:03.932Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G ChargingStatusRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusRes": {
+                "AC_EVSEStatus": {
+                    "EVSENotification": "None",
+                    "NotificationMaxDelay": 0,
+                    "RCD": false
+                },
+                "EVSEID": "DE*PNX*E123456*1",
+                "EVSEMaxCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 16
+                },
+                "MeterInfo": {
+                    "MeterID": "YETI_POWERMETER",
+                    "MeterReading": 33,
+                    "TMeter": 1673862842
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250c000491114a9413960a914c4c8ccd0d4d8a8c40000c30100045651551257d413d5d1549351551154804245d5eca4f03000000000</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a517741424a4552537051546c6771525445794d7a51314e696f784141417777454142465a5256524a583142505630565354555655525649424352645873705041774141414141413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-16T09:54:04.193Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G ChargingStatusReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusReq": {}
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250b0</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a5173413d3d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:54:04.337Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G ChargingStatusRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusRes": {
+                "AC_EVSEStatus": {
+                    "EVSENotification": "None",
+                    "NotificationMaxDelay": 0,
+                    "RCD": false
+                },
+                "EVSEID": "DE*PNX*E123456*1",
+                "EVSEMaxCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 16
+                },
+                "MeterInfo": {
+                    "MeterID": "YETI_POWERMETER",
+                    "MeterReading": 35,
+                    "TMeter": 1673862843
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250c000491114a9413960a914c4c8ccd0d4d8a8c40000c30100045651551257d413d5d1549351551154804645ddeca4f03000000000</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a517741424a4552537051546c6771525445794d7a51314e696f784141417777454142465a5256524a583142505630565354555655525649424752643373705041774141414141413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-16T09:54:04.634Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G ChargingStatusReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusReq": {}
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250b0</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a5173413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-16T09:54:04.698Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>Event CarRequestedStopPower</b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:54:04.718Z</td> <td>EVSE&gt;CAR</td> <td><b>Event PowerOff</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:54:04.741Z</td> <td>EVSE&gt;CAR</td> <td><b>Charger state: Charging->Car Paused</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:54:04.834Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G ChargingStatusRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargingStatusRes": {
+                "AC_EVSEStatus": {
+                    "EVSENotification": "None",
+                    "NotificationMaxDelay": 0,
+                    "RCD": false
+                },
+                "EVSEID": "DE*PNX*E123456*1",
+                "EVSEMaxCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 16
+                },
+                "MeterInfo": {
+                    "MeterID": "YETI_POWERMETER",
+                    "MeterReading": 35,
+                    "TMeter": 1673862843
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0250c000491114a9413960a914c4c8ccd0d4d8a8c40000c30100045651551257d413d5d1549351551154804645ddeca4f03000000000</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a517741424a4552537051546c6771525445794d7a51314e696f784141417777454142465a5256524a583142505630565354555655525649424752643373705041774141414141413d3d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:54:04.893Z</td> <td>EVSE&gt;CAR</td> <td><b>Set PWM On (5.000000074505806%)</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="CAR"> <td>2023-01-16T09:54:05.027Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G PowerDeliveryReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "PowerDeliveryReq": {
+                "ChargeProgress": "Stop",
+                "ChargingProfile": {
+                    "ProfileEntry": [
+                        {
+                            "ChargingProfileEntryMaxPower": {
+                                "Multiplier": 2,
+                                "Unit": "W",
+                                "Value": 110
+                            },
+                            "ChargingProfileEntryStart": 0
+                        }
+                    ]
+                },
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d025151000000028a0dc2c0</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a525551414141414b4b44634c41</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:54:05.212Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G PowerDeliveryRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "PowerDeliveryRes": {
+                "AC_EVSEStatus": {
+                    "EVSENotification": "None",
+                    "NotificationMaxDelay": 0,
+                    "RCD": false
+                },
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d02516000000000</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a52594141414141413d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-16T09:54:05.457Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G SessionStopReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "SessionStopReq": {
+                "ChargingSession": "Terminate"
+            }
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d0251f000</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a523841413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:54:05.605Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G SessionStopRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "SessionStopRes": {
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "CEDD70E66FD1F409"
+        }
+    }
+}</pre></td> <td><pre lang="xml">80980233b75c399bf47d02520000</pre></td> <td><pre lang="xml">674a67434d3764634f5a763066514a534141413d</pre></td> </tr>
+<tr class="CAR"> <td>2023-01-16T09:54:15.280Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>Event LeaveBCD</b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:54:15.427Z</td> <td>EVSE&gt;CAR</td> <td><b>SLAC UNMATCHED</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="CAR"> <td>2023-01-16T09:54:15.433Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>Event CarRequestedStopPower</b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="CAR"> <td>2023-01-16T09:54:15.437Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>Event CarUnplugged</b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:54:15.443Z</td> <td>EVSE&gt;CAR</td> <td><b>Charger state: Car Paused->StoppingCharging</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:54:15.443Z</td> <td>EVSE&gt;CAR</td> <td><b>Set PWM Off</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:54:15.575Z</td> <td>EVSE&gt;CAR</td> <td><b>SLAC UNMATCHED</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:54:15.601Z</td> <td>EVSE&gt;CAR</td> <td><b>Transaction Finished: EVDisconnected (0.037652557373046874 kWh)</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:54:15.653Z</td> <td>EVSE&gt;CAR</td> <td><b>Charger state: StoppingCharging->Finished</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-01-16T09:54:15.654Z</td> <td>EVSE&gt;CAR</td> <td><b>Session Finished</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="SYS"> <td>2023-01-16T09:54:15.654Z</td> <td>SYS&gt;</td> <td><b>Session logging stopped.</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+</table></body></html>

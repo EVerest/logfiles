@@ -1,0 +1,76 @@
+2023-01-13T08:49:37.573Z: SYS> Session logging started. 
+
+
+2023-01-13T08:49:37.684Z: SYS> Connecting to: www.solarlogs.be:8880/OCPP/websocket/CentralSystemService/OCPP20221000001 with security_profile: 0 
+
+
+2023-01-13T08:49:37.862Z: SYS> Connected 
+
+
+2023-01-13T08:49:37.862Z: ChargePoint>CentralSystem BootNotification 
+[
+  2,
+  "38e50c3e-66d3-4456-a332-ff510b5ae43a",
+  "BootNotification",
+  {
+    "chargePointModel": "Yeti",
+    "chargePointVendor": "Pionix",
+    "firmwareVersion": "0.1"
+  }
+]
+
+2023-01-13T08:49:37.905Z: CentralSystem>ChargePoint  BootNotificationResponse
+[
+  3,
+  "38e50c3e-66d3-4456-a332-ff510b5ae43a",
+  {
+    "currentTime": "2023-01-13T08:54:05.315Z",
+    "interval": 14400,
+    "status": "Accepted"
+  }
+]
+
+2023-01-13T08:49:37.934Z: ChargePoint>CentralSystem StatusNotification 
+[
+  2,
+  "2252f27c-cf55-4f15-b09b-a7719c0d1a52",
+  "StatusNotification",
+  {
+    "connectorId": 0,
+    "errorCode": "NoError",
+    "status": "Available"
+  }
+]
+
+2023-01-13T08:49:37.971Z: CentralSystem>ChargePoint  StatusNotificationResponse
+[
+  3,
+  "2252f27c-cf55-4f15-b09b-a7719c0d1a52",
+  {}
+]
+
+2023-01-13T08:49:37.971Z: ChargePoint>CentralSystem StatusNotification 
+[
+  2,
+  "bbaf6aaa-21d4-4ea9-aa7c-7db30a8cbd72",
+  "StatusNotification",
+  {
+    "connectorId": 1,
+    "errorCode": "NoError",
+    "status": "Available"
+  }
+]
+
+2023-01-13T08:49:38.020Z: CentralSystem>ChargePoint  StatusNotificationResponse
+[
+  3,
+  "bbaf6aaa-21d4-4ea9-aa7c-7db30a8cbd72",
+  {}
+]
+
+2023-01-13T08:49:40.833Z: SYS> Disconnecting 
+
+
+2023-01-13T08:49:40.861Z: SYS> Disconnected 
+
+

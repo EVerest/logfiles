@@ -1,0 +1,64 @@
+<html><head><title>EVerest OCPP log session</title>
+<style>.log {  font-family: Arial, Helvetica, sans-serif;  border-collapse: collapse;  width: 100%;}.log td, .log th {  border: 1px solid #ddd;  padding: 8px;  vertical-align: top;}.log tr.CentralSystem{background-color: #E4E6F2;}.log tr.ChargePoint{background-color: #F2F0E4;}.log tr.SYS{background-color: white;}.log th {  padding-top: 12px;  padding-bottom: 12px;  text-align: left;  vertical-align: top;  background-color: #04AA6D;  color: white;}</style></head><body><table class="log">
+<tr class="SYS"> <td>2023-04-14T09:53:34.851Z</td> <td>SYS&gt;</td> <td><b>Session logging started.</b></td><td><b></b></td> <td><pre lang="json"></pre></td> </tr>
+<tr class="ChargePoint"> <td>2023-04-14T09:53:34.853Z</td> <td>ChargePoint&gt;CentralSystem</td> <td><b>StatusNotification</b></td><td><b></b></td> <td><pre lang="json">[
+  2,
+  "cddb007d-e373-4e9e-96c4-30f4db2daadd",
+  "StatusNotification",
+  {
+    "connectorId": 1,
+    "errorCode": "NoError",
+    "status": "Preparing"
+  }
+]</pre></td> </tr>
+<tr class="CentralSystem"> <td>2023-04-14T09:53:34.858Z</td> <td>CentralSystem&gt;ChargePoint</td> <td><b></b></td><td><b>StatusNotificationResponse</b></td> <td><pre lang="json">[
+  3,
+  "cddb007d-e373-4e9e-96c4-30f4db2daadd",
+  {}
+]</pre></td> </tr>
+<tr class="ChargePoint"> <td>2023-04-14T09:53:36.572Z</td> <td>ChargePoint&gt;CentralSystem</td> <td><b>Heartbeat</b></td><td><b></b></td> <td><pre lang="json">[
+  2,
+  "ffa531a4-bf97-4746-b2b5-8695578b8d91",
+  "Heartbeat",
+  {}
+]</pre></td> </tr>
+<tr class="CentralSystem"> <td>2023-04-14T09:53:36.579Z</td> <td>CentralSystem&gt;ChargePoint</td> <td><b></b></td><td><b>HeartbeatResponse</b></td> <td><pre lang="json">[
+  3,
+  "ffa531a4-bf97-4746-b2b5-8695578b8d91",
+  {
+    "currentTime": "2023-04-14T09:53:36.575662"
+  }
+]</pre></td> </tr>
+<tr class="ChargePoint"> <td>2023-04-14T09:53:46.570Z</td> <td>ChargePoint&gt;CentralSystem</td> <td><b>Heartbeat</b></td><td><b></b></td> <td><pre lang="json">[
+  2,
+  "fb456226-4905-4fd5-8722-a8b7693b087f",
+  "Heartbeat",
+  {}
+]</pre></td> </tr>
+<tr class="CentralSystem"> <td>2023-04-14T09:53:46.596Z</td> <td>CentralSystem&gt;ChargePoint</td> <td><b></b></td><td><b>HeartbeatResponse</b></td> <td><pre lang="json">[
+  3,
+  "fb456226-4905-4fd5-8722-a8b7693b087f",
+  {
+    "currentTime": "2023-04-14T09:53:46.593980"
+  }
+]</pre></td> </tr>
+<tr class="ChargePoint"> <td>2023-04-14T09:53:56.570Z</td> <td>ChargePoint&gt;CentralSystem</td> <td><b>Heartbeat</b></td><td><b></b></td> <td><pre lang="json">[
+  2,
+  "3e5ec5e6-6046-45eb-b495-20335e7fea88",
+  "Heartbeat",
+  {}
+]</pre></td> </tr>
+<tr class="CentralSystem"> <td>2023-04-14T09:53:56.575Z</td> <td>CentralSystem&gt;ChargePoint</td> <td><b></b></td><td><b>HeartbeatResponse</b></td> <td><pre lang="json">[
+  3,
+  "3e5ec5e6-6046-45eb-b495-20335e7fea88",
+  {
+    "currentTime": "2023-04-14T09:53:56.572665"
+  }
+]</pre></td> </tr>
+<tr class="ChargePoint"> <td>2023-04-14T09:54:06.570Z</td> <td>ChargePoint&gt;CentralSystem</td> <td><b>Heartbeat</b></td><td><b></b></td> <td><pre lang="json">[
+  2,
+  "5e2a2db8-2cc0-4a9b-94e2-e4107d743e84",
+  "Heartbeat",
+  {}
+]</pre></td> </tr>
+</table></body></html>

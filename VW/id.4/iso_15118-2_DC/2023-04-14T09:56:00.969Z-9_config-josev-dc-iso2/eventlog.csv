@@ -1,0 +1,3311 @@
+"2023-04-14T09:56:00.969Z","SYS","Session logging started.",""
+"2023-04-14T09:56:00.970Z","EVSE","Session Started: EVConnected",""
+"2023-04-14T09:56:01.972Z","EVSE","Set PWM On (5.000000074505806%)",""
+"2023-04-14T09:56:02.170Z","EVSE","Change HLC Limits: 10000W/25A, target_voltage 0, hack_bpt false",""
+"2023-04-14T09:56:02.320Z","EVSE","EIM Authorization received",""
+"2023-04-14T09:56:02.321Z","EVSE","Transaction Started (0 kWh)",""
+"2023-04-14T09:56:02.323Z","EVSE","DC mode. We are in 5percent mode so we can continue without further action.",""
+"2023-04-14T09:56:02.373Z","EVSE","Charger state: Wait for Auth->PrepareCharging",""
+"2023-04-14T09:56:02.513Z","EVSE","Set PWM On (5.000000074505806%)",""
+"2023-04-14T09:56:11.146Z","CAR","V2G SupportedAppProtocolReq","{
+    "supportedAppProtocolReq": {
+        "AppProtocol": [
+            {
+                "Priority": 1,
+                "ProtocolNamespace": "urn:din:70121:2012:MsgDef",
+                "SchemaID": 1,
+                "VersionNumberMajor": 2,
+                "VersionNumberMinor": 0
+            },
+            {
+                "Priority": 2,
+                "ProtocolNamespace": "urn:iso:15118:2:2013:MsgDef",
+                "SchemaID": 0,
+                "VersionNumberMajor": 2,
+                "VersionNumberMinor": 0
+            }
+        ]
+    }
+}"
+"2023-04-14T09:56:11.247Z","EVSE","V2G SupportedAppProtocolRes","{
+    "supportedAppProtocolRes": {
+        "ResponseCode": "OK_SuccessfulNegotiation",
+        "SchemaID": 0
+    }
+}"
+"2023-04-14T09:56:11.758Z","CAR","V2G SessionSetupReq","{
+    "V2G_Message": {
+        "Body": {
+            "SessionSetupReq": {
+                "EVCCID": "007DFA06AB91"
+            }
+        },
+        "Header": {
+            "SessionID": "00"
+        }
+    }
+}"
+"2023-04-14T09:56:12.024Z","EVSE","V2G SessionSetupRes","{
+    "V2G_Message": {
+        "Body": {
+            "SessionSetupRes": {
+                "EVSEID": "DE*PNX*E12345*1",
+                "EVSETimeStamp": 1681466171,
+                "ResponseCode": "OK_NewSessionEstablished"
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:12.371Z","CAR","V2G ServiceDiscoveryReq","{
+    "V2G_Message": {
+        "Body": {
+            "ServiceDiscoveryReq": {}
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:12.678Z","EVSE","V2G ServiceDiscoveryRes","{
+    "V2G_Message": {
+        "Body": {
+            "ServiceDiscoveryRes": {
+                "ChargeService": {
+                    "FreeService": false,
+                    "ServiceCategory": "EVCharging",
+                    "ServiceID": 1,
+                    "ServiceName": "AC_DC_Charging",
+                    "SupportedEnergyTransferMode": {
+                        "EnergyTransferMode": [
+                            "DC_extended"
+                        ]
+                    }
+                },
+                "PaymentOptionList": {
+                    "PaymentOption": [
+                        "ExternalPayment"
+                    ]
+                },
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:12.967Z","CAR","V2G PaymentServiceSelectionReq","{
+    "V2G_Message": {
+        "Body": {
+            "PaymentServiceSelectionReq": {
+                "SelectedPaymentOption": "ExternalPayment",
+                "SelectedServiceList": {
+                    "SelectedService": [
+                        {
+                            "ServiceID": 1
+                        }
+                    ]
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:13.192Z","EVSE","V2G PaymentServiceSelectionRes","{
+    "V2G_Message": {
+        "Body": {
+            "PaymentServiceSelectionRes": {
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:13.481Z","CAR","V2G AuthorizationReq","{
+    "V2G_Message": {
+        "Body": {
+            "AuthorizationReq": {}
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:13.821Z","EVSE","V2G AuthorizationRes","{
+    "V2G_Message": {
+        "Body": {
+            "AuthorizationRes": {
+                "EVSEProcessing": "Ongoing_WaitingForCustomerInteraction",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:14.158Z","CAR","V2G AuthorizationReq","{
+    "V2G_Message": {
+        "Body": {
+            "AuthorizationReq": {}
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:14.383Z","EVSE","V2G AuthorizationRes","{
+    "V2G_Message": {
+        "Body": {
+            "AuthorizationRes": {
+                "EVSEProcessing": "Finished",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:14.696Z","CAR","V2G ChargeParameterDiscoveryReq","{
+    "V2G_Message": {
+        "Body": {
+            "ChargeParameterDiscoveryReq": {
+                "DC_EVChargeParameter": {
+                    "DC_EVStatus": {
+                        "EVErrorCode": "NO_ERROR",
+                        "EVRESSSOC": 76,
+                        "EVReady": false
+                    },
+                    "DepartureTime": 0,
+                    "EVEnergyRequest": {
+                        "Multiplier": 0,
+                        "Unit": "Wh",
+                        "Value": 500
+                    },
+                    "EVMaximumCurrentLimit": {
+                        "Multiplier": -1,
+                        "Unit": "A",
+                        "Value": 3500
+                    },
+                    "EVMaximumVoltageLimit": {
+                        "Multiplier": -1,
+                        "Unit": "V",
+                        "Value": 4130
+                    }
+                },
+                "MaxEntriesSAScheduleTuple": 192,
+                "RequestedEnergyTransferMode": "DC_extended"
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:14.893Z","EVSE","V2G ChargeParameterDiscoveryRes","{
+    "V2G_Message": {
+        "Body": {
+            "ChargeParameterDiscoveryRes": {
+                "DC_EVSEChargeParameter": {
+                    "DC_EVSEStatus": {
+                        "EVSEIsolationStatus": "Invalid",
+                        "EVSENotification": "None",
+                        "EVSEStatusCode": "EVSE_Ready",
+                        "NotificationMaxDelay": 0
+                    },
+                    "EVSECurrentRegulationTolerance": {
+                        "Multiplier": 0,
+                        "Unit": "A",
+                        "Value": 1
+                    },
+                    "EVSEEnergyToBeDelivered": {
+                        "Multiplier": 0,
+                        "Unit": "Wh",
+                        "Value": 10000
+                    },
+                    "EVSEMaximumCurrentLimit": {
+                        "Multiplier": 0,
+                        "Unit": "A",
+                        "Value": 25
+                    },
+                    "EVSEMaximumPowerLimit": {
+                        "Multiplier": 0,
+                        "Unit": "W",
+                        "Value": 10000
+                    },
+                    "EVSEMaximumVoltageLimit": {
+                        "Multiplier": 0,
+                        "Unit": "V",
+                        "Value": 1250
+                    },
+                    "EVSEMinimumCurrentLimit": {
+                        "Multiplier": 0,
+                        "Unit": "A",
+                        "Value": 0
+                    },
+                    "EVSEMinimumVoltageLimit": {
+                        "Multiplier": 0,
+                        "Unit": "V",
+                        "Value": 180
+                    },
+                    "EVSEPeakCurrentRipple": {
+                        "Multiplier": 0,
+                        "Unit": "A",
+                        "Value": 0
+                    }
+                },
+                "EVSEProcessing": "Finished",
+                "ResponseCode": "OK",
+                "SAScheduleList": {
+                    "SAScheduleTuple": [
+                        {
+                            "PMaxSchedule": {
+                                "PMaxScheduleEntry": [
+                                    {
+                                        "PMax": {
+                                            "Multiplier": 0,
+                                            "Unit": "W",
+                                            "Value": 11000
+                                        },
+                                        "RelativeTimeInterval": {
+                                            "start": 0
+                                        }
+                                    },
+                                    {
+                                        "PMax": {
+                                            "Multiplier": 0,
+                                            "Unit": "W",
+                                            "Value": 7000
+                                        },
+                                        "RelativeTimeInterval": {
+                                            "duration": 43200,
+                                            "start": 43200
+                                        }
+                                    }
+                                ]
+                            },
+                            "SAScheduleTupleID": 1
+                        }
+                    ]
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:15.065Z","CAR","Event CarRequestedPower",""
+"2023-04-14T09:56:15.115Z","EVSE","Event PowerOn",""
+"2023-04-14T09:56:15.917Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSSOC": 76,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:15.941Z","EVSE","Start cable check...",""
+"2023-04-14T09:56:15.942Z","EVSE","DC power supply set: 500V/2A, requested was 500V/2A.",""
+"2023-04-14T09:56:16.077Z","EVSE","DC power supply: switch ON called",""
+"2023-04-14T09:56:16.098Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:16.375Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSSOC": 76,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:16.559Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:16.837Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSSOC": 76,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:17.053Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:17.245Z","EVSE","Isolation measurement P 910000 N 900000.",""
+"2023-04-14T09:56:17.245Z","EVSE","DC power supply set: 500V/2A, requested was 500V/2A.",""
+"2023-04-14T09:56:17.327Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSSOC": 76,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:17.369Z","EVSE","Isolation measurement Ok P 910000 N 900000.",""
+"2023-04-14T09:56:17.513Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:17.790Z","CAR","V2G CableCheckReq","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSSOC": 76,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:17.964Z","EVSE","V2G CableCheckRes","{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_Ready",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Finished",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:18.308Z","EVSE","Isolation measurement P 910000 N 900000.",""
+"2023-04-14T09:56:18.330Z","CAR","V2G PreChargeReq","{
+    "V2G_Message": {
+        "Body": {
+            "PreChargeReq": {
+                "DC_EVStatus": {
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSSOC": 76,
+                    "EVReady": true
+                },
+                "EVTargetCurrent": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 0
+                },
+                "EVTargetVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 2000
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:18.504Z","EVSE","V2G PreChargeRes","{
+    "V2G_Message": {
+        "Body": {
+            "PreChargeRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_Ready",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEPresentVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 5010
+                },
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:18.791Z","CAR","V2G PreChargeReq","{
+    "V2G_Message": {
+        "Body": {
+            "PreChargeReq": {
+                "DC_EVStatus": {
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSSOC": 76,
+                    "EVReady": true
+                },
+                "EVTargetCurrent": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 20
+                },
+                "EVTargetVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 3792
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:18.844Z","EVSE","DC power supply set: 379.20001220703125V/2A, requested was 379.20001220703125V/2A.",""
+"2023-04-14T09:56:18.968Z","EVSE","V2G PreChargeRes","{
+    "V2G_Message": {
+        "Body": {
+            "PreChargeRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_Ready",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEPresentVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4998
+                },
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:19.193Z","CAR","V2G PreChargeReq","{
+    "V2G_Message": {
+        "Body": {
+            "PreChargeReq": {
+                "DC_EVStatus": {
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSSOC": 76,
+                    "EVReady": true
+                },
+                "EVTargetCurrent": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 20
+                },
+                "EVTargetVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 3792
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:19.265Z","EVSE","Isolation measurement P 910000 N 900000.",""
+"2023-04-14T09:56:19.410Z","EVSE","V2G PreChargeRes","{
+    "V2G_Message": {
+        "Body": {
+            "PreChargeRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_Ready",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEPresentVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 5023
+                },
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:19.700Z","EVSE","Change HLC Limits: 10000W/25A, target_voltage 379.2, hack_bpt false",""
+"2023-04-14T09:56:19.720Z","CAR","V2G PreChargeReq","{
+    "V2G_Message": {
+        "Body": {
+            "PreChargeReq": {
+                "DC_EVStatus": {
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSSOC": 76,
+                    "EVReady": true
+                },
+                "EVTargetCurrent": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 20
+                },
+                "EVTargetVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 3792
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:19.835Z","EVSE","V2G PreChargeRes","{
+    "V2G_Message": {
+        "Body": {
+            "PreChargeRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_Ready",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEPresentVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 3405
+                },
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:20.032Z","CAR","V2G PowerDeliveryReq","{
+    "V2G_Message": {
+        "Body": {
+            "PowerDeliveryReq": {
+                "ChargeProgress": "Start",
+                "ChargingProfile": {
+                    "ProfileEntry": [
+                        {
+                            "ChargingProfileEntryMaxPower": {
+                                "Multiplier": 2,
+                                "Unit": "W",
+                                "Value": 110
+                            },
+                            "ChargingProfileEntryStart": 0
+                        }
+                    ]
+                },
+                "DC_EVPowerDeliveryParameter": {
+                    "ChargingComplete": false,
+                    "DC_EVStatus": {
+                        "EVErrorCode": "NO_ERROR",
+                        "EVRESSSOC": 76,
+                        "EVReady": true
+                    }
+                },
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:20.169Z","EVSE","V2G PowerDeliveryRes","{
+    "V2G_Message": {
+        "Body": {
+            "PowerDeliveryRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_Ready",
+                    "NotificationMaxDelay": 0
+                },
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:20.250Z","EVSE","Isolation measurement P 910000 N 900000.",""
+"2023-04-14T09:56:20.448Z","CAR","V2G CurrentDemandReq","{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandReq": {
+                "ChargingComplete": false,
+                "DC_EVStatus": {
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSSOC": 76,
+                    "EVReady": true
+                },
+                "EVMaximumCurrentLimit": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 3500
+                },
+                "EVMaximumVoltageLimit": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "EVTargetCurrent": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 0
+                },
+                "EVTargetVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "RemainingTimeToBulkSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 0
+                },
+                "RemainingTimeToFullSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 0
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:20.502Z","EVSE","Charger state: PrepareCharging->Charging",""
+"2023-04-14T09:56:20.520Z","EVSE","DC power supply set: 413V/0A, requested was 413V/0A.",""
+"2023-04-14T09:56:20.616Z","EVSE","V2G CurrentDemandRes","{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_Ready",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSECurrentLimitAchieved": false,
+                "EVSEID": "DE*PNX*E12345*1",
+                "EVSEMaximumCurrentLimit": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 25
+                },
+                "EVSEMaximumPowerLimit": {
+                    "Multiplier": 0,
+                    "Unit": "W",
+                    "Value": 10000
+                },
+                "EVSEMaximumVoltageLimit": {
+                    "Multiplier": 0,
+                    "Unit": "V",
+                    "Value": 1250
+                },
+                "EVSEPowerLimitAchieved": false,
+                "EVSEPresentCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 0
+                },
+                "EVSEPresentVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 3796
+                },
+                "EVSEVoltageLimitAchieved": false,
+                "MeterInfo": {
+                    "MeterID": "UMWC_POWERMETER",
+                    "MeterReading": 0,
+                    "TMeter": 1681466179
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:20.923Z","CAR","V2G CurrentDemandReq","{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandReq": {
+                "ChargingComplete": false,
+                "DC_EVStatus": {
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSSOC": 76,
+                    "EVReady": true
+                },
+                "EVMaximumCurrentLimit": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 3500
+                },
+                "EVMaximumVoltageLimit": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "EVTargetCurrent": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 77
+                },
+                "EVTargetVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "RemainingTimeToBulkSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 0
+                },
+                "RemainingTimeToFullSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 0
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:20.929Z","EVSE","DC power supply set: 413V/7.699999809265137A, requested was 413V/7.699999809265137A.",""
+"2023-04-14T09:56:21.038Z","EVSE","V2G CurrentDemandRes","{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_Ready",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSECurrentLimitAchieved": false,
+                "EVSEID": "DE*PNX*E12345*1",
+                "EVSEMaximumCurrentLimit": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 25
+                },
+                "EVSEMaximumPowerLimit": {
+                    "Multiplier": 0,
+                    "Unit": "W",
+                    "Value": 10000
+                },
+                "EVSEMaximumVoltageLimit": {
+                    "Multiplier": 0,
+                    "Unit": "V",
+                    "Value": 1250
+                },
+                "EVSEPowerLimitAchieved": false,
+                "EVSEPresentCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 0
+                },
+                "EVSEPresentVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 3790
+                },
+                "EVSEVoltageLimitAchieved": false,
+                "MeterInfo": {
+                    "MeterID": "UMWC_POWERMETER",
+                    "MeterReading": 0,
+                    "TMeter": 1681466180
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:21.184Z","EVSE","Change HLC Limits: 10000W/24.213076A, target_voltage 413, hack_bpt false",""
+"2023-04-14T09:56:21.260Z","EVSE","Isolation measurement P 910000 N 900000.",""
+"2023-04-14T09:56:21.323Z","CAR","V2G CurrentDemandReq","{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandReq": {
+                "ChargingComplete": false,
+                "DC_EVStatus": {
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSSOC": 76,
+                    "EVReady": true
+                },
+                "EVMaximumCurrentLimit": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 3500
+                },
+                "EVMaximumVoltageLimit": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "EVTargetCurrent": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 167
+                },
+                "EVTargetVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "RemainingTimeToBulkSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 0
+                },
+                "RemainingTimeToFullSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 0
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:21.364Z","EVSE","DC power supply set: 413V/16.700000762939453A, requested was 413V/16.700000762939453A.",""
+"2023-04-14T09:56:21.503Z","EVSE","V2G CurrentDemandRes","{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_Ready",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSECurrentLimitAchieved": false,
+                "EVSEID": "DE*PNX*E12345*1",
+                "EVSEMaximumCurrentLimit": {
+                    "Multiplier": -2,
+                    "Unit": "A",
+                    "Value": 2421
+                },
+                "EVSEMaximumPowerLimit": {
+                    "Multiplier": 0,
+                    "Unit": "W",
+                    "Value": 10000
+                },
+                "EVSEMaximumVoltageLimit": {
+                    "Multiplier": 0,
+                    "Unit": "V",
+                    "Value": 1250
+                },
+                "EVSEPowerLimitAchieved": false,
+                "EVSEPresentCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 0
+                },
+                "EVSEPresentVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 3753
+                },
+                "EVSEVoltageLimitAchieved": false,
+                "MeterInfo": {
+                    "MeterID": "UMWC_POWERMETER",
+                    "MeterReading": 0,
+                    "TMeter": 1681466181
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:21.781Z","CAR","V2G CurrentDemandReq","{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandReq": {
+                "ChargingComplete": false,
+                "DC_EVStatus": {
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSSOC": 76,
+                    "EVReady": true
+                },
+                "EVMaximumCurrentLimit": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 3500
+                },
+                "EVMaximumVoltageLimit": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "EVTargetCurrent": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 250
+                },
+                "EVTargetVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "RemainingTimeToBulkSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 0
+                },
+                "RemainingTimeToFullSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 0
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:21.802Z","EVSE","DC power supply set: 413V/24.213075060532688A, requested was 413V/25A.",""
+"2023-04-14T09:56:21.953Z","EVSE","V2G CurrentDemandRes","{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_Ready",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSECurrentLimitAchieved": false,
+                "EVSEID": "DE*PNX*E12345*1",
+                "EVSEMaximumCurrentLimit": {
+                    "Multiplier": -2,
+                    "Unit": "A",
+                    "Value": 2421
+                },
+                "EVSEMaximumPowerLimit": {
+                    "Multiplier": 0,
+                    "Unit": "W",
+                    "Value": 10000
+                },
+                "EVSEMaximumVoltageLimit": {
+                    "Multiplier": 0,
+                    "Unit": "V",
+                    "Value": 1250
+                },
+                "EVSEPowerLimitAchieved": false,
+                "EVSEPresentCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 0
+                },
+                "EVSEPresentVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 3875
+                },
+                "EVSEVoltageLimitAchieved": false,
+                "MeterInfo": {
+                    "MeterID": "UMWC_POWERMETER",
+                    "MeterReading": 0,
+                    "TMeter": 1681466181
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:22.228Z","CAR","V2G CurrentDemandReq","{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandReq": {
+                "ChargingComplete": false,
+                "DC_EVStatus": {
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSSOC": 76,
+                    "EVReady": true
+                },
+                "EVMaximumCurrentLimit": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 3500
+                },
+                "EVMaximumVoltageLimit": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "EVTargetCurrent": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 241
+                },
+                "EVTargetVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "RemainingTimeToBulkSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 0
+                },
+                "RemainingTimeToFullSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 0
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:22.258Z","EVSE","Isolation measurement P 910000 N 900000.",""
+"2023-04-14T09:56:22.272Z","EVSE","DC power supply set: 413V/24.100000381469727A, requested was 413V/24.100000381469727A.",""
+"2023-04-14T09:56:22.416Z","EVSE","V2G CurrentDemandRes","{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_Ready",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSECurrentLimitAchieved": false,
+                "EVSEID": "DE*PNX*E12345*1",
+                "EVSEMaximumCurrentLimit": {
+                    "Multiplier": -2,
+                    "Unit": "A",
+                    "Value": 2421
+                },
+                "EVSEMaximumPowerLimit": {
+                    "Multiplier": 0,
+                    "Unit": "W",
+                    "Value": 10000
+                },
+                "EVSEMaximumVoltageLimit": {
+                    "Multiplier": 0,
+                    "Unit": "V",
+                    "Value": 1250
+                },
+                "EVSEPowerLimitAchieved": false,
+                "EVSEPresentCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 0
+                },
+                "EVSEPresentVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 3765
+                },
+                "EVSEVoltageLimitAchieved": false,
+                "MeterInfo": {
+                    "MeterID": "UMWC_POWERMETER",
+                    "MeterReading": 0,
+                    "TMeter": 1681466181
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:22.846Z","CAR","V2G CurrentDemandReq","{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandReq": {
+                "ChargingComplete": false,
+                "DC_EVStatus": {
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSSOC": 76,
+                    "EVReady": true
+                },
+                "EVMaximumCurrentLimit": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 3500
+                },
+                "EVMaximumVoltageLimit": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "EVTargetCurrent": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 241
+                },
+                "EVTargetVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "RemainingTimeToBulkSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 0
+                },
+                "RemainingTimeToFullSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 0
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:22.999Z","EVSE","V2G CurrentDemandRes","{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_Ready",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSECurrentLimitAchieved": false,
+                "EVSEID": "DE*PNX*E12345*1",
+                "EVSEMaximumCurrentLimit": {
+                    "Multiplier": -2,
+                    "Unit": "A",
+                    "Value": 2421
+                },
+                "EVSEMaximumPowerLimit": {
+                    "Multiplier": 0,
+                    "Unit": "W",
+                    "Value": 10000
+                },
+                "EVSEMaximumVoltageLimit": {
+                    "Multiplier": 0,
+                    "Unit": "V",
+                    "Value": 1250
+                },
+                "EVSEPowerLimitAchieved": false,
+                "EVSEPresentCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 0
+                },
+                "EVSEPresentVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 3717
+                },
+                "EVSEVoltageLimitAchieved": false,
+                "MeterInfo": {
+                    "MeterID": "UMWC_POWERMETER",
+                    "MeterReading": 0,
+                    "TMeter": 1681466182
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:23.255Z","EVSE","Isolation measurement P 910000 N 900000.",""
+"2023-04-14T09:56:23.277Z","CAR","V2G CurrentDemandReq","{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandReq": {
+                "ChargingComplete": false,
+                "DC_EVStatus": {
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSSOC": 76,
+                    "EVReady": true
+                },
+                "EVMaximumCurrentLimit": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 3500
+                },
+                "EVMaximumVoltageLimit": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "EVTargetCurrent": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 241
+                },
+                "EVTargetVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "RemainingTimeToBulkSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 0
+                },
+                "RemainingTimeToFullSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 0
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:23.440Z","EVSE","V2G CurrentDemandRes","{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_Ready",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSECurrentLimitAchieved": false,
+                "EVSEID": "DE*PNX*E12345*1",
+                "EVSEMaximumCurrentLimit": {
+                    "Multiplier": -2,
+                    "Unit": "A",
+                    "Value": 2421
+                },
+                "EVSEMaximumPowerLimit": {
+                    "Multiplier": 0,
+                    "Unit": "W",
+                    "Value": 10000
+                },
+                "EVSEMaximumVoltageLimit": {
+                    "Multiplier": 0,
+                    "Unit": "V",
+                    "Value": 1250
+                },
+                "EVSEPowerLimitAchieved": false,
+                "EVSEPresentCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 0
+                },
+                "EVSEPresentVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 3790
+                },
+                "EVSEVoltageLimitAchieved": false,
+                "MeterInfo": {
+                    "MeterID": "UMWC_POWERMETER",
+                    "MeterReading": 0,
+                    "TMeter": 1681466182
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:23.717Z","CAR","V2G CurrentDemandReq","{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandReq": {
+                "ChargingComplete": false,
+                "DC_EVStatus": {
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSSOC": 76,
+                    "EVReady": true
+                },
+                "EVMaximumCurrentLimit": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 3500
+                },
+                "EVMaximumVoltageLimit": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "EVTargetCurrent": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 241
+                },
+                "EVTargetVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "RemainingTimeToBulkSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 0
+                },
+                "RemainingTimeToFullSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 720
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:23.896Z","EVSE","V2G CurrentDemandRes","{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_Ready",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSECurrentLimitAchieved": false,
+                "EVSEID": "DE*PNX*E12345*1",
+                "EVSEMaximumCurrentLimit": {
+                    "Multiplier": -2,
+                    "Unit": "A",
+                    "Value": 2421
+                },
+                "EVSEMaximumPowerLimit": {
+                    "Multiplier": 0,
+                    "Unit": "W",
+                    "Value": 10000
+                },
+                "EVSEMaximumVoltageLimit": {
+                    "Multiplier": 0,
+                    "Unit": "V",
+                    "Value": 1250
+                },
+                "EVSEPowerLimitAchieved": false,
+                "EVSEPresentCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 0
+                },
+                "EVSEPresentVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 3826
+                },
+                "EVSEVoltageLimitAchieved": false,
+                "MeterInfo": {
+                    "MeterID": "UMWC_POWERMETER",
+                    "MeterReading": 0,
+                    "TMeter": 1681466183
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:24.206Z","CAR","V2G CurrentDemandReq","{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandReq": {
+                "ChargingComplete": false,
+                "DC_EVStatus": {
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSSOC": 76,
+                    "EVReady": true
+                },
+                "EVMaximumCurrentLimit": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 3500
+                },
+                "EVMaximumVoltageLimit": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "EVTargetCurrent": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 241
+                },
+                "EVTargetVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "RemainingTimeToBulkSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 0
+                },
+                "RemainingTimeToFullSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 720
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:24.258Z","EVSE","Isolation measurement P 910000 N 900000.",""
+"2023-04-14T09:56:24.436Z","EVSE","V2G CurrentDemandRes","{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_Ready",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSECurrentLimitAchieved": false,
+                "EVSEID": "DE*PNX*E12345*1",
+                "EVSEMaximumCurrentLimit": {
+                    "Multiplier": -2,
+                    "Unit": "A",
+                    "Value": 2421
+                },
+                "EVSEMaximumPowerLimit": {
+                    "Multiplier": 0,
+                    "Unit": "W",
+                    "Value": 10000
+                },
+                "EVSEMaximumVoltageLimit": {
+                    "Multiplier": 0,
+                    "Unit": "V",
+                    "Value": 1250
+                },
+                "EVSEPowerLimitAchieved": false,
+                "EVSEPresentCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 0
+                },
+                "EVSEPresentVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 3790
+                },
+                "EVSEVoltageLimitAchieved": false,
+                "MeterInfo": {
+                    "MeterID": "UMWC_POWERMETER",
+                    "MeterReading": 0,
+                    "TMeter": 1681466183
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:24.705Z","CAR","V2G CurrentDemandReq","{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandReq": {
+                "ChargingComplete": false,
+                "DC_EVStatus": {
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSSOC": 76,
+                    "EVReady": true
+                },
+                "EVMaximumCurrentLimit": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 3500
+                },
+                "EVMaximumVoltageLimit": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "EVTargetCurrent": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 241
+                },
+                "EVTargetVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "RemainingTimeToBulkSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 0
+                },
+                "RemainingTimeToFullSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 720
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:24.793Z","EVSE","V2G CurrentDemandRes","{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_Ready",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSECurrentLimitAchieved": false,
+                "EVSEID": "DE*PNX*E12345*1",
+                "EVSEMaximumCurrentLimit": {
+                    "Multiplier": -2,
+                    "Unit": "A",
+                    "Value": 2421
+                },
+                "EVSEMaximumPowerLimit": {
+                    "Multiplier": 0,
+                    "Unit": "W",
+                    "Value": 10000
+                },
+                "EVSEMaximumVoltageLimit": {
+                    "Multiplier": 0,
+                    "Unit": "V",
+                    "Value": 1250
+                },
+                "EVSEPowerLimitAchieved": false,
+                "EVSEPresentCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 0
+                },
+                "EVSEPresentVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 3753
+                },
+                "EVSEVoltageLimitAchieved": false,
+                "MeterInfo": {
+                    "MeterID": "UMWC_POWERMETER",
+                    "MeterReading": 0,
+                    "TMeter": 1681466184
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:25.052Z","CAR","V2G CurrentDemandReq","{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandReq": {
+                "ChargingComplete": false,
+                "DC_EVStatus": {
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSSOC": 76,
+                    "EVReady": true
+                },
+                "EVMaximumCurrentLimit": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 3500
+                },
+                "EVMaximumVoltageLimit": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "EVTargetCurrent": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 241
+                },
+                "EVTargetVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "RemainingTimeToBulkSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 0
+                },
+                "RemainingTimeToFullSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 720
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:25.228Z","EVSE","V2G CurrentDemandRes","{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_Ready",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSECurrentLimitAchieved": false,
+                "EVSEID": "DE*PNX*E12345*1",
+                "EVSEMaximumCurrentLimit": {
+                    "Multiplier": -2,
+                    "Unit": "A",
+                    "Value": 2421
+                },
+                "EVSEMaximumPowerLimit": {
+                    "Multiplier": 0,
+                    "Unit": "W",
+                    "Value": 10000
+                },
+                "EVSEMaximumVoltageLimit": {
+                    "Multiplier": 0,
+                    "Unit": "V",
+                    "Value": 1250
+                },
+                "EVSEPowerLimitAchieved": false,
+                "EVSEPresentCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 0
+                },
+                "EVSEPresentVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 3765
+                },
+                "EVSEVoltageLimitAchieved": false,
+                "MeterInfo": {
+                    "MeterID": "UMWC_POWERMETER",
+                    "MeterReading": 0,
+                    "TMeter": 1681466184
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:25.270Z","EVSE","Isolation measurement P 910000 N 900000.",""
+"2023-04-14T09:56:25.487Z","CAR","V2G CurrentDemandReq","{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandReq": {
+                "ChargingComplete": false,
+                "DC_EVStatus": {
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSSOC": 76,
+                    "EVReady": true
+                },
+                "EVMaximumCurrentLimit": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 3500
+                },
+                "EVMaximumVoltageLimit": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "EVTargetCurrent": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 241
+                },
+                "EVTargetVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "RemainingTimeToBulkSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 0
+                },
+                "RemainingTimeToFullSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 720
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:25.645Z","EVSE","V2G CurrentDemandRes","{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_Ready",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSECurrentLimitAchieved": false,
+                "EVSEID": "DE*PNX*E12345*1",
+                "EVSEMaximumCurrentLimit": {
+                    "Multiplier": -2,
+                    "Unit": "A",
+                    "Value": 2421
+                },
+                "EVSEMaximumPowerLimit": {
+                    "Multiplier": 0,
+                    "Unit": "W",
+                    "Value": 10000
+                },
+                "EVSEMaximumVoltageLimit": {
+                    "Multiplier": 0,
+                    "Unit": "V",
+                    "Value": 1250
+                },
+                "EVSEPowerLimitAchieved": false,
+                "EVSEPresentCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 0
+                },
+                "EVSEPresentVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 3778
+                },
+                "EVSEVoltageLimitAchieved": false,
+                "MeterInfo": {
+                    "MeterID": "UMWC_POWERMETER",
+                    "MeterReading": 0,
+                    "TMeter": 1681466185
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:25.943Z","CAR","V2G CurrentDemandReq","{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandReq": {
+                "ChargingComplete": false,
+                "DC_EVStatus": {
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSSOC": 76,
+                    "EVReady": true
+                },
+                "EVMaximumCurrentLimit": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 3500
+                },
+                "EVMaximumVoltageLimit": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "EVTargetCurrent": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 241
+                },
+                "EVTargetVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "RemainingTimeToBulkSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 0
+                },
+                "RemainingTimeToFullSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 720
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:26.129Z","EVSE","V2G CurrentDemandRes","{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_Ready",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSECurrentLimitAchieved": false,
+                "EVSEID": "DE*PNX*E12345*1",
+                "EVSEMaximumCurrentLimit": {
+                    "Multiplier": -2,
+                    "Unit": "A",
+                    "Value": 2421
+                },
+                "EVSEMaximumPowerLimit": {
+                    "Multiplier": 0,
+                    "Unit": "W",
+                    "Value": 10000
+                },
+                "EVSEMaximumVoltageLimit": {
+                    "Multiplier": 0,
+                    "Unit": "V",
+                    "Value": 1250
+                },
+                "EVSEPowerLimitAchieved": false,
+                "EVSEPresentCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 0
+                },
+                "EVSEPresentVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 3796
+                },
+                "EVSEVoltageLimitAchieved": false,
+                "MeterInfo": {
+                    "MeterID": "UMWC_POWERMETER",
+                    "MeterReading": 0,
+                    "TMeter": 1681466185
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:26.261Z","EVSE","Isolation measurement P 910000 N 900000.",""
+"2023-04-14T09:56:26.385Z","CAR","V2G CurrentDemandReq","{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandReq": {
+                "ChargingComplete": false,
+                "DC_EVStatus": {
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSSOC": 76,
+                    "EVReady": true
+                },
+                "EVMaximumCurrentLimit": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 3500
+                },
+                "EVMaximumVoltageLimit": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "EVTargetCurrent": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 241
+                },
+                "EVTargetVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "RemainingTimeToBulkSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 0
+                },
+                "RemainingTimeToFullSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 720
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:26.583Z","EVSE","V2G CurrentDemandRes","{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_Ready",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSECurrentLimitAchieved": false,
+                "EVSEID": "DE*PNX*E12345*1",
+                "EVSEMaximumCurrentLimit": {
+                    "Multiplier": -2,
+                    "Unit": "A",
+                    "Value": 2421
+                },
+                "EVSEMaximumPowerLimit": {
+                    "Multiplier": 0,
+                    "Unit": "W",
+                    "Value": 10000
+                },
+                "EVSEMaximumVoltageLimit": {
+                    "Multiplier": 0,
+                    "Unit": "V",
+                    "Value": 1250
+                },
+                "EVSEPowerLimitAchieved": false,
+                "EVSEPresentCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 0
+                },
+                "EVSEPresentVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 3778
+                },
+                "EVSEVoltageLimitAchieved": false,
+                "MeterInfo": {
+                    "MeterID": "UMWC_POWERMETER",
+                    "MeterReading": 0,
+                    "TMeter": 1681466185
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:26.844Z","CAR","V2G CurrentDemandReq","{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandReq": {
+                "ChargingComplete": false,
+                "DC_EVStatus": {
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSSOC": 76,
+                    "EVReady": true
+                },
+                "EVMaximumCurrentLimit": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 3500
+                },
+                "EVMaximumVoltageLimit": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "EVTargetCurrent": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 241
+                },
+                "EVTargetVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "RemainingTimeToBulkSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 0
+                },
+                "RemainingTimeToFullSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 720
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:26.958Z","EVSE","V2G CurrentDemandRes","{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_Ready",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSECurrentLimitAchieved": false,
+                "EVSEID": "DE*PNX*E12345*1",
+                "EVSEMaximumCurrentLimit": {
+                    "Multiplier": -2,
+                    "Unit": "A",
+                    "Value": 2421
+                },
+                "EVSEMaximumPowerLimit": {
+                    "Multiplier": 0,
+                    "Unit": "W",
+                    "Value": 10000
+                },
+                "EVSEMaximumVoltageLimit": {
+                    "Multiplier": 0,
+                    "Unit": "V",
+                    "Value": 1250
+                },
+                "EVSEPowerLimitAchieved": false,
+                "EVSEPresentCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 0
+                },
+                "EVSEPresentVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 3796
+                },
+                "EVSEVoltageLimitAchieved": false,
+                "MeterInfo": {
+                    "MeterID": "UMWC_POWERMETER",
+                    "MeterReading": 0,
+                    "TMeter": 1681466186
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:27.276Z","EVSE","Isolation measurement P 910000 N 900000.",""
+"2023-04-14T09:56:27.278Z","CAR","V2G CurrentDemandReq","{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandReq": {
+                "ChargingComplete": false,
+                "DC_EVStatus": {
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSSOC": 76,
+                    "EVReady": true
+                },
+                "EVMaximumCurrentLimit": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 3500
+                },
+                "EVMaximumVoltageLimit": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "EVTargetCurrent": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 241
+                },
+                "EVTargetVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "RemainingTimeToBulkSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 0
+                },
+                "RemainingTimeToFullSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 720
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:27.453Z","EVSE","V2G CurrentDemandRes","{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_Ready",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSECurrentLimitAchieved": false,
+                "EVSEID": "DE*PNX*E12345*1",
+                "EVSEMaximumCurrentLimit": {
+                    "Multiplier": -2,
+                    "Unit": "A",
+                    "Value": 2421
+                },
+                "EVSEMaximumPowerLimit": {
+                    "Multiplier": 0,
+                    "Unit": "W",
+                    "Value": 10000
+                },
+                "EVSEMaximumVoltageLimit": {
+                    "Multiplier": 0,
+                    "Unit": "V",
+                    "Value": 1250
+                },
+                "EVSEPowerLimitAchieved": false,
+                "EVSEPresentCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 0
+                },
+                "EVSEPresentVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 3753
+                },
+                "EVSEVoltageLimitAchieved": false,
+                "MeterInfo": {
+                    "MeterID": "UMWC_POWERMETER",
+                    "MeterReading": 0,
+                    "TMeter": 1681466187
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:27.891Z","CAR","V2G CurrentDemandReq","{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandReq": {
+                "ChargingComplete": false,
+                "DC_EVStatus": {
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSSOC": 76,
+                    "EVReady": true
+                },
+                "EVMaximumCurrentLimit": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 3500
+                },
+                "EVMaximumVoltageLimit": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "EVTargetCurrent": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 241
+                },
+                "EVTargetVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "RemainingTimeToBulkSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 0
+                },
+                "RemainingTimeToFullSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 720
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:28.023Z","EVSE","V2G CurrentDemandRes","{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_Ready",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSECurrentLimitAchieved": false,
+                "EVSEID": "DE*PNX*E12345*1",
+                "EVSEMaximumCurrentLimit": {
+                    "Multiplier": -2,
+                    "Unit": "A",
+                    "Value": 2421
+                },
+                "EVSEMaximumPowerLimit": {
+                    "Multiplier": 0,
+                    "Unit": "W",
+                    "Value": 10000
+                },
+                "EVSEMaximumVoltageLimit": {
+                    "Multiplier": 0,
+                    "Unit": "V",
+                    "Value": 1250
+                },
+                "EVSEPowerLimitAchieved": false,
+                "EVSEPresentCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 0
+                },
+                "EVSEPresentVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 3784
+                },
+                "EVSEVoltageLimitAchieved": false,
+                "MeterInfo": {
+                    "MeterID": "UMWC_POWERMETER",
+                    "MeterReading": 0,
+                    "TMeter": 1681466187
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:28.263Z","EVSE","Isolation measurement P 910000 N 900000.",""
+"2023-04-14T09:56:28.304Z","CAR","V2G CurrentDemandReq","{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandReq": {
+                "ChargingComplete": false,
+                "DC_EVStatus": {
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSSOC": 76,
+                    "EVReady": true
+                },
+                "EVMaximumCurrentLimit": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 3500
+                },
+                "EVMaximumVoltageLimit": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "EVTargetCurrent": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 241
+                },
+                "EVTargetVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "RemainingTimeToBulkSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 0
+                },
+                "RemainingTimeToFullSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 720
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:28.440Z","EVSE","V2G CurrentDemandRes","{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_Ready",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSECurrentLimitAchieved": false,
+                "EVSEID": "DE*PNX*E12345*1",
+                "EVSEMaximumCurrentLimit": {
+                    "Multiplier": -2,
+                    "Unit": "A",
+                    "Value": 2421
+                },
+                "EVSEMaximumPowerLimit": {
+                    "Multiplier": 0,
+                    "Unit": "W",
+                    "Value": 10000
+                },
+                "EVSEMaximumVoltageLimit": {
+                    "Multiplier": 0,
+                    "Unit": "V",
+                    "Value": 1250
+                },
+                "EVSEPowerLimitAchieved": false,
+                "EVSEPresentCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 0
+                },
+                "EVSEPresentVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 3741
+                },
+                "EVSEVoltageLimitAchieved": false,
+                "MeterInfo": {
+                    "MeterID": "UMWC_POWERMETER",
+                    "MeterReading": 0,
+                    "TMeter": 1681466187
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:28.727Z","CAR","V2G CurrentDemandReq","{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandReq": {
+                "ChargingComplete": false,
+                "DC_EVStatus": {
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSSOC": 76,
+                    "EVReady": true
+                },
+                "EVMaximumCurrentLimit": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 3500
+                },
+                "EVMaximumVoltageLimit": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "EVTargetCurrent": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 241
+                },
+                "EVTargetVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "RemainingTimeToBulkSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 0
+                },
+                "RemainingTimeToFullSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 720
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:28.886Z","EVSE","V2G CurrentDemandRes","{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_Ready",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSECurrentLimitAchieved": false,
+                "EVSEID": "DE*PNX*E12345*1",
+                "EVSEMaximumCurrentLimit": {
+                    "Multiplier": -2,
+                    "Unit": "A",
+                    "Value": 2421
+                },
+                "EVSEMaximumPowerLimit": {
+                    "Multiplier": 0,
+                    "Unit": "W",
+                    "Value": 10000
+                },
+                "EVSEMaximumVoltageLimit": {
+                    "Multiplier": 0,
+                    "Unit": "V",
+                    "Value": 1250
+                },
+                "EVSEPowerLimitAchieved": false,
+                "EVSEPresentCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 0
+                },
+                "EVSEPresentVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 3753
+                },
+                "EVSEVoltageLimitAchieved": false,
+                "MeterInfo": {
+                    "MeterID": "UMWC_POWERMETER",
+                    "MeterReading": 0,
+                    "TMeter": 1681466188
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:29.154Z","CAR","V2G CurrentDemandReq","{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandReq": {
+                "ChargingComplete": false,
+                "DC_EVStatus": {
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSSOC": 76,
+                    "EVReady": true
+                },
+                "EVMaximumCurrentLimit": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 3500
+                },
+                "EVMaximumVoltageLimit": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "EVTargetCurrent": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 241
+                },
+                "EVTargetVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "RemainingTimeToBulkSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 0
+                },
+                "RemainingTimeToFullSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 720
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:29.273Z","EVSE","Isolation measurement P 910000 N 900000.",""
+"2023-04-14T09:56:29.363Z","EVSE","V2G CurrentDemandRes","{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_Ready",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSECurrentLimitAchieved": false,
+                "EVSEID": "DE*PNX*E12345*1",
+                "EVSEMaximumCurrentLimit": {
+                    "Multiplier": -2,
+                    "Unit": "A",
+                    "Value": 2421
+                },
+                "EVSEMaximumPowerLimit": {
+                    "Multiplier": 0,
+                    "Unit": "W",
+                    "Value": 10000
+                },
+                "EVSEMaximumVoltageLimit": {
+                    "Multiplier": 0,
+                    "Unit": "V",
+                    "Value": 1250
+                },
+                "EVSEPowerLimitAchieved": false,
+                "EVSEPresentCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 0
+                },
+                "EVSEPresentVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 3747
+                },
+                "EVSEVoltageLimitAchieved": false,
+                "MeterInfo": {
+                    "MeterID": "UMWC_POWERMETER",
+                    "MeterReading": 0,
+                    "TMeter": 1681466188
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:29.667Z","CAR","V2G CurrentDemandReq","{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandReq": {
+                "ChargingComplete": false,
+                "DC_EVStatus": {
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSSOC": 76,
+                    "EVReady": true
+                },
+                "EVMaximumCurrentLimit": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 3500
+                },
+                "EVMaximumVoltageLimit": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "EVTargetCurrent": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 241
+                },
+                "EVTargetVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "RemainingTimeToBulkSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 0
+                },
+                "RemainingTimeToFullSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 720
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:29.794Z","EVSE","V2G CurrentDemandRes","{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_Ready",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSECurrentLimitAchieved": false,
+                "EVSEID": "DE*PNX*E12345*1",
+                "EVSEMaximumCurrentLimit": {
+                    "Multiplier": -2,
+                    "Unit": "A",
+                    "Value": 2421
+                },
+                "EVSEMaximumPowerLimit": {
+                    "Multiplier": 0,
+                    "Unit": "W",
+                    "Value": 10000
+                },
+                "EVSEMaximumVoltageLimit": {
+                    "Multiplier": 0,
+                    "Unit": "V",
+                    "Value": 1250
+                },
+                "EVSEPowerLimitAchieved": false,
+                "EVSEPresentCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 0
+                },
+                "EVSEPresentVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 3778
+                },
+                "EVSEVoltageLimitAchieved": false,
+                "MeterInfo": {
+                    "MeterID": "UMWC_POWERMETER",
+                    "MeterReading": 0,
+                    "TMeter": 1681466189
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:30.031Z","CAR","V2G CurrentDemandReq","{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandReq": {
+                "ChargingComplete": false,
+                "DC_EVStatus": {
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSSOC": 76,
+                    "EVReady": true
+                },
+                "EVMaximumCurrentLimit": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 3500
+                },
+                "EVMaximumVoltageLimit": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "EVTargetCurrent": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 241
+                },
+                "EVTargetVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "RemainingTimeToBulkSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 0
+                },
+                "RemainingTimeToFullSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 720
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:30.108Z","EVSE","Transaction Finished: Local (0 kWh)",""
+"2023-04-14T09:56:30.143Z","EVSE","Charger state: Charging->StoppingCharging",""
+"2023-04-14T09:56:30.143Z","EVSE","DC power supply OFF",""
+"2023-04-14T09:56:30.275Z","EVSE","Isolation measurement P 910000 N 900000.",""
+"2023-04-14T09:56:30.275Z","EVSE","V2G CurrentDemandRes","{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_Ready",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSECurrentLimitAchieved": false,
+                "EVSEID": "DE*PNX*E12345*1",
+                "EVSEMaximumCurrentLimit": {
+                    "Multiplier": -2,
+                    "Unit": "A",
+                    "Value": 2421
+                },
+                "EVSEMaximumPowerLimit": {
+                    "Multiplier": 0,
+                    "Unit": "W",
+                    "Value": 10000
+                },
+                "EVSEMaximumVoltageLimit": {
+                    "Multiplier": 0,
+                    "Unit": "V",
+                    "Value": 1250
+                },
+                "EVSEPowerLimitAchieved": false,
+                "EVSEPresentCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 0
+                },
+                "EVSEPresentVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 3735
+                },
+                "EVSEVoltageLimitAchieved": false,
+                "MeterInfo": {
+                    "MeterID": "UMWC_POWERMETER",
+                    "MeterReading": 0,
+                    "TMeter": 1681466189
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:30.493Z","CAR","V2G CurrentDemandReq","{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandReq": {
+                "ChargingComplete": false,
+                "DC_EVStatus": {
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSSOC": 76,
+                    "EVReady": true
+                },
+                "EVMaximumCurrentLimit": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 3500
+                },
+                "EVMaximumVoltageLimit": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "EVTargetCurrent": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 241
+                },
+                "EVTargetVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "RemainingTimeToBulkSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 0
+                },
+                "RemainingTimeToFullSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 720
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:30.568Z","EVSE","DC power supply OFF",""
+"2023-04-14T09:56:30.701Z","EVSE","V2G CurrentDemandRes","{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "StopCharging",
+                    "EVSEStatusCode": "EVSE_Shutdown",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSECurrentLimitAchieved": false,
+                "EVSEID": "DE*PNX*E12345*1",
+                "EVSEMaximumCurrentLimit": {
+                    "Multiplier": -2,
+                    "Unit": "A",
+                    "Value": 2421
+                },
+                "EVSEMaximumPowerLimit": {
+                    "Multiplier": 0,
+                    "Unit": "W",
+                    "Value": 10000
+                },
+                "EVSEMaximumVoltageLimit": {
+                    "Multiplier": 0,
+                    "Unit": "V",
+                    "Value": 1250
+                },
+                "EVSEPowerLimitAchieved": false,
+                "EVSEPresentCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 0
+                },
+                "EVSEPresentVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 3790
+                },
+                "EVSEVoltageLimitAchieved": false,
+                "MeterInfo": {
+                    "MeterID": "UMWC_POWERMETER",
+                    "MeterReading": 0,
+                    "TMeter": 1681466190
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:30.948Z","CAR","V2G CurrentDemandReq","{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandReq": {
+                "ChargingComplete": false,
+                "DC_EVStatus": {
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSSOC": 76,
+                    "EVReady": true
+                },
+                "EVMaximumCurrentLimit": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 3500
+                },
+                "EVMaximumVoltageLimit": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "EVTargetCurrent": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 241
+                },
+                "EVTargetVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "RemainingTimeToBulkSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 0
+                },
+                "RemainingTimeToFullSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 720
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:31.041Z","EVSE","DC power supply OFF",""
+"2023-04-14T09:56:31.127Z","EVSE","V2G CurrentDemandRes","{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "StopCharging",
+                    "EVSEStatusCode": "EVSE_Shutdown",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSECurrentLimitAchieved": false,
+                "EVSEID": "DE*PNX*E12345*1",
+                "EVSEMaximumCurrentLimit": {
+                    "Multiplier": -2,
+                    "Unit": "A",
+                    "Value": 2421
+                },
+                "EVSEMaximumPowerLimit": {
+                    "Multiplier": 0,
+                    "Unit": "W",
+                    "Value": 10000
+                },
+                "EVSEMaximumVoltageLimit": {
+                    "Multiplier": 0,
+                    "Unit": "V",
+                    "Value": 1250
+                },
+                "EVSEPowerLimitAchieved": false,
+                "EVSEPresentCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 0
+                },
+                "EVSEPresentVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 3778
+                },
+                "EVSEVoltageLimitAchieved": false,
+                "MeterInfo": {
+                    "MeterID": "UMWC_POWERMETER",
+                    "MeterReading": 0,
+                    "TMeter": 1681466190
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:31.270Z","CAR","V2G PowerDeliveryReq","{
+    "V2G_Message": {
+        "Body": {
+            "PowerDeliveryReq": {
+                "ChargeProgress": "Stop",
+                "ChargingProfile": {
+                    "ProfileEntry": [
+                        {
+                            "ChargingProfileEntryMaxPower": {
+                                "Multiplier": 2,
+                                "Unit": "W",
+                                "Value": 110
+                            },
+                            "ChargingProfileEntryStart": 0
+                        }
+                    ]
+                },
+                "DC_EVPowerDeliveryParameter": {
+                    "ChargingComplete": false,
+                    "DC_EVStatus": {
+                        "EVErrorCode": "NO_ERROR",
+                        "EVRESSSOC": 76,
+                        "EVReady": true
+                    }
+                },
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:31.302Z","EVSE","DC power supply OFF",""
+"2023-04-14T09:56:31.407Z","EVSE","DC power supply OFF",""
+"2023-04-14T09:56:31.560Z","CAR","Event CarRequestedStopPower",""
+"2023-04-14T09:56:31.570Z","EVSE","Event PowerOff",""
+"2023-04-14T09:56:31.644Z","EVSE","V2G PowerDeliveryRes","{
+    "V2G_Message": {
+        "Body": {
+            "PowerDeliveryRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "StopCharging",
+                    "EVSEStatusCode": "EVSE_Shutdown",
+                    "NotificationMaxDelay": 0
+                },
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:32.052Z","EVSE","Change HLC Limits: 0W/0A, target_voltage 413, hack_bpt false",""
+"2023-04-14T09:56:32.332Z","CAR","V2G WeldingDetectionReq","{
+    "V2G_Message": {
+        "Body": {
+            "WeldingDetectionReq": {
+                "DC_EVStatus": {
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSSOC": 76,
+                    "EVReady": false
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:32.478Z","EVSE","V2G WeldingDetectionRes","{
+    "V2G_Message": {
+        "Body": {
+            "WeldingDetectionRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "StopCharging",
+                    "EVSEStatusCode": "EVSE_Shutdown",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEPresentVoltage": {
+                    "Multiplier": -2,
+                    "Unit": "V",
+                    "Value": 18188
+                },
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:32.673Z","CAR","V2G SessionStopReq","{
+    "V2G_Message": {
+        "Body": {
+            "SessionStopReq": {
+                "ChargingSession": "Terminate"
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:32.864Z","EVSE","V2G SessionStopRes","{
+    "V2G_Message": {
+        "Body": {
+            "SessionStopRes": {
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "EB389218544BBA10"
+        }
+    }
+}"
+"2023-04-14T09:56:36.495Z","CAR","Event CarRequestedStopPower",""
+"2023-04-14T09:56:36.740Z","CAR","Event CarUnplugged",""
+"2023-04-14T09:56:36.750Z","EVSE","SLAC UNMATCHED",""
+"2023-04-14T09:56:36.762Z","EVSE","Charger state: StoppingCharging->Finished",""
+"2023-04-14T09:56:36.763Z","EVSE","Session Finished",""
+"2023-04-14T09:56:36.764Z","SYS","Session logging stopped.",""

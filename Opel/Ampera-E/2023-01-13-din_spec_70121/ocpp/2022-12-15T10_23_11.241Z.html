@@ -1,0 +1,56 @@
+<html><head><title>EVerest OCPP log session</title>
+<style>.log {  font-family: Arial, Helvetica, sans-serif;  border-collapse: collapse;  width: 100%;}.log td, .log th {  border: 1px solid #ddd;  padding: 8px;  vertical-align: top;}.log tr.CentralSystem{background-color: #E4E6F2;}.log tr.ChargePoint{background-color: #F2F0E4;}.log tr.SYS{background-color: white;}.log th {  padding-top: 12px;  padding-bottom: 12px;  text-align: left;  vertical-align: top;  background-color: #04AA6D;  color: white;}</style></head><body><table class="log">
+<tr class="SYS"> <td>2022-12-15T10:23:11.286Z</td> <td>SYS&gt;</td> <td><b>Session logging started.</b></td><td><b></b></td> <td><pre lang="json"></pre></td> </tr>
+<tr class="SYS"> <td>2022-12-15T10:23:11.625Z</td> <td>SYS&gt;</td> <td><b>Connecting to: www.solarlogs.be:8880/OCPP/websocket/CentralSystemService/OCPP20221000001 with security_profile: 0</b></td><td><b></b></td> <td><pre lang="json"></pre></td> </tr>
+<tr class="SYS"> <td>2022-12-15T10:23:11.773Z</td> <td>SYS&gt;</td> <td><b>Connected</b></td><td><b></b></td> <td><pre lang="json"></pre></td> </tr>
+<tr class="ChargePoint"> <td>2022-12-15T10:23:11.774Z</td> <td>ChargePoint&gt;CentralSystem</td> <td><b>BootNotification</b></td><td><b></b></td> <td><pre lang="json">[
+  2,
+  "8719f206-c06a-4993-8dbd-1a156f2ef231",
+  "BootNotification",
+  {
+    "chargePointModel": "Yeti",
+    "chargePointVendor": "Pionix",
+    "firmwareVersion": "0.1"
+  }
+]</pre></td> </tr>
+<tr class="CentralSystem"> <td>2022-12-15T10:23:11.826Z</td> <td>CentralSystem&gt;ChargePoint</td> <td><b></b></td><td><b>BootNotificationResponse</b></td> <td><pre lang="json">[
+  3,
+  "8719f206-c06a-4993-8dbd-1a156f2ef231",
+  {
+    "currentTime": "2023-01-10T14:03:28.129Z",
+    "interval": 14400,
+    "status": "Accepted"
+  }
+]</pre></td> </tr>
+<tr class="ChargePoint"> <td>2022-12-15T10:23:11.841Z</td> <td>ChargePoint&gt;CentralSystem</td> <td><b>StatusNotification</b></td><td><b></b></td> <td><pre lang="json">[
+  2,
+  "39a2d655-dd5b-4343-891a-0b45b318c222",
+  "StatusNotification",
+  {
+    "connectorId": 0,
+    "errorCode": "NoError",
+    "status": "Available"
+  }
+]</pre></td> </tr>
+<tr class="CentralSystem"> <td>2022-12-15T10:23:11.882Z</td> <td>CentralSystem&gt;ChargePoint</td> <td><b></b></td><td><b>StatusNotificationResponse</b></td> <td><pre lang="json">[
+  3,
+  "39a2d655-dd5b-4343-891a-0b45b318c222",
+  {}
+]</pre></td> </tr>
+<tr class="ChargePoint"> <td>2022-12-15T10:23:11.883Z</td> <td>ChargePoint&gt;CentralSystem</td> <td><b>StatusNotification</b></td><td><b></b></td> <td><pre lang="json">[
+  2,
+  "3f152cd5-8327-4124-b8d3-1c901e988eca",
+  "StatusNotification",
+  {
+    "connectorId": 1,
+    "errorCode": "NoError",
+    "status": "Available"
+  }
+]</pre></td> </tr>
+<tr class="CentralSystem"> <td>2022-12-15T10:23:11.948Z</td> <td>CentralSystem&gt;ChargePoint</td> <td><b></b></td><td><b>StatusNotificationResponse</b></td> <td><pre lang="json">[
+  3,
+  "3f152cd5-8327-4124-b8d3-1c901e988eca",
+  {}
+]</pre></td> </tr>
+<tr class="SYS"> <td>2022-12-15T10:23:14.817Z</td> <td>SYS&gt;</td> <td><b>Disconnecting</b></td><td><b></b></td> <td><pre lang="json"></pre></td> </tr>
+<tr class="SYS"> <td>2022-12-15T10:23:14.859Z</td> <td>SYS&gt;</td> <td><b>Disconnected</b></td><td><b></b></td> <td><pre lang="json"></pre></td> </tr>

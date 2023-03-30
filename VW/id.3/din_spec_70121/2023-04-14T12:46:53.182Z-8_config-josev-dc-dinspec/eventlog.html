@@ -1,0 +1,3047 @@
+<html><head><title>EVerest log session 8_config-josev-dc-dinspec</title>
+<style>.log {  font-family: Arial, Helvetica, sans-serif;  border-collapse: collapse;  width: 100%;}.log td, .log th {  border: 1px solid #ddd;  padding: 8px;  vertical-align: top;}.log tr.CAR{background-color: #E4E6F2;}.log tr.EVSE{background-color: #F2F0E4;}.log tr.SYS{background-color: white;}.log th {  padding-top: 12px;  padding-bottom: 12px;  text-align: left;  vertical-align: top;  background-color: #04AA6D;  color: white;}</style></head><body><table class="log">
+<tr class="SYS"> <td>2023-04-14T12:46:53.183Z</td> <td>SYS&gt;</td> <td><b>Session logging started.</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:46:53.184Z</td> <td>EVSE&gt;CAR</td> <td><b>Session Started: EVConnected</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:46:54.186Z</td> <td>EVSE&gt;CAR</td> <td><b>Set PWM On (5.000000074505806%)</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:46:54.362Z</td> <td>EVSE&gt;CAR</td> <td><b>Change HLC Limits: 10000W/25A, target_voltage 0, hack_bpt false</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:46:54.512Z</td> <td>EVSE&gt;CAR</td> <td><b>EIM Authorization received</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:46:54.512Z</td> <td>EVSE&gt;CAR</td> <td><b>Transaction Started (0 kWh)</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:46:54.514Z</td> <td>EVSE&gt;CAR</td> <td><b>DC mode. We are in 5percent mode so we can continue without further action.</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:46:54.565Z</td> <td>EVSE&gt;CAR</td> <td><b>Charger state: Wait for Auth->PrepareCharging</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:46:54.700Z</td> <td>EVSE&gt;CAR</td> <td><b>Set PWM On (5.000000074505806%)</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="CAR"> <td>2023-04-14T12:47:00.429Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G SupportedAppProtocolReq</b></td> <td><pre lang="xml">{
+    "supportedAppProtocolReq": {
+        "AppProtocol": [
+            {
+                "Priority": 2,
+                "ProtocolNamespace": "urn:din:70121:2012:MsgDef",
+                "SchemaID": 1,
+                "VersionNumberMajor": 2,
+                "VersionNumberMinor": 0
+            },
+            {
+                "Priority": 1,
+                "ProtocolNamespace": "urn:iso:15118:2:2013:MsgDef",
+                "SchemaID": 0,
+                "VersionNumberMajor": 2,
+                "VersionNumberMinor": 0
+            }
+        ]
+    }
+}</pre></td> <td><pre lang="xml">8000dbab9371d3234b71d1b981899189d191818991d26b9b3a232b30020000040401d75726e3a69736f3a31353131383a323a323031333a4d73674465660040000000080</pre></td> <td><pre lang="xml">6741446271354e7830794e4c6364473567596d526964475267596d52306d75624f694d724d41494141415145416464584a754f6d6c7a627a6f784e5445784f446f794f6a49774d544d3654584e6e5247566d4145414141414149413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:00.501Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G SupportedAppProtocolRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "supportedAppProtocolRes": {
+        "ResponseCode": "OK_SuccessfulNegotiation",
+        "SchemaID": 0
+    }
+}</pre></td> <td><pre lang="xml">80400000</pre></td> <td><pre lang="xml">6745414141413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-04-14T12:47:00.953Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G SessionSetupReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "SessionSetupReq": {
+                "EVCCID": "007DFA0643B4"
+            }
+        },
+        "Header": {
+            "SessionID": "00"
+        }
+    }
+}</pre></td> <td><pre lang="xml">8098004011d01801f7e8190ed000</pre></td> <td><pre lang="xml">674a6741514248514741483336426b4f3041413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:01.242Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G SessionSetupRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "SessionSetupRes": {
+                "EVSEID": "DE*PNX*E12345*1",
+                "EVSETimeStamp": 1681476420,
+                "ResponseCode": "OK_NewSessionEstablished"
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c711e020451114a9413960a914c4c8ccd0d4a8c41892dcb420c0</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d6352344342464552537051546c6771525445794d7a51314b6a45474a4c6374434441</pre></td> </tr>
+<tr class="CAR"> <td>2023-04-14T12:47:01.582Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G ServiceDiscoveryReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ServiceDiscoveryReq": {}
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c711b8</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d635275413d3d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:01.879Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G ServiceDiscoveryRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ServiceDiscoveryRes": {
+                "ChargeService": {
+                    "FreeService": false,
+                    "ServiceCategory": "EVCharging",
+                    "ServiceID": 1,
+                    "ServiceName": "AC_DC_Charging",
+                    "SupportedEnergyTransferMode": {
+                        "EnergyTransferMode": [
+                            "DC_extended"
+                        ]
+                    }
+                },
+                "PaymentOptionList": {
+                    "PaymentOption": [
+                        "ExternalPayment"
+                    ]
+                },
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c711c0012004041050d7d110d7d0da185c99da5b99c0406480</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d63527741456742415151554e6652454e6651326868636d6470626d6342415a49413d</pre></td> </tr>
+<tr class="CAR"> <td>2023-04-14T12:47:02.225Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G PaymentServiceSelectionReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "PaymentServiceSelectionReq": {
+                "SelectedPaymentOption": "ExternalPayment",
+                "SelectedServiceList": {
+                    "SelectedService": [
+                        {
+                            "ServiceID": 1
+                        }
+                    ]
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c71132001280</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d63524d67415367413d3d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:02.408Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G PaymentServiceSelectionRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "PaymentServiceSelectionRes": {
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c7114000</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d63525141413d</pre></td> </tr>
+<tr class="CAR"> <td>2023-04-14T12:47:02.759Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G AuthorizationReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "AuthorizationReq": {}
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c71008</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d635143413d3d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:03.046Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G AuthorizationRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "AuthorizationRes": {
+                "EVSEProcessing": "Ongoing_WaitingForCustomerInteraction",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c710100200</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d635145414941</pre></td> </tr>
+<tr class="CAR"> <td>2023-04-14T12:47:03.365Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G AuthorizationReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "AuthorizationReq": {}
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c71008</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d635143413d3d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:03.558Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G AuthorizationRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "AuthorizationRes": {
+                "EVSEProcessing": "Finished",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c710100000</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d635145414141</pre></td> </tr>
+<tr class="CAR"> <td>2023-04-14T12:47:03.885Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G ChargeParameterDiscoveryReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargeParameterDiscoveryReq": {
+                "DC_EVChargeParameter": {
+                    "DC_EVStatus": {
+                        "EVErrorCode": "NO_ERROR",
+                        "EVRESSSOC": 74,
+                        "EVReady": false
+                    },
+                    "EVEnergyRequest": {
+                        "Multiplier": 0,
+                        "Unit": "Wh",
+                        "Value": 5300
+                    },
+                    "EVMaximumCurrentLimit": {
+                        "Multiplier": -1,
+                        "Unit": "A",
+                        "Value": 5000
+                    },
+                    "EVMaximumVoltageLimit": {
+                        "Multiplier": -1,
+                        "Unit": "V",
+                        "Value": 4130
+                    }
+                },
+                "MaxEntriesSAScheduleTuple": 192,
+                "RequestedEnergyTransferMode": "DC_extended"
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c7109180021940012808308827110814440118c1685240</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d63516b594143475541424b416777694363524342524541526a4261464a41</pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:04.124Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G ChargeParameterDiscoveryRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "ChargeParameterDiscoveryRes": {
+                "DC_EVSEChargeParameter": {
+                    "DC_EVSEStatus": {
+                        "EVSEIsolationStatus": "Invalid",
+                        "EVSENotification": "None",
+                        "EVSEStatusCode": "EVSE_Ready",
+                        "NotificationMaxDelay": 0
+                    },
+                    "EVSECurrentRegulationTolerance": {
+                        "Multiplier": 0,
+                        "Unit": "A",
+                        "Value": 1
+                    },
+                    "EVSEEnergyToBeDelivered": {
+                        "Multiplier": 0,
+                        "Unit": "Wh",
+                        "Value": 10000
+                    },
+                    "EVSEMaximumCurrentLimit": {
+                        "Multiplier": 0,
+                        "Unit": "A",
+                        "Value": 25
+                    },
+                    "EVSEMaximumPowerLimit": {
+                        "Multiplier": 0,
+                        "Unit": "W",
+                        "Value": 10000
+                    },
+                    "EVSEMaximumVoltageLimit": {
+                        "Multiplier": 0,
+                        "Unit": "V",
+                        "Value": 1250
+                    },
+                    "EVSEMinimumCurrentLimit": {
+                        "Multiplier": 0,
+                        "Unit": "A",
+                        "Value": 0
+                    },
+                    "EVSEMinimumVoltageLimit": {
+                        "Multiplier": 0,
+                        "Unit": "V",
+                        "Value": 180
+                    },
+                    "EVSEPeakCurrentRipple": {
+                        "Multiplier": 0,
+                        "Unit": "A",
+                        "Value": 0
+                    }
+                },
+                "EVSEProcessing": "Finished",
+                "ResponseCode": "OK",
+                "SAScheduleList": {
+                    "SAScheduleTuple": [
+                        {
+                            "PMaxSchedule": {
+                                "PMaxScheduleEntry": [
+                                    {
+                                        "PMax": {
+                                            "Multiplier": 0,
+                                            "Unit": "W",
+                                            "Value": 11000
+                                        },
+                                        "RelativeTimeInterval": {
+                                            "start": 0
+                                        }
+                                    },
+                                    {
+                                        "PMax": {
+                                            "Multiplier": 0,
+                                            "Unit": "W",
+                                            "Value": 7000
+                                        },
+                                        "RelativeTimeInterval": {
+                                            "duration": 43200,
+                                            "start": 43200
+                                        }
+                                    }
+                                ]
+                            },
+                            "SAScheduleTupleID": 1
+                        }
+                    ]
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c710a0000000000086287c2a80303440830344080c50d8360aa000000081860320628482701881c412061800018816802030c0040c3000018c1209c000</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d63516f41414141414141686968384b6f41774e45434441305149444644594e677167414141416759594449474b45676e4159676351534268674141596757674341777741514d4d4141426a42494a7741413d</pre></td> </tr>
+<tr class="CAR"> <td>2023-04-14T12:47:04.215Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>Event CarRequestedPower</b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:04.235Z</td> <td>EVSE&gt;CAR</td> <td><b>Event PowerOn</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="CAR"> <td>2023-04-14T12:47:05.077Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSSOC": 74,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c71031002500</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d63514d51416c41413d3d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:05.098Z</td> <td>EVSE&gt;CAR</td> <td><b>Start cable check...</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:05.098Z</td> <td>EVSE&gt;CAR</td> <td><b>DC power supply set: 500V/2A, requested was 500V/2A.</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:05.242Z</td> <td>EVSE&gt;CAR</td> <td><b>DC power supply: switch ON called</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:05.262Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c71040000000010100</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d6351514141414141454241413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-04-14T12:47:05.549Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSSOC": 74,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c71031002500</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d63514d51416c41413d3d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:05.704Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c71040000000010100</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d6351514141414141454241413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-04-14T12:47:05.991Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSSOC": 74,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c71031002500</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d63514d51416c41413d3d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:06.144Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c71040000000010100</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d6351514141414141454241413d3d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:06.462Z</td> <td>EVSE&gt;CAR</td> <td><b>Isolation measurement P 910000 N 900000.</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:06.463Z</td> <td>EVSE&gt;CAR</td> <td><b>DC power supply set: 500V/2A, requested was 500V/2A.</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="CAR"> <td>2023-04-14T12:47:06.463Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSSOC": 74,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c71031002500</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d63514d51416c41413d3d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:06.586Z</td> <td>EVSE&gt;CAR</td> <td><b>Isolation measurement Ok P 910000 N 900000.</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:06.648Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Invalid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_IsolationMonitoringActive",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Ongoing",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c71040000000010100</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d6351514141414141454241413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-04-14T12:47:06.904Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CableCheckReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckReq": {
+                "DC_EVStatus": {
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSSOC": 74,
+                    "EVReady": true
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c71031002500</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d63514d51416c41413d3d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:07.140Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CableCheckRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CableCheckRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_Ready",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEProcessing": "Finished",
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c71040000000204000</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d6351514141414143424141413d3d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:07.466Z</td> <td>EVSE&gt;CAR</td> <td><b>Isolation measurement P 910000 N 900000.</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="CAR"> <td>2023-04-14T12:47:07.489Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G PreChargeReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "PreChargeReq": {
+                "DC_EVStatus": {
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSSOC": 74,
+                    "EVReady": true
+                },
+                "EVTargetCurrent": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 20
+                },
+                "EVTargetVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 3700
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c71171002501081e83804180a000</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d63526351416c4151676567344242674b4141</pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:07.508Z</td> <td>EVSE&gt;CAR</td> <td><b>DC power supply set: 370V/2A, requested was 370V/2A.</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:07.601Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G PreChargeRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "PreChargeRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_Ready",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEPresentVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 5004
+                },
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c7118000000020408408c27000</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d6352674141414143424168416a436341413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:07.837Z</td> <td>EVSE&gt;CAR</td> <td><b>Change HLC Limits: 10000W/25A, target_voltage 370, hack_bpt false</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="CAR"> <td>2023-04-14T12:47:07.919Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G PreChargeReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "PreChargeReq": {
+                "DC_EVStatus": {
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSSOC": 74,
+                    "EVReady": true
+                },
+                "EVTargetCurrent": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 20
+                },
+                "EVTargetVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 3700
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c71171002501081e83804180a000</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d63526351416c4151676567344242674b4141</pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:08.052Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G PreChargeRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "PreChargeRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_Ready",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEPresentVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4174
+                },
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c711800000002040840ce20000</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d6352674141414143424168417a694141413d</pre></td> </tr>
+<tr class="CAR"> <td>2023-04-14T12:47:08.348Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G PreChargeReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "PreChargeReq": {
+                "DC_EVStatus": {
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSSOC": 74,
+                    "EVReady": true
+                },
+                "EVTargetCurrent": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 20
+                },
+                "EVTargetVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 3700
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c71171002501081e83804180a000</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d63526351416c4151676567344242674b4141</pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:08.463Z</td> <td>EVSE&gt;CAR</td> <td><b>Isolation measurement P 910000 N 900000.</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:08.484Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G PreChargeRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "PreChargeRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_Ready",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEPresentVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 3698
+                },
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c711800000002040840f21c000</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d63526741414141434241684138687741413d</pre></td> </tr>
+<tr class="CAR"> <td>2023-04-14T12:47:08.721Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G PowerDeliveryReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "PowerDeliveryReq": {
+                "ChargeProgress": "Start",
+                "ChargingProfile": {
+                    "ProfileEntry": [
+                        {
+                            "ChargingProfileEntryMaxPower": {
+                                "Multiplier": 2,
+                                "Unit": "W",
+                                "Value": 110
+                            },
+                            "ChargingProfileEntryStart": 0
+                        }
+                    ]
+                },
+                "DC_EVPowerDeliveryParameter": {
+                    "ChargingComplete": false,
+                    "DC_EVStatus": {
+                        "EVErrorCode": "NO_ERROR",
+                        "EVRESSSOC": 74,
+                        "EVReady": true
+                    }
+                },
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c71150000000028a0dc282004a1000</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d63525541414141414b4b44634b4341456f5141413d3d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:08.978Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G PowerDeliveryRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "PowerDeliveryRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_Ready",
+                    "NotificationMaxDelay": 0
+                },
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c711600400001020</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d63525941514141424167</pre></td> </tr>
+<tr class="CAR"> <td>2023-04-14T12:47:09.172Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CurrentDemandReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandReq": {
+                "ChargingComplete": false,
+                "DC_EVStatus": {
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSSOC": 74,
+                    "EVReady": true
+                },
+                "EVMaximumCurrentLimit": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 5000
+                },
+                "EVMaximumVoltageLimit": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "EVTargetCurrent": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 0
+                },
+                "EVTargetVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "RemainingTimeToFullSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 0
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c710d10025010600001081444001061104e4020400022102888000</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d63513051416c415159414142434252454142426845453541494541414968416f694141413d3d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:09.239Z</td> <td>EVSE&gt;CAR</td> <td><b>DC power supply set: 413V/0A, requested was 413V/0A.</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:09.287Z</td> <td>EVSE&gt;CAR</td> <td><b>Charger state: PrepareCharging->Charging</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:09.474Z</td> <td>EVSE&gt;CAR</td> <td><b>Isolation measurement P 910000 N 900000.</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:09.502Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CurrentDemandRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_Ready",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSECurrentLimitAchieved": false,
+                "EVSEID": "DE*PNX*E12345*1",
+                "EVSEMaximumCurrentLimit": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 25
+                },
+                "EVSEMaximumPowerLimit": {
+                    "Multiplier": 0,
+                    "Unit": "W",
+                    "Value": 10000
+                },
+                "EVSEMaximumVoltageLimit": {
+                    "Multiplier": 0,
+                    "Unit": "V",
+                    "Value": 1250
+                },
+                "EVSEPowerLimitAchieved": false,
+                "EVSEPresentCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 0
+                },
+                "EVSEPresentVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 3692
+                },
+                "EVSEVoltageLimitAchieved": false,
+                "MeterInfo": {
+                    "MeterID": "UMWC_POWERMETER",
+                    "MeterReading": 0,
+                    "TMeter": 1681476428
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c710e00000002040840ec1c030c00000003103882406180c80c50904e01144452a504e582a4531323334352a31000011554d57435f504f5745524d4554455200011992dcb420c000</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d635134414141414342416841374277444441414141414d514f494a4159594449444643515467455552464b6c424f574370464d54497a4e4455714d5141414556564e56304e665545395852564a4e5256524655674142475a4c637443444141413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-04-14T12:47:09.683Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CurrentDemandReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandReq": {
+                "ChargingComplete": false,
+                "DC_EVStatus": {
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSSOC": 74,
+                    "EVReady": true
+                },
+                "EVMaximumCurrentLimit": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 5000
+                },
+                "EVMaximumVoltageLimit": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "EVTargetCurrent": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 84
+                },
+                "EVTargetVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "RemainingTimeToFullSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 0
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c710d1002501060a801081444001061104e4020400022102888000</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d63513051416c4151594b6742434252454142426845453541494541414968416f694141413d3d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:09.725Z</td> <td>EVSE&gt;CAR</td> <td><b>DC power supply set: 413V/8.399999618530273A, requested was 413V/8.399999618530273A.</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:09.821Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CurrentDemandRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_Ready",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSECurrentLimitAchieved": false,
+                "EVSEID": "DE*PNX*E12345*1",
+                "EVSEMaximumCurrentLimit": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 25
+                },
+                "EVSEMaximumPowerLimit": {
+                    "Multiplier": 0,
+                    "Unit": "W",
+                    "Value": 10000
+                },
+                "EVSEMaximumVoltageLimit": {
+                    "Multiplier": 0,
+                    "Unit": "V",
+                    "Value": 1250
+                },
+                "EVSEPowerLimitAchieved": false,
+                "EVSEPresentCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 0
+                },
+                "EVSEPresentVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 3704
+                },
+                "EVSEVoltageLimitAchieved": false,
+                "MeterInfo": {
+                    "MeterID": "UMWC_POWERMETER",
+                    "MeterReading": 0,
+                    "TMeter": 1681476429
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c710e00000002040840f81c030c00000003103882406180c80c50904e01144452a504e582a4531323334352a31000011554d57435f504f5745524d45544552000119b2dcb420c000</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d6351344141414143424168412b4277444441414141414d514f494a4159594449444643515467455552464b6c424f574370464d54497a4e4455714d5141414556564e56304e665545395852564a4e525652465567414247624c637443444141413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-04-14T12:47:10.126Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CurrentDemandReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandReq": {
+                "ChargingComplete": false,
+                "DC_EVStatus": {
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSSOC": 74,
+                    "EVReady": true
+                },
+                "EVMaximumCurrentLimit": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 5000
+                },
+                "EVMaximumVoltageLimit": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "EVTargetCurrent": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 180
+                },
+                "EVTargetVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "RemainingTimeToFullSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 0
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c710d1002501061680201081444001061104e4020400022102888000</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d63513051416c41515957674341516755524141515952424f51434241414349514b496741413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:10.147Z</td> <td>EVSE&gt;CAR</td> <td><b>DC power supply set: 413V/18A, requested was 413V/18A.</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:10.274Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CurrentDemandRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_Ready",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSECurrentLimitAchieved": false,
+                "EVSEID": "DE*PNX*E12345*1",
+                "EVSEMaximumCurrentLimit": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 25
+                },
+                "EVSEMaximumPowerLimit": {
+                    "Multiplier": 0,
+                    "Unit": "W",
+                    "Value": 10000
+                },
+                "EVSEMaximumVoltageLimit": {
+                    "Multiplier": 0,
+                    "Unit": "V",
+                    "Value": 1250
+                },
+                "EVSEPowerLimitAchieved": false,
+                "EVSEPresentCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 0
+                },
+                "EVSEPresentVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 3717
+                },
+                "EVSEVoltageLimitAchieved": false,
+                "MeterInfo": {
+                    "MeterID": "UMWC_POWERMETER",
+                    "MeterReading": 0,
+                    "TMeter": 1681476429
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c710e00000002040840851d030c00000003103882406180c80c50904e01144452a504e582a4531323334352a31000011554d57435f504f5745524d45544552000119b2dcb420c000</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d635134414141414342416841685230444441414141414d514f494a4159594449444643515467455552464b6c424f574370464d54497a4e4455714d5141414556564e56304e665545395852564a4e525652465567414247624c637443444141413d3d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:10.467Z</td> <td>EVSE&gt;CAR</td> <td><b>Isolation measurement P 910000 N 900000.</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="CAR"> <td>2023-04-14T12:47:10.529Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CurrentDemandReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandReq": {
+                "ChargingComplete": false,
+                "DC_EVStatus": {
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSSOC": 74,
+                    "EVReady": true
+                },
+                "EVMaximumCurrentLimit": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 5000
+                },
+                "EVMaximumVoltageLimit": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "EVTargetCurrent": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 250
+                },
+                "EVTargetVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "RemainingTimeToFullSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 0
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c710d1002501061f40201081444001061104e4020400022102888000</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d63513051416c41515966514341516755524141515952424f51434241414349514b496741413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:10.571Z</td> <td>EVSE&gt;CAR</td> <td><b>DC power supply set: 413V/24.213075060532688A, requested was 413V/25A.</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:10.705Z</td> <td>EVSE&gt;CAR</td> <td><b>Change HLC Limits: 10000W/24.213076A, target_voltage 413, hack_bpt false</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:10.716Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CurrentDemandRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_Ready",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSECurrentLimitAchieved": false,
+                "EVSEID": "DE*PNX*E12345*1",
+                "EVSEMaximumCurrentLimit": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 25
+                },
+                "EVSEMaximumPowerLimit": {
+                    "Multiplier": 0,
+                    "Unit": "W",
+                    "Value": 10000
+                },
+                "EVSEMaximumVoltageLimit": {
+                    "Multiplier": 0,
+                    "Unit": "V",
+                    "Value": 1250
+                },
+                "EVSEPowerLimitAchieved": false,
+                "EVSEPresentCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 0
+                },
+                "EVSEPresentVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 3698
+                },
+                "EVSEVoltageLimitAchieved": false,
+                "MeterInfo": {
+                    "MeterID": "UMWC_POWERMETER",
+                    "MeterReading": 0,
+                    "TMeter": 1681476430
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c710e00000002040840f21c030c00000003103882406180c80c50904e01144452a504e582a4531323334352a31000011554d57435f504f5745524d45544552000119d2dcb420c000</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d635134414141414342416841386877444441414141414d514f494a4159594449444643515467455552464b6c424f574370464d54497a4e4455714d5141414556564e56304e665545395852564a4e525652465567414247644c637443444141413d3d</pre></td> </tr>
+<tr class="CAR"> <td>2023-04-14T12:47:10.944Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CurrentDemandReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandReq": {
+                "ChargingComplete": false,
+                "DC_EVStatus": {
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSSOC": 74,
+                    "EVReady": true
+                },
+                "EVMaximumCurrentLimit": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 5000
+                },
+                "EVMaximumVoltageLimit": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "EVTargetCurrent": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 250
+                },
+                "EVTargetVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "RemainingTimeToFullSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 0
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c710d1002501061f40201081444001061104e4020400022102888000</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d63513051416c41515966514341516755524141515952424f51434241414349514b496741413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:11.111Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CurrentDemandRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_Ready",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSECurrentLimitAchieved": false,
+                "EVSEID": "DE*PNX*E12345*1",
+                "EVSEMaximumCurrentLimit": {
+                    "Multiplier": -2,
+                    "Unit": "A",
+                    "Value": 2421
+                },
+                "EVSEMaximumPowerLimit": {
+                    "Multiplier": 0,
+                    "Unit": "W",
+                    "Value": 10000
+                },
+                "EVSEMaximumVoltageLimit": {
+                    "Multiplier": 0,
+                    "Unit": "V",
+                    "Value": 1250
+                },
+                "EVSEPowerLimitAchieved": false,
+                "EVSEPresentCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 0
+                },
+                "EVSEPresentVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 3686
+                },
+                "EVSEVoltageLimitAchieved": false,
+                "MeterInfo": {
+                    "MeterID": "UMWC_POWERMETER",
+                    "MeterReading": 0,
+                    "TMeter": 1681476430
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c710e00000002040840e61c030c00000003103882402187a8900c50904e01144452a504e582a4531323334352a31000011554d57435f504f5745524d45544552000119d2dcb420c000</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d635134414141414342416841356877444441414141414d514f494a414959656f6b4178516b453442464552537051546c6771525445794d7a51314b6a454141424656545664445831425056305653545556555256494141526e53334c51677741413d</pre></td> </tr>
+<tr class="CAR"> <td>2023-04-14T12:47:11.377Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CurrentDemandReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandReq": {
+                "ChargingComplete": false,
+                "DC_EVStatus": {
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSSOC": 74,
+                    "EVReady": true
+                },
+                "EVMaximumCurrentLimit": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 5000
+                },
+                "EVMaximumVoltageLimit": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "EVTargetCurrent": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 242
+                },
+                "EVTargetVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "RemainingTimeToFullSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 0
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c710d1002501061e40201081444001061104e4020400022102888000</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d63513051416c41515965514341516755524141515952424f51434241414349514b496741413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:11.418Z</td> <td>EVSE&gt;CAR</td> <td><b>DC power supply set: 413V/24.200000762939453A, requested was 413V/24.200000762939453A.</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:11.474Z</td> <td>EVSE&gt;CAR</td> <td><b>Isolation measurement P 910000 N 900000.</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:11.554Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CurrentDemandRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_Ready",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSECurrentLimitAchieved": false,
+                "EVSEID": "DE*PNX*E12345*1",
+                "EVSEMaximumCurrentLimit": {
+                    "Multiplier": -2,
+                    "Unit": "A",
+                    "Value": 2421
+                },
+                "EVSEMaximumPowerLimit": {
+                    "Multiplier": 0,
+                    "Unit": "W",
+                    "Value": 10000
+                },
+                "EVSEMaximumVoltageLimit": {
+                    "Multiplier": 0,
+                    "Unit": "V",
+                    "Value": 1250
+                },
+                "EVSEPowerLimitAchieved": false,
+                "EVSEPresentCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 0
+                },
+                "EVSEPresentVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 3643
+                },
+                "EVSEVoltageLimitAchieved": false,
+                "MeterInfo": {
+                    "MeterID": "UMWC_POWERMETER",
+                    "MeterReading": 0,
+                    "TMeter": 1681476431
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c710e00000002040840bb1c030c00000003103882402187a8900c50904e01144452a504e582a4531323334352a31000011554d57435f504f5745524d45544552000119f2dcb420c000</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d635134414141414342416841757877444441414141414d514f494a414959656f6b4178516b453442464552537051546c6771525445794d7a51314b6a454141424656545664445831425056305653545556555256494141526e79334c51677741413d</pre></td> </tr>
+<tr class="CAR"> <td>2023-04-14T12:47:11.992Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CurrentDemandReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandReq": {
+                "ChargingComplete": false,
+                "DC_EVStatus": {
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSSOC": 74,
+                    "EVReady": true
+                },
+                "EVMaximumCurrentLimit": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 5000
+                },
+                "EVMaximumVoltageLimit": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "EVTargetCurrent": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 242
+                },
+                "EVTargetVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "RemainingTimeToFullSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 0
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c710d1002501061e40201081444001061104e4020400022102888000</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d63513051416c41515965514341516755524141515952424f51434241414349514b496741413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:12.188Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CurrentDemandRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_Ready",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSECurrentLimitAchieved": false,
+                "EVSEID": "DE*PNX*E12345*1",
+                "EVSEMaximumCurrentLimit": {
+                    "Multiplier": -2,
+                    "Unit": "A",
+                    "Value": 2421
+                },
+                "EVSEMaximumPowerLimit": {
+                    "Multiplier": 0,
+                    "Unit": "W",
+                    "Value": 10000
+                },
+                "EVSEMaximumVoltageLimit": {
+                    "Multiplier": 0,
+                    "Unit": "V",
+                    "Value": 1250
+                },
+                "EVSEPowerLimitAchieved": false,
+                "EVSEPresentCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 0
+                },
+                "EVSEPresentVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 3698
+                },
+                "EVSEVoltageLimitAchieved": false,
+                "MeterInfo": {
+                    "MeterID": "UMWC_POWERMETER",
+                    "MeterReading": 0,
+                    "TMeter": 1681476431
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c710e00000002040840f21c030c00000003103882402187a8900c50904e01144452a504e582a4531323334352a31000011554d57435f504f5745524d45544552000119f2dcb420c000</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d635134414141414342416841386877444441414141414d514f494a414959656f6b4178516b453442464552537051546c6771525445794d7a51314b6a454141424656545664445831425056305653545556555256494141526e79334c51677741413d</pre></td> </tr>
+<tr class="CAR"> <td>2023-04-14T12:47:12.434Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CurrentDemandReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandReq": {
+                "ChargingComplete": false,
+                "DC_EVStatus": {
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSSOC": 74,
+                    "EVReady": true
+                },
+                "EVMaximumCurrentLimit": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 5000
+                },
+                "EVMaximumVoltageLimit": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "EVTargetCurrent": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 242
+                },
+                "EVTargetVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "RemainingTimeToFullSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 120
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c710d1002501061e40201081444001061104e402040f022102888000</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d63513051416c41515965514341516755524141515952424f51434241384349514b496741413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:12.486Z</td> <td>EVSE&gt;CAR</td> <td><b>Isolation measurement P 910000 N 900000.</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:12.579Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CurrentDemandRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_Ready",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSECurrentLimitAchieved": false,
+                "EVSEID": "DE*PNX*E12345*1",
+                "EVSEMaximumCurrentLimit": {
+                    "Multiplier": -2,
+                    "Unit": "A",
+                    "Value": 2421
+                },
+                "EVSEMaximumPowerLimit": {
+                    "Multiplier": 0,
+                    "Unit": "W",
+                    "Value": 10000
+                },
+                "EVSEMaximumVoltageLimit": {
+                    "Multiplier": 0,
+                    "Unit": "V",
+                    "Value": 1250
+                },
+                "EVSEPowerLimitAchieved": false,
+                "EVSEPresentCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 0
+                },
+                "EVSEPresentVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 3704
+                },
+                "EVSEVoltageLimitAchieved": false,
+                "MeterInfo": {
+                    "MeterID": "UMWC_POWERMETER",
+                    "MeterReading": 0,
+                    "TMeter": 1681476432
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c710e00000002040840f81c030c00000003103882402187a8900c50904e01144452a504e582a4531323334352a31000011554d57435f504f5745524d4554455200011a12dcb420c000</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d6351344141414143424168412b4277444441414141414d514f494a414959656f6b4178516b453442464552537051546c6771525445794d7a51314b6a454141424656545664445831425056305653545556555256494141526f53334c51677741413d</pre></td> </tr>
+<tr class="CAR"> <td>2023-04-14T12:47:12.854Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CurrentDemandReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandReq": {
+                "ChargingComplete": false,
+                "DC_EVStatus": {
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSSOC": 74,
+                    "EVReady": true
+                },
+                "EVMaximumCurrentLimit": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 5000
+                },
+                "EVMaximumVoltageLimit": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "EVTargetCurrent": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 242
+                },
+                "EVTargetVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "RemainingTimeToFullSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 120
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c710d1002501061e40201081444001061104e402040f022102888000</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d63513051416c41515965514341516755524141515952424f51434241384349514b496741413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:13.021Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CurrentDemandRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_Ready",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSECurrentLimitAchieved": false,
+                "EVSEID": "DE*PNX*E12345*1",
+                "EVSEMaximumCurrentLimit": {
+                    "Multiplier": -2,
+                    "Unit": "A",
+                    "Value": 2421
+                },
+                "EVSEMaximumPowerLimit": {
+                    "Multiplier": 0,
+                    "Unit": "W",
+                    "Value": 10000
+                },
+                "EVSEMaximumVoltageLimit": {
+                    "Multiplier": 0,
+                    "Unit": "V",
+                    "Value": 1250
+                },
+                "EVSEPowerLimitAchieved": false,
+                "EVSEPresentCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 0
+                },
+                "EVSEPresentVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 3668
+                },
+                "EVSEVoltageLimitAchieved": false,
+                "MeterInfo": {
+                    "MeterID": "UMWC_POWERMETER",
+                    "MeterReading": 0,
+                    "TMeter": 1681476432
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c710e00000002040840d41c030c00000003103882402187a8900c50904e01144452a504e582a4531323334352a31000011554d57435f504f5745524d4554455200011a12dcb420c000</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d635134414141414342416841314277444441414141414d514f494a414959656f6b4178516b453442464552537051546c6771525445794d7a51314b6a454141424656545664445831425056305653545556555256494141526f53334c51677741413d</pre></td> </tr>
+<tr class="CAR"> <td>2023-04-14T12:47:13.340Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CurrentDemandReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandReq": {
+                "ChargingComplete": false,
+                "DC_EVStatus": {
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSSOC": 74,
+                    "EVReady": true
+                },
+                "EVMaximumCurrentLimit": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 5000
+                },
+                "EVMaximumVoltageLimit": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "EVTargetCurrent": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 242
+                },
+                "EVTargetVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "RemainingTimeToFullSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 120
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c710d1002501061e40201081444001061104e402040f022102888000</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d63513051416c41515965514341516755524141515952424f51434241384349514b496741413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:13.474Z</td> <td>EVSE&gt;CAR</td> <td><b>Isolation measurement P 910000 N 900000.</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:13.517Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CurrentDemandRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_Ready",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSECurrentLimitAchieved": false,
+                "EVSEID": "DE*PNX*E12345*1",
+                "EVSEMaximumCurrentLimit": {
+                    "Multiplier": -2,
+                    "Unit": "A",
+                    "Value": 2421
+                },
+                "EVSEMaximumPowerLimit": {
+                    "Multiplier": 0,
+                    "Unit": "W",
+                    "Value": 10000
+                },
+                "EVSEMaximumVoltageLimit": {
+                    "Multiplier": 0,
+                    "Unit": "V",
+                    "Value": 1250
+                },
+                "EVSEPowerLimitAchieved": false,
+                "EVSEPresentCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 0
+                },
+                "EVSEPresentVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 3686
+                },
+                "EVSEVoltageLimitAchieved": false,
+                "MeterInfo": {
+                    "MeterID": "UMWC_POWERMETER",
+                    "MeterReading": 0,
+                    "TMeter": 1681476432
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c710e00000002040840e61c030c00000003103882402187a8900c50904e01144452a504e582a4531323334352a31000011554d57435f504f5745524d4554455200011a12dcb420c000</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d635134414141414342416841356877444441414141414d514f494a414959656f6b4178516b453442464552537051546c6771525445794d7a51314b6a454141424656545664445831425056305653545556555256494141526f53334c51677741413d</pre></td> </tr>
+<tr class="CAR"> <td>2023-04-14T12:47:13.855Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CurrentDemandReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandReq": {
+                "ChargingComplete": false,
+                "DC_EVStatus": {
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSSOC": 74,
+                    "EVReady": true
+                },
+                "EVMaximumCurrentLimit": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 5000
+                },
+                "EVMaximumVoltageLimit": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "EVTargetCurrent": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 242
+                },
+                "EVTargetVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "RemainingTimeToFullSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 120
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c710d1002501061e40201081444001061104e402040f022102888000</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d63513051416c41515965514341516755524141515952424f51434241384349514b496741413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:13.937Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CurrentDemandRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_Ready",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSECurrentLimitAchieved": false,
+                "EVSEID": "DE*PNX*E12345*1",
+                "EVSEMaximumCurrentLimit": {
+                    "Multiplier": -2,
+                    "Unit": "A",
+                    "Value": 2421
+                },
+                "EVSEMaximumPowerLimit": {
+                    "Multiplier": 0,
+                    "Unit": "W",
+                    "Value": 10000
+                },
+                "EVSEMaximumVoltageLimit": {
+                    "Multiplier": 0,
+                    "Unit": "V",
+                    "Value": 1250
+                },
+                "EVSEPowerLimitAchieved": false,
+                "EVSEPresentCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 0
+                },
+                "EVSEPresentVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 3698
+                },
+                "EVSEVoltageLimitAchieved": false,
+                "MeterInfo": {
+                    "MeterID": "UMWC_POWERMETER",
+                    "MeterReading": 0,
+                    "TMeter": 1681476433
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c710e00000002040840f21c030c00000003103882402187a8900c50904e01144452a504e582a4531323334352a31000011554d57435f504f5745524d4554455200011a32dcb420c000</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d635134414141414342416841386877444441414141414d514f494a414959656f6b4178516b453442464552537051546c6771525445794d7a51314b6a454141424656545664445831425056305653545556555256494141526f79334c51677741413d</pre></td> </tr>
+<tr class="CAR"> <td>2023-04-14T12:47:14.266Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CurrentDemandReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandReq": {
+                "ChargingComplete": false,
+                "DC_EVStatus": {
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSSOC": 74,
+                    "EVReady": true
+                },
+                "EVMaximumCurrentLimit": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 5000
+                },
+                "EVMaximumVoltageLimit": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "EVTargetCurrent": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 242
+                },
+                "EVTargetVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "RemainingTimeToFullSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 120
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c710d1002501061e40201081444001061104e402040f022102888000</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d63513051416c41515965514341516755524141515952424f51434241384349514b496741413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:14.412Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CurrentDemandRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_Ready",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSECurrentLimitAchieved": false,
+                "EVSEID": "DE*PNX*E12345*1",
+                "EVSEMaximumCurrentLimit": {
+                    "Multiplier": -2,
+                    "Unit": "A",
+                    "Value": 2421
+                },
+                "EVSEMaximumPowerLimit": {
+                    "Multiplier": 0,
+                    "Unit": "W",
+                    "Value": 10000
+                },
+                "EVSEMaximumVoltageLimit": {
+                    "Multiplier": 0,
+                    "Unit": "V",
+                    "Value": 1250
+                },
+                "EVSEPowerLimitAchieved": false,
+                "EVSEPresentCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 0
+                },
+                "EVSEPresentVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 3680
+                },
+                "EVSEVoltageLimitAchieved": false,
+                "MeterInfo": {
+                    "MeterID": "UMWC_POWERMETER",
+                    "MeterReading": 0,
+                    "TMeter": 1681476434
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c710e00000002040840e01c030c00000003103882402187a8900c50904e01144452a504e582a4531323334352a31000011554d57435f504f5745524d4554455200011a52dcb420c000</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d635134414141414342416841344277444441414141414d514f494a414959656f6b4178516b453442464552537051546c6771525445794d7a51314b6a454141424656545664445831425056305653545556555256494141527053334c51677741413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:14.483Z</td> <td>EVSE&gt;CAR</td> <td><b>Isolation measurement P 910000 N 900000.</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="CAR"> <td>2023-04-14T12:47:14.741Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CurrentDemandReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandReq": {
+                "ChargingComplete": false,
+                "DC_EVStatus": {
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSSOC": 74,
+                    "EVReady": true
+                },
+                "EVMaximumCurrentLimit": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 5000
+                },
+                "EVMaximumVoltageLimit": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "EVTargetCurrent": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 242
+                },
+                "EVTargetVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "RemainingTimeToFullSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 120
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c710d1002501061e40201081444001061104e402040f022102888000</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d63513051416c41515965514341516755524141515952424f51434241384349514b496741413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:14.877Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CurrentDemandRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_Ready",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSECurrentLimitAchieved": false,
+                "EVSEID": "DE*PNX*E12345*1",
+                "EVSEMaximumCurrentLimit": {
+                    "Multiplier": -2,
+                    "Unit": "A",
+                    "Value": 2421
+                },
+                "EVSEMaximumPowerLimit": {
+                    "Multiplier": 0,
+                    "Unit": "W",
+                    "Value": 10000
+                },
+                "EVSEMaximumVoltageLimit": {
+                    "Multiplier": 0,
+                    "Unit": "V",
+                    "Value": 1250
+                },
+                "EVSEPowerLimitAchieved": false,
+                "EVSEPresentCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 0
+                },
+                "EVSEPresentVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 3710
+                },
+                "EVSEVoltageLimitAchieved": false,
+                "MeterInfo": {
+                    "MeterID": "UMWC_POWERMETER",
+                    "MeterReading": 0,
+                    "TMeter": 1681476434
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c710e00000002040840fe1c030c00000003103882402187a8900c50904e01144452a504e582a4531323334352a31000011554d57435f504f5745524d4554455200011a52dcb420c000</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d6351344141414143424168412f6877444441414141414d514f494a414959656f6b4178516b453442464552537051546c6771525445794d7a51314b6a454141424656545664445831425056305653545556555256494141527053334c51677741413d</pre></td> </tr>
+<tr class="CAR"> <td>2023-04-14T12:47:15.165Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CurrentDemandReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandReq": {
+                "ChargingComplete": false,
+                "DC_EVStatus": {
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSSOC": 74,
+                    "EVReady": true
+                },
+                "EVMaximumCurrentLimit": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 5000
+                },
+                "EVMaximumVoltageLimit": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "EVTargetCurrent": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 242
+                },
+                "EVTargetVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "RemainingTimeToFullSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 120
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c710d1002501061e40201081444001061104e402040f022102888000</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d63513051416c41515965514341516755524141515952424f51434241384349514b496741413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:15.366Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CurrentDemandRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_Ready",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSECurrentLimitAchieved": false,
+                "EVSEID": "DE*PNX*E12345*1",
+                "EVSEMaximumCurrentLimit": {
+                    "Multiplier": -2,
+                    "Unit": "A",
+                    "Value": 2421
+                },
+                "EVSEMaximumPowerLimit": {
+                    "Multiplier": 0,
+                    "Unit": "W",
+                    "Value": 10000
+                },
+                "EVSEMaximumVoltageLimit": {
+                    "Multiplier": 0,
+                    "Unit": "V",
+                    "Value": 1250
+                },
+                "EVSEPowerLimitAchieved": false,
+                "EVSEPresentCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 0
+                },
+                "EVSEPresentVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 3680
+                },
+                "EVSEVoltageLimitAchieved": false,
+                "MeterInfo": {
+                    "MeterID": "UMWC_POWERMETER",
+                    "MeterReading": 0,
+                    "TMeter": 1681476434
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c710e00000002040840e01c030c00000003103882402187a8900c50904e01144452a504e582a4531323334352a31000011554d57435f504f5745524d4554455200011a52dcb420c000</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d635134414141414342416841344277444441414141414d514f494a414959656f6b4178516b453442464552537051546c6771525445794d7a51314b6a454141424656545664445831425056305653545556555256494141527053334c51677741413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:15.468Z</td> <td>EVSE&gt;CAR</td> <td><b>Isolation measurement P 910000 N 900000.</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="CAR"> <td>2023-04-14T12:47:15.602Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CurrentDemandReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandReq": {
+                "ChargingComplete": false,
+                "DC_EVStatus": {
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSSOC": 74,
+                    "EVReady": true
+                },
+                "EVMaximumCurrentLimit": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 5000
+                },
+                "EVMaximumVoltageLimit": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "EVTargetCurrent": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 242
+                },
+                "EVTargetVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "RemainingTimeToFullSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 120
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c710d1002501061e40201081444001061104e402040f022102888000</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d63513051416c41515965514341516755524141515952424f51434241384349514b496741413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:15.791Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CurrentDemandRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_Ready",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSECurrentLimitAchieved": false,
+                "EVSEID": "DE*PNX*E12345*1",
+                "EVSEMaximumCurrentLimit": {
+                    "Multiplier": -2,
+                    "Unit": "A",
+                    "Value": 2421
+                },
+                "EVSEMaximumPowerLimit": {
+                    "Multiplier": 0,
+                    "Unit": "W",
+                    "Value": 10000
+                },
+                "EVSEMaximumVoltageLimit": {
+                    "Multiplier": 0,
+                    "Unit": "V",
+                    "Value": 1250
+                },
+                "EVSEPowerLimitAchieved": false,
+                "EVSEPresentCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 0
+                },
+                "EVSEPresentVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 3692
+                },
+                "EVSEVoltageLimitAchieved": false,
+                "MeterInfo": {
+                    "MeterID": "UMWC_POWERMETER",
+                    "MeterReading": 0,
+                    "TMeter": 1681476435
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c710e00000002040840ec1c030c00000003103882402187a8900c50904e01144452a504e582a4531323334352a31000011554d57435f504f5745524d4554455200011a72dcb420c000</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d635134414141414342416841374277444441414141414d514f494a414959656f6b4178516b453442464552537051546c6771525445794d7a51314b6a454141424656545664445831425056305653545556555256494141527079334c51677741413d</pre></td> </tr>
+<tr class="CAR"> <td>2023-04-14T12:47:16.038Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CurrentDemandReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandReq": {
+                "ChargingComplete": false,
+                "DC_EVStatus": {
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSSOC": 74,
+                    "EVReady": true
+                },
+                "EVMaximumCurrentLimit": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 5000
+                },
+                "EVMaximumVoltageLimit": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "EVTargetCurrent": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 242
+                },
+                "EVTargetVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "RemainingTimeToFullSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 120
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c710d1002501061e40201081444001061104e402040f022102888000</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d63513051416c41515965514341516755524141515952424f51434241384349514b496741413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:16.215Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CurrentDemandRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_Ready",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSECurrentLimitAchieved": false,
+                "EVSEID": "DE*PNX*E12345*1",
+                "EVSEMaximumCurrentLimit": {
+                    "Multiplier": -2,
+                    "Unit": "A",
+                    "Value": 2421
+                },
+                "EVSEMaximumPowerLimit": {
+                    "Multiplier": 0,
+                    "Unit": "W",
+                    "Value": 10000
+                },
+                "EVSEMaximumVoltageLimit": {
+                    "Multiplier": 0,
+                    "Unit": "V",
+                    "Value": 1250
+                },
+                "EVSEPowerLimitAchieved": false,
+                "EVSEPresentCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 0
+                },
+                "EVSEPresentVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 3698
+                },
+                "EVSEVoltageLimitAchieved": false,
+                "MeterInfo": {
+                    "MeterID": "UMWC_POWERMETER",
+                    "MeterReading": 0,
+                    "TMeter": 1681476435
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c710e00000002040840f21c030c00000003103882402187a8900c50904e01144452a504e582a4531323334352a31000011554d57435f504f5745524d4554455200011a72dcb420c000</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d635134414141414342416841386877444441414141414d514f494a414959656f6b4178516b453442464552537051546c6771525445794d7a51314b6a454141424656545664445831425056305653545556555256494141527079334c51677741413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:16.484Z</td> <td>EVSE&gt;CAR</td> <td><b>Isolation measurement P 910000 N 900000.</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="CAR"> <td>2023-04-14T12:47:16.485Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CurrentDemandReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandReq": {
+                "ChargingComplete": false,
+                "DC_EVStatus": {
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSSOC": 74,
+                    "EVReady": true
+                },
+                "EVMaximumCurrentLimit": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 5000
+                },
+                "EVMaximumVoltageLimit": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "EVTargetCurrent": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 242
+                },
+                "EVTargetVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "RemainingTimeToFullSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 120
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c710d1002501061e40201081444001061104e402040f022102888000</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d63513051416c41515965514341516755524141515952424f51434241384349514b496741413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:16.650Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CurrentDemandRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_Ready",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSECurrentLimitAchieved": false,
+                "EVSEID": "DE*PNX*E12345*1",
+                "EVSEMaximumCurrentLimit": {
+                    "Multiplier": -2,
+                    "Unit": "A",
+                    "Value": 2421
+                },
+                "EVSEMaximumPowerLimit": {
+                    "Multiplier": 0,
+                    "Unit": "W",
+                    "Value": 10000
+                },
+                "EVSEMaximumVoltageLimit": {
+                    "Multiplier": 0,
+                    "Unit": "V",
+                    "Value": 1250
+                },
+                "EVSEPowerLimitAchieved": false,
+                "EVSEPresentCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 0
+                },
+                "EVSEPresentVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 3710
+                },
+                "EVSEVoltageLimitAchieved": false,
+                "MeterInfo": {
+                    "MeterID": "UMWC_POWERMETER",
+                    "MeterReading": 0,
+                    "TMeter": 1681476436
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c710e00000002040840fe1c030c00000003103882402187a8900c50904e01144452a504e582a4531323334352a31000011554d57435f504f5745524d4554455200011a92dcb420c000</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d6351344141414143424168412f6877444441414141414d514f494a414959656f6b4178516b453442464552537051546c6771525445794d7a51314b6a454141424656545664445831425056305653545556555256494141527153334c51677741413d</pre></td> </tr>
+<tr class="CAR"> <td>2023-04-14T12:47:17.039Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CurrentDemandReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandReq": {
+                "ChargingComplete": false,
+                "DC_EVStatus": {
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSSOC": 74,
+                    "EVReady": true
+                },
+                "EVMaximumCurrentLimit": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 5000
+                },
+                "EVMaximumVoltageLimit": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "EVTargetCurrent": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 242
+                },
+                "EVTargetVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "RemainingTimeToFullSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 120
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c710d1002501061e40201081444001061104e402040f022102888000</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d63513051416c41515965514341516755524141515952424f51434241384349514b496741413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:17.198Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CurrentDemandRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_Ready",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSECurrentLimitAchieved": false,
+                "EVSEID": "DE*PNX*E12345*1",
+                "EVSEMaximumCurrentLimit": {
+                    "Multiplier": -2,
+                    "Unit": "A",
+                    "Value": 2421
+                },
+                "EVSEMaximumPowerLimit": {
+                    "Multiplier": 0,
+                    "Unit": "W",
+                    "Value": 10000
+                },
+                "EVSEMaximumVoltageLimit": {
+                    "Multiplier": 0,
+                    "Unit": "V",
+                    "Value": 1250
+                },
+                "EVSEPowerLimitAchieved": false,
+                "EVSEPresentCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 0
+                },
+                "EVSEPresentVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 3692
+                },
+                "EVSEVoltageLimitAchieved": false,
+                "MeterInfo": {
+                    "MeterID": "UMWC_POWERMETER",
+                    "MeterReading": 0,
+                    "TMeter": 1681476436
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c710e00000002040840ec1c030c00000003103882402187a8900c50904e01144452a504e582a4531323334352a31000011554d57435f504f5745524d4554455200011a92dcb420c000</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d635134414141414342416841374277444441414141414d514f494a414959656f6b4178516b453442464552537051546c6771525445794d7a51314b6a454141424656545664445831425056305653545556555256494141527153334c51677741413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:17.477Z</td> <td>EVSE&gt;CAR</td> <td><b>Isolation measurement P 910000 N 900000.</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="CAR"> <td>2023-04-14T12:47:17.509Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CurrentDemandReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandReq": {
+                "ChargingComplete": false,
+                "DC_EVStatus": {
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSSOC": 74,
+                    "EVReady": true
+                },
+                "EVMaximumCurrentLimit": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 5000
+                },
+                "EVMaximumVoltageLimit": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "EVTargetCurrent": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 242
+                },
+                "EVTargetVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "RemainingTimeToFullSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 120
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c710d1002501061e40201081444001061104e402040f022102888000</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d63513051416c41515965514341516755524141515952424f51434241384349514b496741413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:17.687Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CurrentDemandRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_Ready",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSECurrentLimitAchieved": false,
+                "EVSEID": "DE*PNX*E12345*1",
+                "EVSEMaximumCurrentLimit": {
+                    "Multiplier": -2,
+                    "Unit": "A",
+                    "Value": 2421
+                },
+                "EVSEMaximumPowerLimit": {
+                    "Multiplier": 0,
+                    "Unit": "W",
+                    "Value": 10000
+                },
+                "EVSEMaximumVoltageLimit": {
+                    "Multiplier": 0,
+                    "Unit": "V",
+                    "Value": 1250
+                },
+                "EVSEPowerLimitAchieved": false,
+                "EVSEPresentCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 0
+                },
+                "EVSEPresentVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 3747
+                },
+                "EVSEVoltageLimitAchieved": false,
+                "MeterInfo": {
+                    "MeterID": "UMWC_POWERMETER",
+                    "MeterReading": 0,
+                    "TMeter": 1681476437
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c710e00000002040840a31d030c00000003103882402187a8900c50904e01144452a504e582a4531323334352a31000011554d57435f504f5745524d4554455200011ab2dcb420c000</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d6351344141414143424168416f7830444441414141414d514f494a414959656f6b4178516b453442464552537051546c6771525445794d7a51314b6a454141424656545664445831425056305653545556555256494141527179334c51677741413d</pre></td> </tr>
+<tr class="CAR"> <td>2023-04-14T12:47:17.914Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CurrentDemandReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandReq": {
+                "ChargingComplete": false,
+                "DC_EVStatus": {
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSSOC": 74,
+                    "EVReady": true
+                },
+                "EVMaximumCurrentLimit": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 5000
+                },
+                "EVMaximumVoltageLimit": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "EVTargetCurrent": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 242
+                },
+                "EVTargetVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "RemainingTimeToFullSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 120
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c710d1002501061e40201081444001061104e402040f022102888000</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d63513051416c41515965514341516755524141515952424f51434241384349514b496741413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:18.071Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CurrentDemandRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_Ready",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSECurrentLimitAchieved": false,
+                "EVSEID": "DE*PNX*E12345*1",
+                "EVSEMaximumCurrentLimit": {
+                    "Multiplier": -2,
+                    "Unit": "A",
+                    "Value": 2421
+                },
+                "EVSEMaximumPowerLimit": {
+                    "Multiplier": 0,
+                    "Unit": "W",
+                    "Value": 10000
+                },
+                "EVSEMaximumVoltageLimit": {
+                    "Multiplier": 0,
+                    "Unit": "V",
+                    "Value": 1250
+                },
+                "EVSEPowerLimitAchieved": false,
+                "EVSEPresentCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 0
+                },
+                "EVSEPresentVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 3717
+                },
+                "EVSEVoltageLimitAchieved": false,
+                "MeterInfo": {
+                    "MeterID": "UMWC_POWERMETER",
+                    "MeterReading": 0,
+                    "TMeter": 1681476437
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c710e00000002040840851d030c00000003103882402187a8900c50904e01144452a504e582a4531323334352a31000011554d57435f504f5745524d4554455200011ab2dcb420c000</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d635134414141414342416841685230444441414141414d514f494a414959656f6b4178516b453442464552537051546c6771525445794d7a51314b6a454141424656545664445831425056305653545556555256494141527179334c51677741413d</pre></td> </tr>
+<tr class="CAR"> <td>2023-04-14T12:47:18.323Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CurrentDemandReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandReq": {
+                "ChargingComplete": false,
+                "DC_EVStatus": {
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSSOC": 74,
+                    "EVReady": true
+                },
+                "EVMaximumCurrentLimit": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 5000
+                },
+                "EVMaximumVoltageLimit": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "EVTargetCurrent": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 242
+                },
+                "EVTargetVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "RemainingTimeToFullSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 120
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c710d1002501061e40201081444001061104e402040f022102888000</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d63513051416c41515965514341516755524141515952424f51434241384349514b496741413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:18.477Z</td> <td>EVSE&gt;CAR</td> <td><b>Isolation measurement P 910000 N 900000.</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:18.479Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CurrentDemandRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "None",
+                    "EVSEStatusCode": "EVSE_Ready",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSECurrentLimitAchieved": false,
+                "EVSEID": "DE*PNX*E12345*1",
+                "EVSEMaximumCurrentLimit": {
+                    "Multiplier": -2,
+                    "Unit": "A",
+                    "Value": 2421
+                },
+                "EVSEMaximumPowerLimit": {
+                    "Multiplier": 0,
+                    "Unit": "W",
+                    "Value": 10000
+                },
+                "EVSEMaximumVoltageLimit": {
+                    "Multiplier": 0,
+                    "Unit": "V",
+                    "Value": 1250
+                },
+                "EVSEPowerLimitAchieved": false,
+                "EVSEPresentCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 0
+                },
+                "EVSEPresentVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 3710
+                },
+                "EVSEVoltageLimitAchieved": false,
+                "MeterInfo": {
+                    "MeterID": "UMWC_POWERMETER",
+                    "MeterReading": 0,
+                    "TMeter": 1681476438
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c710e00000002040840fe1c030c00000003103882402187a8900c50904e01144452a504e582a4531323334352a31000011554d57435f504f5745524d4554455200011ad2dcb420c000</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d6351344141414143424168412f6877444441414141414d514f494a414959656f6b4178516b453442464552537051546c6771525445794d7a51314b6a454141424656545664445831425056305653545556555256494141527253334c51677741413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:18.602Z</td> <td>EVSE&gt;CAR</td> <td><b>Transaction Finished: Local (0 kWh)</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:18.632Z</td> <td>EVSE&gt;CAR</td> <td><b>Charger state: Charging->StoppingCharging</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:18.634Z</td> <td>EVSE&gt;CAR</td> <td><b>DC power supply OFF</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="CAR"> <td>2023-04-14T12:47:18.768Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CurrentDemandReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandReq": {
+                "ChargingComplete": false,
+                "DC_EVStatus": {
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSSOC": 74,
+                    "EVReady": true
+                },
+                "EVMaximumCurrentLimit": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 5000
+                },
+                "EVMaximumVoltageLimit": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "EVTargetCurrent": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 242
+                },
+                "EVTargetVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "RemainingTimeToFullSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 120
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c710d1002501061e40201081444001061104e402040f022102888000</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d63513051416c41515965514341516755524141515952424f51434241384349514b496741413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:18.825Z</td> <td>EVSE&gt;CAR</td> <td><b>DC power supply OFF</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:18.959Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CurrentDemandRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "StopCharging",
+                    "EVSEStatusCode": "EVSE_Shutdown",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSECurrentLimitAchieved": false,
+                "EVSEID": "DE*PNX*E12345*1",
+                "EVSEMaximumCurrentLimit": {
+                    "Multiplier": -2,
+                    "Unit": "A",
+                    "Value": 2421
+                },
+                "EVSEMaximumPowerLimit": {
+                    "Multiplier": 0,
+                    "Unit": "W",
+                    "Value": 10000
+                },
+                "EVSEMaximumVoltageLimit": {
+                    "Multiplier": 0,
+                    "Unit": "V",
+                    "Value": 1250
+                },
+                "EVSEPowerLimitAchieved": false,
+                "EVSEPresentCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 0
+                },
+                "EVSEPresentVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 3747
+                },
+                "EVSEVoltageLimitAchieved": false,
+                "MeterInfo": {
+                    "MeterID": "UMWC_POWERMETER",
+                    "MeterReading": 0,
+                    "TMeter": 1681476438
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c710e00000102080840a31d030c00000003103882402187a8900c50904e01144452a504e582a4531323334352a31000011554d57435f504f5745524d4554455200011ad2dcb420c000</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d6351344141414543434168416f7830444441414141414d514f494a414959656f6b4178516b453442464552537051546c6771525445794d7a51314b6a454141424656545664445831425056305653545556555256494141527253334c51677741413d</pre></td> </tr>
+<tr class="CAR"> <td>2023-04-14T12:47:19.197Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G CurrentDemandReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandReq": {
+                "ChargingComplete": false,
+                "DC_EVStatus": {
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSSOC": 74,
+                    "EVReady": true
+                },
+                "EVMaximumCurrentLimit": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 5000
+                },
+                "EVMaximumVoltageLimit": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "EVTargetCurrent": {
+                    "Multiplier": -1,
+                    "Unit": "A",
+                    "Value": 242
+                },
+                "EVTargetVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 4130
+                },
+                "RemainingTimeToFullSoC": {
+                    "Multiplier": 1,
+                    "Unit": "s",
+                    "Value": 120
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c710d1002501061e40201081444001061104e402040f022102888000</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d63513051416c41515965514341516755524141515952424f51434241384349514b496741413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:19.270Z</td> <td>EVSE&gt;CAR</td> <td><b>DC power supply OFF</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:19.385Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G CurrentDemandRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "CurrentDemandRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "StopCharging",
+                    "EVSEStatusCode": "EVSE_Shutdown",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSECurrentLimitAchieved": false,
+                "EVSEID": "DE*PNX*E12345*1",
+                "EVSEMaximumCurrentLimit": {
+                    "Multiplier": -2,
+                    "Unit": "A",
+                    "Value": 2421
+                },
+                "EVSEMaximumPowerLimit": {
+                    "Multiplier": 0,
+                    "Unit": "W",
+                    "Value": 10000
+                },
+                "EVSEMaximumVoltageLimit": {
+                    "Multiplier": 0,
+                    "Unit": "V",
+                    "Value": 1250
+                },
+                "EVSEPowerLimitAchieved": false,
+                "EVSEPresentCurrent": {
+                    "Multiplier": 0,
+                    "Unit": "A",
+                    "Value": 0
+                },
+                "EVSEPresentVoltage": {
+                    "Multiplier": -1,
+                    "Unit": "V",
+                    "Value": 3649
+                },
+                "EVSEVoltageLimitAchieved": false,
+                "MeterInfo": {
+                    "MeterID": "UMWC_POWERMETER",
+                    "MeterReading": 0,
+                    "TMeter": 1681476438
+                },
+                "ReceiptRequired": false,
+                "ResponseCode": "OK",
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c710e00000102080840c11c030c00000003103882402187a8900c50904e01144452a504e582a4531323334352a31000011554d57435f504f5745524d4554455200011ad2dcb420c000</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d635134414141454343416841775277444441414141414d514f494a414959656f6b4178516b453442464552537051546c6771525445794d7a51314b6a454141424656545664445831425056305653545556555256494141527253334c51677741413d</pre></td> </tr>
+<tr class="CAR"> <td>2023-04-14T12:47:19.549Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G PowerDeliveryReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "PowerDeliveryReq": {
+                "ChargeProgress": "Stop",
+                "ChargingProfile": {
+                    "ProfileEntry": [
+                        {
+                            "ChargingProfileEntryMaxPower": {
+                                "Multiplier": 2,
+                                "Unit": "W",
+                                "Value": 110
+                            },
+                            "ChargingProfileEntryStart": 0
+                        }
+                    ]
+                },
+                "DC_EVPowerDeliveryParameter": {
+                    "ChargingComplete": false,
+                    "DC_EVStatus": {
+                        "EVErrorCode": "NO_ERROR",
+                        "EVRESSSOC": 74,
+                        "EVReady": true
+                    }
+                },
+                "SAScheduleTupleID": 1
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c71151000000028a0dc282004a1000</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d63525551414141414b4b44634b4341456f5141413d3d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:19.569Z</td> <td>EVSE&gt;CAR</td> <td><b>DC power supply OFF</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:19.715Z</td> <td>EVSE&gt;CAR</td> <td><b>DC power supply OFF</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="CAR"> <td>2023-04-14T12:47:19.851Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>Event CarRequestedStopPower</b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:19.873Z</td> <td>EVSE&gt;CAR</td> <td><b>Event PowerOff</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:19.986Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G PowerDeliveryRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "PowerDeliveryRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "StopCharging",
+                    "EVSEStatusCode": "EVSE_Shutdown",
+                    "NotificationMaxDelay": 0
+                },
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c711600400081040</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d63525941514143424241</pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:20.256Z</td> <td>EVSE&gt;CAR</td> <td><b>Change HLC Limits: 0W/0A, target_voltage 413, hack_bpt false</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="CAR"> <td>2023-04-14T12:47:20.634Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G WeldingDetectionReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "WeldingDetectionReq": {
+                "DC_EVStatus": {
+                    "EVErrorCode": "NO_ERROR",
+                    "EVRESSSOC": 74,
+                    "EVReady": false
+                }
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c71210002500</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d63534541416c41413d3d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:20.757Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G WeldingDetectionRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "WeldingDetectionRes": {
+                "DC_EVSEStatus": {
+                    "EVSEIsolationStatus": "Valid",
+                    "EVSENotification": "StopCharging",
+                    "EVSEStatusCode": "EVSE_Shutdown",
+                    "NotificationMaxDelay": 0
+                },
+                "EVSEPresentVoltage": {
+                    "Multiplier": -2,
+                    "Unit": "V",
+                    "Value": 14709
+                },
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c712200000102080440f572000</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d63534941414145434341524139584941413d</pre></td> </tr>
+<tr class="CAR"> <td>2023-04-14T12:47:20.995Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>V2G SessionStopReq</b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "SessionStopReq": {
+                "ChargingSession": "Terminate"
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c711f000</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d63523841413d</pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:21.080Z</td> <td>EVSE&gt;CAR</td> <td><b>V2G SessionStopRes</b></td><td><b></b></td> <td><pre lang="xml">{
+    "V2G_Message": {
+        "Body": {
+            "SessionStopRes": {
+                "ResponseCode": "OK"
+            }
+        },
+        "Header": {
+            "SessionID": "51FB6C7A3C00C31C"
+        }
+    }
+}</pre></td> <td><pre lang="xml">809802147edb1e8f0030c7120000</pre></td> <td><pre lang="xml">674a674346483762486f38414d4d63534141413d</pre></td> </tr>
+<tr class="CAR"> <td>2023-04-14T12:47:42.038Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>Event CarRequestedStopPower</b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="CAR"> <td>2023-04-14T12:47:42.309Z</td> <td>CAR&gt;EVSE</td> <td><b></b></td><td><b>Event CarUnplugged</b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:42.319Z</td> <td>EVSE&gt;CAR</td> <td><b>SLAC UNMATCHED</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:42.335Z</td> <td>EVSE&gt;CAR</td> <td><b>Charger state: StoppingCharging->Finished</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="EVSE"> <td>2023-04-14T12:47:42.336Z</td> <td>EVSE&gt;CAR</td> <td><b>Session Finished</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+<tr class="SYS"> <td>2023-04-14T12:47:42.336Z</td> <td>SYS&gt;</td> <td><b>Session logging stopped.</b></td><td><b></b></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> <td><pre lang="xml"></pre></td> </tr>
+</table></body></html>
