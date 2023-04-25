@@ -53,7 +53,7 @@ Legend:
 | --- | ------------ | ---------------------------- | -------------------------- | --------------------- | --------------------- | --------------------- | ---------------------------------------------------------------------- |
 | 24  | Hyundai      | Hyundai Ioniq plug in hybrid | :heavy_check_mark: 1ph/14A | :black_square_button: | :black_square_button: | :black_square_button: | Charger stops if 5% PWM presented and does not recover until replugged |
 
-## Prototype cars
+## Prototype cars (Charin Testival Arnhem April 2023)
 
 EVerest is tested on prototype cars or series cars with unreleased firmware versions on testivals in regular intervals (e.g. organized by Charin e.V.). The logfiles of these tests are not published here. Test results for unreleased features (e.g. PnC, ISO-20) are also not published.
 
