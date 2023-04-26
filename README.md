@@ -66,7 +66,7 @@ EVerest is tested on prototype cars or series cars with unreleased firmware vers
 | 29  | Hyundai       | Prototype 2       | :heavy_check_mark: 3ph/16A | :heavy_check_mark: | :heavy_check_mark: | :black_square_button: |          |
 | 30  | Mercedes-Benz | Prototype 1       | :heavy_check_mark: 3ph/16A | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark:    |          |
 | 31  | Volvo         | Prototype 1       | :heavy_check_mark: 3ph/16A | :heavy_check_mark: | :heavy_check_mark: | :black_square_button: |          |
-| 32  | Volvo         | Prototype 2       | :heavy_check_mark: 3ph/63A | :heavy_check_mark: | :heavy_check_mark: | :black_square_button: |          |
-| 33  | Scania        | Prototype 1       | :black_square_button:      | :heavy_check_mark: | :heavy_check_mark: | :black_square_button: |          |
+| 32  | Volvo         | Truck Prototype 2       | :heavy_check_mark: 3ph/63A | :heavy_check_mark: | :heavy_check_mark: | :black_square_button: |          |
+| 33  | Scania        | Truck Prototype 1       | :black_square_button:      | :heavy_check_mark: | :heavy_check_mark: | :black_square_button: |          |
 
 
