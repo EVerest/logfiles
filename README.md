@@ -48,13 +48,14 @@ Legend:
 | 24  | MG        | MG4 electric                    | :heavy_check_mark: 3ph/16A         | :heavy_check_mark:                                               | :heavy_check_mark:                        | :black_square_button:           |       |
 | 25  | Audi        | Q4                    | :heavy_check_mark: 3ph/16A         | :heavy_check_mark:                                               | :heavy_check_mark:                        | :heavy_check_mark:        |       |
 | 26  | Xpeng        | P7 performance             | :heavy_check_mark: 3ph/16A         | :heavy_check_mark:                                               | :heavy_check_mark:                        | :black_square_button:           |       |
+| 27  | Seres        | Seres 3             | :heavy_check_mark: 3ph/16A         | :heavy_check_mark:                                               | :heavy_check_mark:                        | :black_square_button:           | On AC ISO15118-2, the EV sends a CableCheck req in AC    |
 
 
 
 ## Plug in hybrid vehicles (European markets)
 |     | Manufacturer | Model, fw version            | AC BASIC                   | DIN SPEC 70121 DC     | ISO15118-2 DC         | ISO15118-2 AC         | Comments                                                               |
 | --- | ------------ | ---------------------------- | -------------------------- | --------------------- | --------------------- | --------------------- | ---------------------------------------------------------------------- |
-| 27  | Hyundai      | Hyundai Ioniq plug in hybrid | :heavy_check_mark: 1ph/14A | :black_square_button: | :black_square_button: | :black_square_button: | Charger stops if 5% PWM presented and does not recover until replugged |
+| 28  | Hyundai      | Hyundai Ioniq plug in hybrid | :heavy_check_mark: 1ph/14A | :black_square_button: | :black_square_button: | :black_square_button: | Charger stops if 5% PWM presented and does not recover until replugged |
 
 ## Prototype cars (Charin Testival Arnhem April 2023)
 
@@ -62,14 +63,14 @@ EVerest is tested on prototype cars or series cars with unreleased firmware vers
 
 |     | Manufacturer  | Model, fw version | AC BASIC                   | DIN SPEC 70121 DC  | ISO15118-2 DC      | ISO15118-2 AC         | Comments |
 | --- | ------------- | ----------------- | -------------------------- | ------------------ | ------------------ | --------------------- | -------- |
-| 28  | Lotus         | Prototype         | :heavy_check_mark: 3ph/16A | :heavy_check_mark: | :heavy_check_mark: | :black_square_button: |          |
-| 29  | Lucid         | Prototype         | :heavy_check_mark: 3ph/16A | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark:    |          |
-| 30  | Renault       | Prototype         | :heavy_check_mark: 3ph/16A | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark:    |          |
-| 31  | Hyundai       | Prototype 1       | :heavy_check_mark: 3ph/16A | :heavy_check_mark: | :heavy_check_mark: | :black_square_button: |          |
-| 32  | Hyundai       | Prototype 2       | :heavy_check_mark: 3ph/16A | :heavy_check_mark: | :heavy_check_mark: | :black_square_button: |          |
-| 33  | Mercedes-Benz | Prototype 1       | :heavy_check_mark: 3ph/16A | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark:    |          |
-| 34  | Volvo         | Prototype 1       | :heavy_check_mark: 3ph/16A | :heavy_check_mark: | :heavy_check_mark: | :black_square_button: |          |
-| 35  | Volvo         | Truck Prototype 2       | :heavy_check_mark: 3ph/63A | :heavy_check_mark: | :heavy_check_mark: | :black_square_button: |          |
-| 36  | Scania        | Truck Prototype 1       | :black_square_button:      | :heavy_check_mark: | :heavy_check_mark: | :black_square_button: |          |
+| 29  | Lotus         | Prototype         | :heavy_check_mark: 3ph/16A | :heavy_check_mark: | :heavy_check_mark: | :black_square_button: |          |
+| 30  | Lucid         | Prototype         | :heavy_check_mark: 3ph/16A | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark:    |          |
+| 31  | Renault       | Prototype         | :heavy_check_mark: 3ph/16A | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark:    |          |
+| 32  | Hyundai       | Prototype 1       | :heavy_check_mark: 3ph/16A | :heavy_check_mark: | :heavy_check_mark: | :black_square_button: |          |
+| 33  | Hyundai       | Prototype 2       | :heavy_check_mark: 3ph/16A | :heavy_check_mark: | :heavy_check_mark: | :black_square_button: |          |
+| 34  | Mercedes-Benz | Prototype 1       | :heavy_check_mark: 3ph/16A | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark:    |          |
+| 35  | Volvo         | Prototype 1       | :heavy_check_mark: 3ph/16A | :heavy_check_mark: | :heavy_check_mark: | :black_square_button: |          |
+| 36  | Volvo         | Truck Prototype 2       | :heavy_check_mark: 3ph/63A | :heavy_check_mark: | :heavy_check_mark: | :black_square_button: |          |
+| 37  | Scania        | Truck Prototype 1       | :black_square_button:      | :heavy_check_mark: | :heavy_check_mark: | :black_square_button: |          |
 
 
